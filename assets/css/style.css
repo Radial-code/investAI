@@ -20,9 +20,9 @@ body {
 /* hero background image */
 .hero_bg {
     background-image: url("../image/webp/hero-section-bg.webp");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100vh;
 }
 
 /* common btn  */
