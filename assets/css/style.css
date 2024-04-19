@@ -92,7 +92,7 @@ nav ul li a:hover {
 /* nav css end */
 /* hero section css start*/
 .blur_box {
-    background: #553AF5;
+    background: #553af5;
     width: 311.89px;
     height: 311.89px;
     filter: blur(140px);
@@ -153,8 +153,53 @@ nav ul li a:hover {
     background: #8989890d;
     padding: 12px 10px;
     border: 1px solid #ffffff17;
-    max-width: 566px;
+    max-width: 554px;
     border-radius: 20px;
+}
+.flip-clock-dot {
+    display: block;
+    background: #553af5 !important;
+    border-radius: 1px !important;
+    width: 6px !important;
+    height: 6px !important;
+}
+.flip-clock-wrapper ul li a div div.inn {
+    font-size: var(--fs-xl) !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 9.03px 33.86px 0px #00000069 !important;
+    box-shadow: 0px 0px 13.54px 0px #ffffff08 inset !important;
+    text-shadow: unset !important;
+    /* background: #FFFFFF08 !important; */
+}
+.flip-clock-wrapper ul {
+    width: 59px !important;
+    height: 75px !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+}
+.flip-clock-wrapper {
+    margin: 0 !important;
+}
+.flip-clock-divider {
+    height: 75px !important;
+    /* width: 12px !important; */
+}
+.flip-clock-wrapper ul li a div .shadow {
+    position: unset !important;
+}
+.flip-clock-dot.top {
+    top: 25px !important;
+    transform: rotate(45deg) !important;
+}
+.flip-clock-dot.bottom {
+    top: 50px !important;
+    transform: rotate(45deg) !important;
+}
+.flip-clock-divider .flip-clock-label {
+    display: none !important;
+}
+.flip-clock-wrapper .flip{
+    box-shadow: unset !important;
 }
 
 /* hero section css end */
@@ -242,5 +287,18 @@ nav ul li a:hover {
     }
     .hero_input {
         padding: 12px 18px;
+    }
+    .flip-clock-wrapper ul {
+        width: 33px !important;
+        height: 60px !important;
+    }
+    .flip-clock-wrapper ul li a div.up{
+        top: 10px !important;
+    }
+}
+@media (max-width:374.98px) {
+    .flip-clock-wrapper ul {
+        width: 33px !important;
+        height: 60px !important;
     }
 }

@@ -8,26 +8,54 @@ function toggleNavigationMenu() {
   changeButton.classList.toggle("change");
 }
 
-// counter
-function startTimer(days, hours, minutes, seconds) {
-  let totalSeconds =
-    days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60 + seconds;
-  let daysDisplay = document.getElementById("days");
-  let hoursDisplay = document.getElementById("hours");
-  let minutesDisplay = document.getElementById("minutes");
-  let secondsDisplay = document.getElementById("seconds");
-  let timerInterval = setInterval(function () {
-    let days = Math.floor(totalSeconds / (3600 * 24));
-    let hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
-    let minutes = Math.floor((totalSeconds % 3600) / 60);
-    let seconds = Math.floor(totalSeconds % 60);
-    daysDisplay.textContent = days < 10 ? "0" + days : days;
-    hoursDisplay.textContent = hours < 10 ? "0" + hours : hours;
-    minutesDisplay.textContent = minutes < 10 ? "0" + minutes : minutes;
-    secondsDisplay.textContent = seconds < 10 ? "0" + seconds : seconds;
-    if (--totalSeconds < 0) {
-      clearInterval(timerInterval);
+
+//timer counter
+window.addEventListener('load', (event) => {
+  let clock;
+
+  // Grab the current date
+  let currentDate = new Date();
+
+  // Target future date/24 hour time/Timezone
+  let targetDate = moment.tz("2024-06-01 23:59", "Australia/Sydney");
+
+  // Calculate the difference in seconds between the future and current date
+  let diff = targetDate / 1000 - currentDate.getTime() / 1000;
+
+  if (diff <= 0) {
+    // If remaining countdown is 0
+    clock = (".clock").FlipClock(0, {
+      clockFace: "DailyCounter",
+      countdown: true,
+      autostart: false
+    });
+    console.log("Date has already passed!")
+    
+  } else {
+    // Run countdown timer
+    clock = $(".clock").FlipClock(diff, {
+      clockFace: "DailyCounter",
+      countdown: true,
+      callbacks: {
+        stop: function() {
+          console.log("Timer has ended!")
+        }
+      }
+    });
+    
+    // Check when timer reaches 0, then stop at 0
+    setTimeout(function() {
+      checktime();
+    }, 1000);
+    
+    function checktime() {
+      t = clock.getTime();
+      if (t <= 0) {
+        clock.setTime(0);
+      }
+      setTimeout(function() {
+        checktime();
+      }, 1000);
     }
-  }, 1000);
-}
-startTimer(10, 10, 15, 15);
+  }
+});
