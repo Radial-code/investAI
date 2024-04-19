@@ -162,6 +162,7 @@ nav ul li a:hover {
     border-radius: 1px !important;
     width: 6px !important;
     height: 6px !important;
+    left: 6px !important;
 }
 .flip-clock-wrapper ul li a div div.inn {
     font-size: var(--fs-xl) !important;
@@ -198,7 +199,7 @@ nav ul li a:hover {
 .flip-clock-divider .flip-clock-label {
     display: none !important;
 }
-.flip-clock-wrapper .flip{
+.flip-clock-wrapper .flip {
     box-shadow: unset !important;
 }
 
@@ -220,6 +221,9 @@ nav ul li a:hover {
     .side_blur_box_one {
         width: 250px;
         height: 250px;
+    }
+    .counter_box {
+        margin-bottom: 36px;
     }
 }
 /* media screen  765.95px*/
@@ -266,6 +270,10 @@ nav ul li a:hover {
     .hero_input {
         padding: 14px 18px;
     }
+    .counter_para {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 /* media screen  575.98px*/
 @media (max-width: 576.98px) {
@@ -292,11 +300,31 @@ nav ul li a:hover {
         width: 33px !important;
         height: 60px !important;
     }
-    .flip-clock-wrapper ul li a div.up{
+    .flip-clock-wrapper ul li a div.up {
         top: 10px !important;
     }
+    .counter_box {
+        padding: 0 12px;
+    }
+    .flip-clock-wrapper ul li a div.down {
+        bottom: 5px !important;
+    }
+    .flip-clock-dot {
+        width: 5px !important;
+        height: 5px !important;
+        left: 7px !important;
+    }
+    .flip-clock-divider {
+        height: 65px !important;
+    }
+    .flip-clock-dot.bottom {
+        top: 43px !important;
+    }
+    .flip-clock-wrapper ul li a div div.inn {
+        height: 212% !important;
+    }
 }
-@media (max-width:374.98px) {
+@media (max-width: 374.98px) {
     .flip-clock-wrapper ul {
         width: 33px !important;
         height: 60px !important;
