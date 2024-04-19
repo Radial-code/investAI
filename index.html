@@ -4,44 +4,134 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/image/svg/favicon.svg" type="image/x-icon">
+    <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
-    <title>Bootstrap demo</title>
+    <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Primary Meta Tags -->
+    <!-- page title -->
+    <title>AI ETF</title>
+    <meta name="title" content="AI ETF" />
+    <meta name="description" content="AI ETFs are expected to grow 119.37%. Here are the top 5 AI ETFs." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://invest-ai-4030b.web.app/" />
+    <meta property="og:title" content="AI ETF" />
+    <meta property="og:description" content="AI ETFs are expected to grow 119.37%. Here are the top 5 AI ETFs." />
+    <meta property="og:image" content="/meta-img.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://invest-ai-4030b.web.app/" />
+    <meta property="twitter:title" content="AI ETF" />
+    <meta property="twitter:description" content="AI ETFs are expected to grow 119.37%. Here are the top 5 AI ETFs." />
+    <meta property="twitter:image" content="/meta-img.webp" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
 </head>
 
 <body>
-    <div class="container custom_container mx-auto py-3">
-        <nav class="d-flex align-items-center justify-content-between py-1">
-            <a href="/" class="ff_orbitron fw-bold fs_md text-white position-relative z-3">
-                <span class="text_light_indigo ">AI</span> ETF
-            </a>
-            <ul class="d-flex align-items-center justify-content-center flex-md-row flex-column  mb-0 sm-navbar nababar ps-0 list-unstyled"
-                id="nav">
-                <li><a onclick="toggleNavigationMenu()" href="#home"
-                        class="d-inline-block text-white ff_inter fw-normal  nav_line position-relative fs_nav">HOME</a>
-                </li>
-                <li><a onclick="toggleNavigationMenu()" href="#benefit"
-                        class="d-inline-block text-white ff_inter fw-normal  nav_line position-relative fs_nav">BENEFIT</a>
-                </li>
-                <li><a onclick="toggleNavigationMenu()" href="#stocks"
-                        class="d-inline-block text-white ff_inter fw-normal  nav_line position-relative fs_nav">AI
-                        STOCKS</a>
-                </li>
-                <li>
-                    <button class="common_btn text-white ff_inter fw-bold fs_base d-sm-none">SIGN UP FOR FREE</button>
-                </li>
-            </ul>
-            <button class="common_btn text-white ff_inter fw-bold fs_base d-none d-sm-block">SIGN UP FOR FREE</button>
-            <label for="navMenu" onclick="toggleNavigationMenu()" class="d-md-none" id="change">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-            </label>
-        </nav>
+    <div class="hero_bg position-relative overflow-hidden">
+        <div class="side_blur_box_one blur_box position-absolute"></div>
+        <div class="blur_box side_blur_box_two  position-absolute"></div>
+        <div class="container custom_container mx-auto py-3 position-relative z-1">
+            <!-- nav bar start -->
+            <nav class="d-flex align-items-center justify-content-between py-1">
+                <a href="/" class="ff_orbitron fw-bold fs_md text-white position-relative z-3">
+                    <span class="text_light_indigo ">AI</span> ETF
+                </a>
+                <ul class="d-flex align-items-center justify-content-center flex-md-row flex-column  mb-0 sm-navbar nababar ps-0 list-unstyled"
+                    id="nav">
+                    <li><a onclick="toggleNavigationMenu()" href="#home"
+                            class="d-inline-block text-white ff_inter fw-normal nav_line position-relative fs_nav">HOME</a>
+                    </li>
+                    <li><a onclick="toggleNavigationMenu()" href="#benefit"
+                            class="d-inline-block text-white ff_inter fw-normal nav_line position-relative fs_nav">BENEFIT</a>
+                    </li>
+                    <li><a onclick="toggleNavigationMenu()" href="#stocks"
+                            class="d-inline-block text-white ff_inter fw-normal nav_line position-relative fs_nav">AI
+                            STOCKS</a>
+                    </li>
+                    <li>
+                        <button class="common_btn text-white ff_inter fw-bold fs_base d-sm-none">SIGN UP FOR
+                            FREE</button>
+                    </li>
+                </ul>
+                <button class="common_btn text-white ff_inter fw-bold fs_base d-none d-sm-block">SIGN UP FOR
+                    FREE</button>
+                <label for="navMenu" onclick="toggleNavigationMenu()" class="d-md-none" id="change">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </label>
+            </nav>
+            <!-- nav bar end -->
+            <!-- hero section start -->
+            <div class="pt-5 mt-4">
+                <div class="d-flex align-items-center flex-column flex-lg-row gap-lg-5 gap-3 justify-content-between">
+                    <h1 class="text-white fw-semibold lh_120 fs_2xl text-capitalize main_heading_w mb-0 ff_openSans">AI
+                        ETFs are
+                        expected to
+                        <span class="text_light_blue">grow 119.37%.</span> Here are the top 5 AI ETFs.
+                    </h1>
+                    <p class="text-white opacity_80 main_heading_para_w mb-0 lh_160 fs_sm ff_inter">We have seen a
+                        significant
+                        growth
+                        of
+                        40% since last year, which
+                        brought
+                        the share price from $7 to $10.</p>
+                </div>
+                <div class="row pt-4 mt-1">
+                    <div class="col-12 col-lg-7">
+                        <div class="position-relative">
+                            <span class="position-absolute live_icon fs_sm ff_inter fw-bold lh-base text-white">
+                                <img src="./assets/image/svg/liveicon.svg" alt="live">
+                                LIVE
+                            </span>
+                            <img class="w-100 hero_Ai_img" src="./assets/image/webp/hero-Ai-img.webp" alt="hero-ai-img">
+                            <p class="ff_inter fw-bold fs_sm lh_120  text-white text-center counter_para mx-auto">Due to
+                                extremely high
+                                demand for media coverage, registration closes in</p>
+                            <!-- <div class="counter_box mx-auto d-flex align-items-center">
+                                <div id="days">00</div>
+                                <div id="hours">00</div>
+                                <div id="minutes">00</div>
+                                <div id="seconds">00</div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="form_box_hero mx-auto">
+                            <h2 class="text-white ff_openSans fw-bold fs_xl lh_120 text-center mb-4 pb-md-2">This is the
+                                right time
+                                to invest in <span class="text_light_blue">ai ETF</span></h2>
+                            <form>
+                                <div class="d-flex flex-column">
+                                    <input required type="text" placeholder="First Name" class="hero_input">
+                                    <input required type="text" placeholder="Last Name" class="hero_input">
+                                    <input required type="email" placeholder="Email" class="hero_input">
+                                    <input required type="number" placeholder="Phone Number" class="hero_input">
+                                </div>
+                                <div class=" pt-3 pt-lg-4">
+                                    <button class="common_btn w-100 text-white ff_inter fw-bold fs_base ">SIGN
+                                        UP
+                                        FOR
+                                        FREE</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- hero section end -->
+        </div>
     </div>
-    </header>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
