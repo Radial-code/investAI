@@ -8,6 +8,7 @@
 /* body */
 body {
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
     background-color: var(--dark-blue) !important;
 }
 
@@ -93,8 +94,8 @@ nav ul li a:hover {
 /* hero section css start*/
 .blur_box {
     background: #553af5;
-    width: 311.89px;
-    height: 311.89px;
+    width: 310px;
+    height: 310px;
     filter: blur(140px);
 }
 .side_blur_box_one {
@@ -103,9 +104,10 @@ nav ul li a:hover {
     opacity: 0.6;
 }
 .side_blur_box_two {
-    bottom: 0;
+    width: 170px !important;
+    top: -90%;
     opacity: 0.23;
-    right: -120px;
+    right: 0;
 }
 .main_heading_w {
     max-width: 688px;
@@ -208,6 +210,36 @@ nav ul li a:hover {
 }
 
 /* hero section css end */
+
+/* slider section start */
+
+.slider_box {
+    background: #8989890d;
+    border-top: unset;
+    border-bottom: 1px solid #ffffff17;
+    border-left: 1px solid #ffffff17;
+    border-right: 1px solid #ffffff17;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.slider_box_blur {
+    width: 80px;
+    height: 80px;
+    background: var(--light-blue);
+    filter: blur(70px);
+    top: 80px;
+    left: 20px;
+}
+.slider_box_img {
+    width: 101px;
+    height: 101px;
+    border: 1px solid var(--light-blue);
+    border-radius: 100%;
+    margin-top: 14px;
+    margin-bottom: 9px;
+}
+/* slider section end */
+
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
     .common_btn {
