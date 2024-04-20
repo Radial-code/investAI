@@ -335,11 +335,14 @@ nav ul li a:hover {
 
 /* How to benefit by investing in AI ETFs for high returns css start */
 
-.high_returns_heading{
+.high_returns_heading {
     max-width: 672px;
     padding-top: 159px;
 }
-
+.hight_return_bg_img {
+    top: 93%;
+    max-width: 1440px;
+}
 /* How to benefit by investing in AI ETFs for high returns css end */
 
 /* media screen 1199.98px */
@@ -390,6 +393,9 @@ nav ul li a:hover {
     }
     .Implement_heading {
         padding-top: 120px;
+    }
+    .hight_return_bg_img {
+        top: 100%;
     }
 }
 /* media screen  765.95px*/
@@ -464,6 +470,9 @@ nav ul li a:hover {
     }
     .Implement_heading {
         padding-top: 90px;
+    }
+    .hight_return_bg_img {
+        top: 141%;
     }
 }
 /* media screen  575.98px*/
@@ -543,6 +552,14 @@ nav ul li a:hover {
     }
     .bacground_circle {
         top: -1.5%;
+    }
+    .hight_return_bg_img {
+        top: 169%;
+    }
+}
+@media (max-width:399.98px) {
+    .hight_return_bg_img {
+        top: 155%;
     }
 }
 @media (max-width: 374.98px) {
