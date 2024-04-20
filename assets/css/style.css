@@ -44,6 +44,9 @@ body {
 }
 
 /* nav bar css  */
+.nav_logo {
+    z-index: 12;
+}
 .nav_line {
     transition: all 200ms linear;
 }
@@ -137,7 +140,7 @@ nav ul li a:hover {
     backdrop-filter: blur(8px);
 }
 .hero_input {
-    padding: 23px 18px;
+    padding: 20.5px 18px;
     margin-bottom: 17px;
     border-radius: 66px;
     outline: none;
@@ -153,12 +156,26 @@ nav ul li a:hover {
 .form_box_hero input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
+.counter_box_timer span {
+    display: inline-block;
+    width: 59px;
+    height: 75px;
+    padding: 18px;
+    line-height: normal;
+    background: #ffffff08;
+    border-radius: 10px;
+    box-shadow: 0px 9.03px 33.86px 0px #00000069;
+    box-shadow: 0px 0px 13.54px 0px #ffffff08 inset;
+    background-image: url("../image/svg/counter-bg.svg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
 .counter_box {
     background: #8989890d;
     padding: 12px 10px;
     border: 1px solid #ffffff17;
-    max-width: 554px;
+    gap: 7px;
     border-radius: 20px;
 }
 .flip-clock-dot {
@@ -240,10 +257,58 @@ nav ul li a:hover {
     margin-top: 14px;
     margin-bottom: 9px;
 }
+
 /* slider section end */
-@media (min-width:1199.98px) {
+
+/* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css start */
+.Implement_heading {
+    max-width: 571px !important;
+    padding-top: 178px;
+}
+.Implement_paragraph {
+    max-width: 806px !important;
+    width: 100% !important;
+    margin-bottom: 58px;
+}
+.side_blur_box_three {
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(150px) !important;
+    opacity: 0.23 !important;
+    top: 110px;
+}
+.implement_box {
+    box-shadow: 0px 48.87px 183.25px 0px #00000069;
+    background: #ffffff08;
+    padding: 59px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
+}
+.implement_svg_box {
+    box-shadow: 0px 48.87px 183.25px 0px #00000069;
+    background: #ffffff08;
+    padding: 19px 23px;
+    border-radius: 10px;
+    width: 96px;
+    height: 88px;
+    box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
+}
+/* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css end */
+
+/* media screen 1199.98px */
+@media (min-width: 1199.98px) {
     .main_heading_para_w {
         width: 367px;
+    }
+}
+@media (max-width: 1199.98px) {
+    .counter_box {
+        gap: 6px;
+    }
+
+    .counter_box_timer span {
+        width: 56px !important;
+        height: 72px !important;
     }
 }
 /* media screen 991.98 */
@@ -278,7 +343,7 @@ nav ul li a:hover {
         top: 0;
         background-color: var(--dark-blue);
         transition: all 500ms ease-in-out;
-        z-index: 1;
+        z-index: 10;
     }
 
     label[for="navMenu"] {
@@ -289,7 +354,7 @@ nav ul li a:hover {
         flex-direction: column;
         cursor: pointer;
         justify-content: space-between;
-        z-index: 3;
+        z-index: 11;
     }
 
     label[for="navMenu"] > span {
@@ -318,6 +383,18 @@ nav ul li a:hover {
     }
     .live_icon {
         font-size: 18px !important;
+    }
+    .counter_box {
+        padding: 8px 8px !important;
+        border-radius: 15px;
+    }
+    .counter_box_timer span {
+        width: 50px !important;
+        height: 65px !important;
+        padding: 15px;
+    }
+    .counter_box {
+        gap: 5px;
     }
 }
 /* media screen  575.98px*/
@@ -348,9 +425,7 @@ nav ul li a:hover {
     .flip-clock-wrapper ul li a div.up {
         top: 10px !important;
     }
-    .counter_box {
-        padding: 0 12px;
-    }
+
     .flip-clock-wrapper ul li a div.down {
         bottom: 5px !important;
     }
@@ -371,10 +446,37 @@ nav ul li a:hover {
     .live_icon {
         font-size: 14px !important;
     }
+    .counter_box {
+        padding: 8px !important;
+        border-radius: 15px;
+    }
+    .counter_box_timer span {
+        width: 34px !important;
+        height: 45px !important;
+        font-size: 20px !important;
+        padding: 10px;
+    }
+    .counter_box {
+        gap: 3px;
+    }
 }
 @media (max-width: 374.98px) {
     .flip-clock-wrapper ul {
         width: 33px !important;
         height: 60px !important;
+    }
+    .counter_box {
+        padding: 6px !important;
+        border-radius: 11px;
+    }
+    .counter_box_timer span {
+        width: 30px !important;
+        height: 40px !important;
+        font-size: 18px !important;
+        border-radius: 8px;
+        padding: 9px;
+    }
+    .counter_box {
+        gap: 2px;
     }
 }
