@@ -316,6 +316,9 @@ nav ul li a:hover {
     border-radius: 40%;
     transform: translateX(-50%);
 }
+.bacground_circle{
+    top: 0;
+}
 
 /* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css end */
 
@@ -516,7 +519,10 @@ nav ul li a:hover {
         padding: 35px 25px;
     }
     .Implement_heading {
-        padding-top: 70px;
+        padding-top: 50px;
+    }
+    .bacground_circle{
+        top: -1.5%
     }
 }
 @media (max-width: 374.98px) {
