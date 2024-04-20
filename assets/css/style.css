@@ -5,7 +5,9 @@
     text-decoration: none !important;
     box-sizing: border-box !important;
 }
+
 /* body */
+
 body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
@@ -13,12 +15,22 @@ body {
 }
 
 /* custom container */
+
 .custom_container {
     max-width: 1164px !important;
     padding: 0 12px !important;
 }
 
+/* scrollbar  */
+::-webkit-scrollbar {
+    width: 5px !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-blue) !important;
+    border-radius: 10px;
+}
 /* hero background image */
+
 .hero_bg {
     background-image: url("../image/webp/hero-section-bg.webp");
     background-position: top;
@@ -32,15 +44,14 @@ body {
     padding: 22px 34px;
     border-radius: 132px;
     background: var(--light-blue);
-    box-shadow: 0px 4px 53.2px 0px #553af594;
     transition: all 300ms ease-in-out;
 }
 
 .common_btn:hover {
-    border: 1px solid var(--light-blue);
+    box-shadow:
+        0px 4px 53.2px 0px #553af594,
+        inset 0 70px 0 white;
     color: var(--light-blue) !important;
-    background-color: white;
-    box-shadow: 0px 0px 20px 0px white;
 }
 
 /* nav bar css  */
@@ -48,7 +59,7 @@ body {
     z-index: 12;
 }
 .nav_line {
-    transition: all 200ms linear;
+    transition: all 300ms linear;
 }
 .nababar {
     gap: 34px;
@@ -316,11 +327,20 @@ nav ul li a:hover {
     border-radius: 40%;
     transform: translateX(-50%);
 }
-.bacground_circle{
+.bacground_circle {
     top: 0;
 }
 
 /* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css end */
+
+/* How to benefit by investing in AI ETFs for high returns css start */
+
+.high_returns_heading{
+    max-width: 672px;
+    padding-top: 159px;
+}
+
+/* How to benefit by investing in AI ETFs for high returns css end */
 
 /* media screen 1199.98px */
 @media (min-width: 1199.98px) {
@@ -521,8 +541,8 @@ nav ul li a:hover {
     .Implement_heading {
         padding-top: 50px;
     }
-    .bacground_circle{
-        top: -1.5%
+    .bacground_circle {
+        top: -1.5%;
     }
 }
 @media (max-width: 374.98px) {
