@@ -281,8 +281,17 @@ nav ul li a:hover {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
     background: #ffffff08;
     padding: 59px 30px;
+    height: 100%;
+    max-width: 450px;
     border-radius: 12px;
     box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
+    transition: all 300ms linear;
+}
+.implement_box:hover {
+    transform: translateY(-6px);
+}
+.implement_box:hover .implement_svg_box svg {
+    filter: drop-shadow(0px 0px 50px 0px);
 }
 .implement_svg_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
@@ -293,6 +302,21 @@ nav ul li a:hover {
     height: 88px;
     box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
 }
+.implement_box h2 {
+    padding-top: 31px;
+    padding-bottom: 29px;
+}
+.implement_box_blur {
+    top: unset;
+    bottom: -30px !important;
+    left: 50%;
+    width: 150px;
+    height: 85px;
+    filter: blur(90px);
+    border-radius: 40%;
+    transform: translateX(-50%);
+}
+
 /* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css end */
 
 /* media screen 1199.98px */
@@ -309,6 +333,12 @@ nav ul li a:hover {
     .counter_box_timer span {
         width: 56px !important;
         height: 72px !important;
+    }
+    .implement_box {
+        padding: 45px 25px;
+    }
+    .Implement_heading {
+        padding-top: 150px;
     }
 }
 /* media screen 991.98 */
@@ -331,6 +361,12 @@ nav ul li a:hover {
     }
     .counter_box {
         margin-bottom: 36px;
+    }
+    .Implement_paragraph {
+        margin-bottom: 50px;
+    }
+    .Implement_heading {
+        padding-top: 120px;
     }
 }
 /* media screen  765.95px*/
@@ -396,9 +432,22 @@ nav ul li a:hover {
     .counter_box {
         gap: 5px;
     }
+    .implement_box h2 {
+        padding-top: 24px;
+        padding-bottom: 22px;
+    }
+    .Implement_paragraph {
+        margin-bottom: 45px;
+    }
+    .Implement_heading {
+        padding-top: 90px;
+    }
 }
 /* media screen  575.98px*/
 @media (max-width: 576.98px) {
+    .Implement_paragraph {
+        margin-bottom: 35px;
+    }
     label[for="navMenu"] {
         width: 35px;
         height: 25px;
@@ -458,6 +507,16 @@ nav ul li a:hover {
     }
     .counter_box {
         gap: 3px;
+    }
+    .implement_box h2 {
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
+    .implement_box {
+        padding: 35px 25px;
+    }
+    .Implement_heading {
+        padding-top: 70px;
     }
 }
 @media (max-width: 374.98px) {

@@ -67,6 +67,9 @@
 .lh_160 {
     line-height: 160% !important;
 }
+.lh_normal {
+    line-height:normal !important;
+}
 @media (max-width: 991.98px) {
     :root {
         --fs-xl: 28px;
@@ -75,16 +78,16 @@
     }
 }
 
-@media (max-width: 767.9px) {
+@media (max-width: 767.98px) {
     :root {
         --fs-2xl: 35px;
         --fs-nav: 5vw;
     }
 }
-@media (max-width: 575.9px) {
+@media (max-width: 575.98px) {
     :root {
         --fs-base: 14px;
-        --fs-sm: 18px;
+        --fs-sm: 16px;
         --fs-xl: 24px;
         --fs-2xl: 30px;
         --fs-md: 20px;
