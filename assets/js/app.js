@@ -109,3 +109,53 @@ $(".hero_slider").slick({
     },
   ],
 });
+
+
+// from validation
+function validateForm() {
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var email = document.getElementById("email").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+
+    var errorMessages = [];
+
+    if (firstName.trim() === '') {
+        errorMessages.push("First name is required.");
+    }
+
+    if (lastName.trim() === '') {
+        errorMessages.push("Last name is required.");
+    }
+
+    if (email.trim() === '') {
+        errorMessages.push("Email is required.");
+    } else if (!isValidEmail(email)) {
+        errorMessages.push("Invalid email address.");
+    }
+
+    if (phoneNumber.trim() === '') {
+        errorMessages.push("Phone number is required.");
+    } else if (!isValidPhoneNumber(phoneNumber)) {
+        errorMessages.push("Invalid phone number.");
+    }
+
+    if (errorMessages.length > 0) {
+        alert(errorMessages.join("\n"));
+    } else {
+        alert("Form submitted successfully!");
+        // You can submit the form here if needed
+    }
+}
+
+function isValidEmail(email) {
+    // Basic email validation, you might want to use a more comprehensive validation method
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidPhoneNumber(phoneNumber) {
+    // Basic phone number validation, you might want to use a more comprehensive validation method
+    var phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phoneNumber);
+}

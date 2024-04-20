@@ -151,13 +151,14 @@
                                 to invest in <span class="text_light_blue">ai ETF</span></h2>
                             <form>
                                 <div class="d-flex flex-column">
-                                    <input required type="text" placeholder="First Name" class="hero_input">
-                                    <input required type="text" placeholder="Last Name" class="hero_input">
-                                    <input required type="email" placeholder="Email" class="hero_input">
-                                    <input required type="number" placeholder="Phone Number" class="hero_input">
+                                    <input type="text" placeholder="First Name" class="hero_input" id="firstName">
+                                    <input type="text" placeholder="Last Name" class="hero_input" id="lastName">
+                                    <input type="email" placeholder="Email" class="hero_input" id="email">
+                                    <input type="tel" placeholder="Phone Number" class="hero_input" id="phoneNumber">
                                 </div>
                                 <div class=" pt-3 pt-lg-4">
-                                    <button class="common_btn w-100 text-white ff_inter fw-bold fs_base ">SIGN
+                                    <button onclick="validateForm()"
+                                        class="common_btn w-100 text-white ff_inter fw-bold fs_base ">SIGN
                                         UP
                                         FOR
                                         FREE</button>
