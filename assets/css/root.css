@@ -59,7 +59,7 @@
     opacity: 0.8 !important;
 }
 .opacity_70 {
-    opacity: 0.8 !important;
+    opacity: 0.7 !important;
 }
 .lh_120 {
     line-height: 120% !important;
@@ -75,18 +75,19 @@
         --fs-xl: 28px;
         --fs-2xl: 42px;
         --fs-md: 24px;
+        --fs-base: 15px;
     }
 }
 
 @media (max-width: 767.98px) {
     :root {
         --fs-2xl: 35px;
+        --fs-base: 14px;
         --fs-nav: 5vw;
     }
 }
 @media (max-width: 575.98px) {
     :root {
-        --fs-base: 14px;
         --fs-sm: 16px;
         --fs-xl: 24px;
         --fs-2xl: 30px;
