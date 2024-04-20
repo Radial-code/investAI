@@ -340,12 +340,16 @@ nav ul li a:hover {
     padding-top: 159px;
 }
 .hight_return_bg_img {
-    top: 93%;
-    max-width: 1440px;
+    top: 44%;
 }
 /* How to benefit by investing in AI ETFs for high returns css end */
 
 /* media screen 1199.98px */
+@media (min-width: 1500px) {
+    .hight_return_bg_img {
+        top: 40%;
+    }
+}
 @media (min-width: 1199.98px) {
     .main_heading_para_w {
         width: 367px;
@@ -391,11 +395,12 @@ nav ul li a:hover {
     .Implement_paragraph {
         margin-bottom: 50px;
     }
-    .Implement_heading {
+    .Implement_heading,
+    .high_returns_heading {
         padding-top: 120px;
     }
     .hight_return_bg_img {
-        top: 100%;
+        top: 54%;
     }
 }
 /* media screen  765.95px*/
@@ -468,11 +473,9 @@ nav ul li a:hover {
     .Implement_paragraph {
         margin-bottom: 45px;
     }
-    .Implement_heading {
+    .Implement_heading,
+    .high_returns_heading {
         padding-top: 90px;
-    }
-    .hight_return_bg_img {
-        top: 141%;
     }
 }
 /* media screen  575.98px*/
@@ -547,19 +550,15 @@ nav ul li a:hover {
     .implement_box {
         padding: 35px 25px;
     }
-    .Implement_heading {
-        padding-top: 50px;
+    .Implement_heading,
+    .high_returns_heading {
+        padding-top: 48px;
     }
     .bacground_circle {
         top: -1.5%;
     }
     .hight_return_bg_img {
-        top: 169%;
-    }
-}
-@media (max-width:399.98px) {
-    .hight_return_bg_img {
-        top: 155%;
+        top: 60%;
     }
 }
 @media (max-width: 374.98px) {
