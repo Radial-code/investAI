@@ -108,6 +108,7 @@ nav ul li a:hover {
     top: -90%;
     opacity: 0.23;
     right: 0;
+    filter: blur(80px) !important;
 }
 .main_heading_w {
     max-width: 688px;
