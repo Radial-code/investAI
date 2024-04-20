@@ -133,6 +133,7 @@ nav ul li a:hover {
     padding: 21px 21px 36px 21px;
     border-radius: 20px;
     max-width: 600px;
+    backdrop-filter: blur(8px);
 }
 .hero_input {
     padding: 23px 18px;
@@ -239,7 +240,11 @@ nav ul li a:hover {
     margin-bottom: 9px;
 }
 /* slider section end */
-
+@media (min-width:1199.98px) {
+    .main_heading_para_w {
+        width: 367px;
+    }
+}
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
     .common_btn {
