@@ -15,6 +15,7 @@
 /* root  */
 :root {
     --fs-nav: 16px;
+    --fs-xs:14px;
     --fs-base: 16px;
     --fs-sm: 20px;
     --fs-md: 28px;
@@ -39,6 +40,9 @@
 /* font size  */
 .fs_nav {
     font-size: var(--fs-nav) !important;
+}
+.fs_xs {
+    font-size: var(--fs-xs) !important;
 }
 .fs_base {
     font-size: var(--fs-base) !important;

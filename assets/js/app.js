@@ -111,89 +111,70 @@ $(".hero_slider").slick({
 });
 
 // Form validation
-document.addEventListener("DOMContentLoaded", function () {
-  var contactForm = document.getElementById("contactForm");
-  var firstName = document.getElementById("first_name");
-  var lastName = document.getElementById("last_name");
-  var emailInput = document.getElementById("email");
-  var messageInput = document.getElementById("message");
-  var agreeCheckbox = document.getElementById("agree");
-  var para1 = document.getElementById("para-1");
-  var para2 = document.getElementById("para-2");
-  var para3 = document.getElementById("para-3");
-  var para4 = document.getElementById("para-4");
-  var para5 = document.getElementById("para-5");
-  var thankYouBox = document.getElementById("thankYouBox");
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+const form = document.getElementById("signupForm");
 
-    var name = firstName.value.trim();
-    var last = lastName.value.trim();
-    var email = emailInput.value.trim();
-    var message = messageInput.value.trim();
-    var error = false;
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    if (name === "") {
-      error = true;
-      para1.style.display = "block";
-    } else {
-      para1.style.display = "none";
-    }
+  // Clear previous error messages
+  const errorMessages = document.querySelectorAll(".error-message");
+  errorMessages.forEach((message) => (message.textContent = ""));
 
-    if (last === "") {
-      error = true;
-      para2.style.display = "block";
-    } else {
-      para2.style.display = "none";
-    }
+  // Get form inputs
+  const firstName = document.getElementById("firstName").value.trim();
+  const lastName = document.getElementById("lastName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phoneNumber = document.getElementById("phoneNumber").value.trim();
 
-    if (message === "") {
-      error = true;
-      para4.style.display = "block";
-    } else {
-      para4.style.display = "none";
-    }
+  // Validate inputs
+  if (firstName === "") {
+    document.getElementById("firstNameError").textContent =
+      "Please enter your first name.";
+  }
 
-    if (email === "") {
-      error = true;
-      para3.style.display = "block";
-    } else {
-      para3.style.display = "none";
-    }
+  if (lastName === "") {
+    document.getElementById("lastNameError").textContent =
+      "Please enter your last name.";
+  }
 
-    if (!agreeCheckbox.checked) {
-      error = true;
-      para5.style.display = "block";
-    } else {
-      para5.style.display = "none";
-    }
+  if (email === "") {
+    document.getElementById("emailError").textContent =
+      "Please enter your email address.";
+  } else if (!isValidEmail(email)) {
+    document.getElementById("emailError").textContent =
+      "Please enter a valid email address.";
+  }
 
-    if (!error) {
-      thankYouBox.style.display = "block";
-      setTimeout(function () {
-        thankYouBox.style.display = "none";
-      }, 2000);
-      contactForm.reset();
-    }
-  });
-  firstName.addEventListener("input", function () {
-    para1.style.display = "none";
-  });
+  if (phoneNumber === "") {
+    document.getElementById("phoneNumberError").textContent =
+      "Please enter your phone number.";
+  } else if (!isValidPhoneNumber(phoneNumber)) {
+    document.getElementById("phoneNumberError").textContent =
+      "Please enter a valid phone number.";
+  }
 
-  lastName.addEventListener("input", function () {
-    para2.style.display = "none";
-  });
-
-  emailInput.addEventListener("input", function () {
-    para3.style.display = "none";
-  });
-
-  messageInput.addEventListener("input", function () {
-    para4.style.display = "none";
-  });
-
-  function toggleSignUpForm() {
-    var contactForm = document.getElementById("contactForm");
-    contactForm.style.display = "block"; // or toggle the visibility as needed
+  // If all inputs are valid, submit the form
+  if (
+    firstName &&
+    lastName &&
+    email &&
+    phoneNumber &&
+    isValidEmail(email) &&
+    isValidPhoneNumber(phoneNumber)
+  ) {
+    // Submit the form
+    form.submit();
   }
 });
+
+// Function to validate email
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Function to validate phone number
+function isValidPhoneNumber(phoneNumber) {
+  const phoneRegex = /^[0-9]{10}$/;
+  return phoneRegex.test(phoneNumber);
+}

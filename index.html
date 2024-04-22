@@ -149,35 +149,35 @@
                             <h2 class="text-white ff_openSans fw-bold fs_xl lh_120 text-center mb-4 pb-md-2">This is the
                                 right time
                                 to invest in <span class="text_light_blue">ai ETF</span></h2>
-                            <form id="contactForm">
+                            <form id="signupForm">
                                 <div class="d-flex flex-column">
-                                    <input type="text" placeholder="First Name" class="hero_input" id="firstName">
-                                    <p id="para-1"
-                                        class=" fs_base text"
-                                        style="display: none;">
-                                        Please fill First Name</p>
-                                    <input type="text" placeholder="Last Name" class="hero_input" id="lastName">
-                                    <p id="para-2"
-                                        class=" fs_base text"
-                                        style="display: none;">
-                                        Please fill Last Name</p>
-                                    <input type="email" placeholder="Email" class="hero_input" id="email">
-                                    <p id="para-3"
-                                        class=" fs_base text"
-                                        style="display: none;">
-                                        Please
-                                        fill email</p>
-                                    <input type="tel" placeholder="Phone Number" class="hero_input" id="phoneNumber">
-                                    <p id="para-4"
-                                        class=" fs_base text"
-                                        style="display: none;">
-                                        Please fill Last Name</p>
+                                    <div class="position-relative">
+                                        <input type="text" placeholder="First Name" class="hero_input w-100"
+                                            id="firstName">
+                                        <div id="firstNameError"
+                                            class="error-message fs_xs text-danger position-absolute bottom-0"></div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <input type="text" placeholder="Last Name" class="hero_input w-100"
+                                            id="lastName">
+                                        <div id="lastNameError"
+                                            class="error-message fs_xs text-danger position-absolute bottom-0"></div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <input type="email" placeholder="Email" class="hero_input w-100" id="email">
+                                        <div id="emailError"
+                                            class="error-message fs_xs text-danger position-absolute bottom-0"></div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <input type="number" placeholder="Phone Number" class="hero_input w-100"
+                                            id="phoneNumber">
+                                        <div id="phoneNumberError"
+                                            class="error-message fs_xs text-danger position-absolute bottom-0"></div>
+                                    </div>
                                 </div>
-                                <div class=" pt-3 pt-lg-4">
-                                    <button onclick="validateForm()"
-                                        class="common_btn w-100 text-white ff_inter fw-bold fs_base ">SIGN
-                                        UP
-                                        FOR
+                                <div class="pt-3 pt-lg-4">
+                                    <button type="submit"
+                                        class="common_btn w-100 text-white ff_inter fw-bold fs_base">SIGN UP FOR
                                         FREE</button>
                                 </div>
                             </form>
@@ -487,7 +487,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
     <script src="./assets/js/app.js"></script>
 </body>
 
