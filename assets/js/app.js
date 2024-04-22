@@ -61,7 +61,7 @@ $(".hero_slider").slick({
 });
 // partner-slider
 $(".partner_slider").slick({
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 0,
@@ -72,6 +72,12 @@ $(".partner_slider").slick({
   pauseOnHover: false,
   cssEase: "linear",
   responsive: [
+    {
+      breakpoint: 1700,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
     {
       breakpoint: 1200,
       settings: {
