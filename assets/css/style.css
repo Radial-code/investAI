@@ -265,6 +265,56 @@ nav ul li a:hover {
 
 /* How to benefit by investing in AI ETFs for high returns css end */
 
+/* Advisors css start */
+.advisors_heading {
+    padding-top: 110px;
+}
+.advisors_slider_box {
+    box-shadow: 0px 48.87px 183.25px 0px #00000069;
+    background: #ffffff08;
+    border-radius: 12px;
+    box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
+}
+.advisors_slider_box div {
+    padding: 24px;
+}
+.advisors_slider_side_p {
+    padding: 0px 20px;
+}
+.jeff_paragraph {
+    max-width: 262px;
+}
+.keith_paragraph {
+    max-width: 303px;
+}
+.left_arrow:hover path {
+    fill: #553af5;
+}
+.right_arrow:hover path {
+    fill: #553af5;
+}
+.left_arrow {
+    left: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right_arrow {
+    right: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.advisors_slider .slick-track {
+    display: flex !important;
+}
+.advisors_slider .slick-slide {
+    height: inherit !important;
+    display: flex !important;
+}
+.advisors_slider .slick-slide > div {
+    display: flex;
+}
+/* Advisors css end */
+
 /* STATISTICS FOR TODAY start css start */
 .average_paragraph {
     max-width: 278px;
@@ -273,13 +323,13 @@ nav ul li a:hover {
     max-width: 861px;
 }
 .today_bg {
-    top: 15%;
+    top: 24%;
     left: 0;
 }
 .today_side_vector {
     width: 285px;
     height: 437px;
-    top: 15%;
+    top: 24%;
 }
 .today_left_side_victor {
     background: linear-gradient(88deg, #0c0b18 23.37%, rgba(10, 13, 35, 0) 98.36%);
@@ -347,10 +397,30 @@ nav ul li a:hover {
     .implement_box {
         max-width: 351px;
     }
+    .register_paragraph {
+        padding-bottom: 73px !important;
+    }
+}
+@media (min-width: 992px) {
+    .register_paragraph {
+        padding-bottom: 32px;
+    }
 }
 @media (min-width: 768px) {
     .width_md_full {
         width: 100%;
+    }
+}
+@media (max-width:1280px) {
+    .left_arrow {
+        left:45%;
+        top: unset;
+        bottom: -25%;
+    }
+    .right_arrow {
+        right: 45%;
+        top: unset;
+        bottom: -25%;
     }
 }
 @media (max-width: 1199.98px) {
@@ -378,6 +448,14 @@ nav ul li a:hover {
     .today_heading {
         padding-top: 100px;
         padding-bottom: 75px;
+    }
+    .left_arrow {
+        left:50%;
+        transform: translateX(-70%);
+    }
+    .right_arrow {
+        right:50%;
+        transform: translateX(-70%);
     }
 }
 /* media screen 991.98 */
@@ -505,9 +583,15 @@ nav ul li a:hover {
         padding-top: 70px;
         padding-bottom: 40px;
     }
+    .advisors_heading {
+        padding-top: 70px;
+    }
 }
 /* media screen  575.98px*/
 @media (max-width: 576.98px) {
+    .advisors_slider_side_p {
+        padding: 0 10px;
+    }
     .Implement_paragraph {
         margin-bottom: 35px;
     }
@@ -582,6 +666,9 @@ nav ul li a:hover {
     .today_heading {
         padding-top: 48px;
         padding-bottom: 32px;
+    }
+    .advisors_heading {
+        padding-top: 48px;
     }
 }
 @media (max-width: 374.98px) {

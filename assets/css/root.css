@@ -114,7 +114,9 @@ body {
 .transition_300 {
     transition: all 300ms ease-in-out;
 }
-
+.c_pointer{
+    cursor: pointer;
+}
 /* common btn  */
 .common_btn {
     border: 1px solid #ffffff;
