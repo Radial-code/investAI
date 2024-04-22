@@ -300,7 +300,7 @@ nav ul li a:hover {
     transform: translateY(-6px);
 }
 .implement_box:hover .implement_svg_box .svg-container {
-    filter: drop-shadow(2px 2px 8px var(--light-blue)); 
+    filter: drop-shadow(2px 2px 8px var(--light-blue));
 }
 .implement_svg_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
@@ -328,7 +328,6 @@ nav ul li a:hover {
 .bacground_circle {
     top: 0;
 }
-
 
 /* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css end */
 
@@ -364,6 +363,20 @@ nav ul li a:hover {
 
 /* How to benefit by investing in AI ETFs for high returns css end */
 
+/* footer css start*/
+.footer_paragraph {
+    max-width: 373px;
+}
+.footer_social_logo {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+}
+.conditions_border{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+/* footer css end */
 /* media screen 1199.98px */
 @media (min-width: 1500px) {
     .hight_return_bg_img {
