@@ -163,7 +163,6 @@ $(".partner_slider").slick({
 
 // Form validation
 const form = document.getElementById("signupForm");
-
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -222,6 +221,68 @@ form.addEventListener("submit", function (event) {
     });
     // Reset the form
     form.reset();
+  }
+});
+
+const form2 = document.getElementById("signupFormtwo");
+form2.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Clear previous error messages
+  const errorMessages = document.querySelectorAll(".error-messagetwo");
+  errorMessages.forEach((message) => (message.textContent = ""));
+
+  // Get form inputs
+  const firstName = document.getElementById("firstNametwo").value.trim();
+  const lastName = document.getElementById("lastNametwo").value.trim();
+  const email = document.getElementById("emailtwo").value.trim();
+  const phoneNumber = document.getElementById("phoneNumbertwo").value.trim();
+
+  // Validate inputs
+  let isValid = true; // Track overall validation status
+
+  if (firstName === "") {
+    document.getElementById("firstNameErrortwo").textContent =
+      "Please enter your first name.";
+    isValid = false;
+  }
+
+  if (lastName === "") {
+    document.getElementById("lastNameErrortwo").textContent =
+      "Please enter your last name.";
+    isValid = false;
+  }
+
+  if (email === "") {
+    document.getElementById("emailErrortwo").textContent =
+      "Please enter your email address.";
+    isValid = false;
+  } else if (!isValidEmail(email)) {
+    document.getElementById("emailErrortwo").textContent =
+      "Please enter a valid email address.";
+    isValid = false;
+  }
+
+  if (phoneNumber === "") {
+    document.getElementById("phoneNumberErrortwo").textContent =
+      "Please enter your phone number.";
+    isValid = false;
+  } else if (!isValidPhoneNumber(phoneNumber)) {
+    document.getElementById("phoneNumberErrortwo").textContent =
+      "Please enter a valid phone number.";
+    isValid = false;
+  }
+
+  // If all inputs are valid, submit the form
+  if (isValid) {
+    Swal.fire({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+      timer: 1500,
+    });
+    // Reset the form
+    form2.reset();
   }
 });
 

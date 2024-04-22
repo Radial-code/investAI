@@ -350,19 +350,14 @@ nav ul li a:hover {
     right: 0;
     filter: blur(80px) !important;
 }
-#thankYouBox {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    z-index: 999;
+
+/* profit css start */
+.profit_heading{
+    max-width: 805px;
+    padding-top: 141px;
+    padding-bottom: 57px;
 }
+/* profit css end */
 
 /* How to benefit by investing in AI ETFs for high returns css end */
 /* partner_slider css start */
