@@ -163,15 +163,14 @@ form.addEventListener("submit", function (event) {
 
   // If all inputs are valid, submit the form
   if (isValid) {
-    // Submit the form
-    form.submit();
     Swal.fire({
-      position: "center",
+      title: "Good job!",
+      text: "You clicked the button!",
       icon: "success",
-      title: "Thank you for sign up",
-      showConfirmButton: false,
-      timer: 3000,
+      timer: 1500,
     });
+    // Reset the form
+    form.reset();
   }
 });
 
