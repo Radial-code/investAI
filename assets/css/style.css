@@ -189,7 +189,7 @@ nav ul li a:hover {
     gap: 7px;
     border-radius: 20px;
 }
-.flip-clock-dot {
+/* .flip-clock-dot {
     display: block;
     background: #553af5 !important;
     border-radius: 1px !important;
@@ -219,7 +219,6 @@ nav ul li a:hover {
 }
 .flip-clock-divider {
     height: 75px !important;
-    /* width: 12px !important; */
 }
 .flip-clock-wrapper ul li a div .shadow {
     position: unset !important;
@@ -237,7 +236,7 @@ nav ul li a:hover {
 }
 .flip-clock-wrapper .flip {
     box-shadow: unset !important;
-}
+} */
 
 /* hero section css end */
 
@@ -296,13 +295,12 @@ nav ul li a:hover {
     max-width: 450px;
     border-radius: 12px;
     box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
-    transition: all 300ms linear;
 }
 .implement_box:hover {
     transform: translateY(-6px);
 }
-.implement_box:hover .implement_svg_box svg {
-    filter: drop-shadow(0px 0px 50px 0px);
+.implement_box:hover .implement_svg_box .svg-container {
+    filter: drop-shadow(2px 2px 8px var(--light-blue)); 
 }
 .implement_svg_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
@@ -331,6 +329,7 @@ nav ul li a:hover {
     top: 0;
 }
 
+
 /* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css end */
 
 /* How to benefit by investing in AI ETFs for high returns css start */
@@ -342,6 +341,27 @@ nav ul li a:hover {
 .hight_return_bg_img {
     top: 44%;
 }
+.side_blur_box_four {
+    width: 100px;
+    height: 100px;
+    left: unset;
+    right: 0;
+    filter: blur(80px) !important;
+}
+#thankYouBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 999;
+}
+
 /* How to benefit by investing in AI ETFs for high returns css end */
 
 /* media screen 1199.98px */
@@ -350,13 +370,16 @@ nav ul li a:hover {
         top: 40%;
     }
 }
-@media (min-width: 1299px) {
+@media (min-width: 1200px) {
     .main_heading_para_w {
         width: 367px;
     }
+    .implement_box {
+        max-width: 351px;
+    }
 }
 @media (min-width: 768px) {
-    .width_md_full{
+    .width_md_full {
         width: 100%;
     }
 }
@@ -507,7 +530,7 @@ nav ul li a:hover {
     .hero_input {
         padding: 12px 18px;
     }
-    .flip-clock-wrapper ul {
+    /* .flip-clock-wrapper ul {
         width: 33px !important;
         height: 60px !important;
     }
@@ -531,7 +554,7 @@ nav ul li a:hover {
     }
     .flip-clock-wrapper ul li a div div.inn {
         height: 212% !important;
-    }
+    } */
     .live_icon {
         font-size: 14px !important;
     }

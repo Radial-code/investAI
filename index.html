@@ -149,12 +149,29 @@
                             <h2 class="text-white ff_openSans fw-bold fs_xl lh_120 text-center mb-4 pb-md-2">This is the
                                 right time
                                 to invest in <span class="text_light_blue">ai ETF</span></h2>
-                            <form>
+                            <form id="contactForm">
                                 <div class="d-flex flex-column">
                                     <input type="text" placeholder="First Name" class="hero_input" id="firstName">
+                                    <p id="para-1"
+                                        class=" fs_base text"
+                                        style="display: none;">
+                                        Please fill First Name</p>
                                     <input type="text" placeholder="Last Name" class="hero_input" id="lastName">
+                                    <p id="para-2"
+                                        class=" fs_base text"
+                                        style="display: none;">
+                                        Please fill Last Name</p>
                                     <input type="email" placeholder="Email" class="hero_input" id="email">
+                                    <p id="para-3"
+                                        class=" fs_base text"
+                                        style="display: none;">
+                                        Please
+                                        fill email</p>
                                     <input type="tel" placeholder="Phone Number" class="hero_input" id="phoneNumber">
+                                    <p id="para-4"
+                                        class=" fs_base text"
+                                        style="display: none;">
+                                        Please fill Last Name</p>
                                 </div>
                                 <div class=" pt-3 pt-lg-4">
                                     <button onclick="validateForm()"
@@ -356,10 +373,11 @@
                 through this strategy.</p>
             <div class="row justify-content-center pb-5">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="implement_box mx-auto position-relative overflow-hidden">
+                    <div class="implement_box transition_300 mx-auto position-relative overflow-hidden">
                         <div class="slider_box_blur implement_box_blur position-absolute"></div>
                         <div class="implement_svg_box mx-auto">
-                            <img src="./assets/images/svg/research_opportunities.svg" alt="research-opportunities">
+                            <img class="svg-container transition_300"
+                                src="./assets/images/svg/research_opportunities.svg" alt="research-opportunities">
                         </div>
                         <h2 class="fs_sm ff_inter fw-bold text-white text-center mb-0 lh_normal">Research Opportunities
                         </h2>
@@ -370,10 +388,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-8 col-md-6 col-lg-4 pt-4 pt-md-0">
-                    <div class="implement_box mx-auto position-relative overflow-hidden">
+                    <div class="implement_box transition_300 mx-auto position-relative overflow-hidden">
                         <div class="slider_box_blur implement_box_blur position-absolute"></div>
                         <div class="implement_svg_box mx-auto">
-                            <img src="./assets/images/svg/immediate-execution.svg" alt="immediate-execution">
+                            <img class="svg-container transition_300" src="./assets/images/svg/immediate-execution.svg"
+                                alt="immediate-execution">
                         </div>
                         <h2 class="fs_sm ff_inter fw-bold text-white text-center mb-0 lh_normal"> Immediate Execution
                         </h2>
@@ -384,11 +403,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-8 col-md-6 col-lg-4 pt-4 pt-lg-0">
-                    <div class="implement_box mx-auto  position-relative overflow-hidden">
+                    <div class="implement_box transition_300 mx-auto  position-relative overflow-hidden">
                         <div class="slider_box_blur implement_box_blur position-absolute"></div>
                         <div class="implement_svg_box mx-auto">
-                            <img src="./assets/images/svg/simultaneous-transactions.svg"
-                                alt="simultaneous-transactions">
+                            <img class="svg-container transition_300"
+                                src="./assets/images/svg/simultaneous-transactions.svg" alt="simultaneous-transactions">
                         </div>
                         <h2 class="fs_sm ff_inter fw-bold text-white text-center mb-0 lh_normal">Simultaneous
                             Transactions
@@ -410,6 +429,7 @@
     <!-- IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! end -->
     <!-- How to benefit by investing in AI ETFs for high returns  start-->
     <section class="position-relative">
+        <div class="side_blur_box_four blur_box position-absolute"></div>
         <img class="position-absolute hight_return_bg_img w-100 start-50 translate-middle-x"
             src="./assets/images/svg/hight-retrun.svg" alt="hight-retrun">
         <img class="position-absolute start-50 translate-middle-x bacground_circle w-100"

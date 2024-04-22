@@ -68,7 +68,10 @@
     line-height: 160% !important;
 }
 .lh_normal {
-    line-height:normal !important;
+    line-height: normal !important;
+}
+.transition_300 {
+    transition: all 300ms ease-in-out;
 }
 @media (max-width: 991.98px) {
     :root {

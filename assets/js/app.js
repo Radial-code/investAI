@@ -64,7 +64,7 @@ $(".hero_slider").slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 0,
-  arrows: false, 
+  arrows: false,
   dots: false,
   infinite: true,
   speed: 8000,
@@ -110,52 +110,90 @@ $(".hero_slider").slick({
   ],
 });
 
+// Form validation
+document.addEventListener("DOMContentLoaded", function () {
+  var contactForm = document.getElementById("contactForm");
+  var firstName = document.getElementById("first_name");
+  var lastName = document.getElementById("last_name");
+  var emailInput = document.getElementById("email");
+  var messageInput = document.getElementById("message");
+  var agreeCheckbox = document.getElementById("agree");
+  var para1 = document.getElementById("para-1");
+  var para2 = document.getElementById("para-2");
+  var para3 = document.getElementById("para-3");
+  var para4 = document.getElementById("para-4");
+  var para5 = document.getElementById("para-5");
+  var thankYouBox = document.getElementById("thankYouBox");
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-// from validation
-function validateForm() {
-    var firstName = document.getElementById("firstName").value;
-    var lastName = document.getElementById("lastName").value;
-    var email = document.getElementById("email").value;
-    var phoneNumber = document.getElementById("phoneNumber").value;
+    var name = firstName.value.trim();
+    var last = lastName.value.trim();
+    var email = emailInput.value.trim();
+    var message = messageInput.value.trim();
+    var error = false;
 
-    var errorMessages = [];
-
-    if (firstName.trim() === '') {
-        errorMessages.push("First name is required.");
-    }
-
-    if (lastName.trim() === '') {
-        errorMessages.push("Last name is required.");
-    }
-
-    if (email.trim() === '') {
-        errorMessages.push("Email is required.");
-    } else if (!isValidEmail(email)) {
-        errorMessages.push("Invalid email address.");
-    }
-
-    if (phoneNumber.trim() === '') {
-        errorMessages.push("Phone number is required.");
-    } else if (!isValidPhoneNumber(phoneNumber)) {
-        errorMessages.push("Invalid phone number.");
-    }
-
-    if (errorMessages.length > 0) {
-        alert(errorMessages.join("\n"));
+    if (name === "") {
+      error = true;
+      para1.style.display = "block";
     } else {
-        alert("Form submitted successfully!");
-        // You can submit the form here if needed
+      para1.style.display = "none";
     }
-}
 
-function isValidEmail(email) {
-    // Basic email validation, you might want to use a more comprehensive validation method
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
+    if (last === "") {
+      error = true;
+      para2.style.display = "block";
+    } else {
+      para2.style.display = "none";
+    }
 
-function isValidPhoneNumber(phoneNumber) {
-    // Basic phone number validation, you might want to use a more comprehensive validation method
-    var phoneRegex = /^\d{10}$/;
-    return phoneRegex.test(phoneNumber);
-}
+    if (message === "") {
+      error = true;
+      para4.style.display = "block";
+    } else {
+      para4.style.display = "none";
+    }
+
+    if (email === "") {
+      error = true;
+      para3.style.display = "block";
+    } else {
+      para3.style.display = "none";
+    }
+
+    if (!agreeCheckbox.checked) {
+      error = true;
+      para5.style.display = "block";
+    } else {
+      para5.style.display = "none";
+    }
+
+    if (!error) {
+      thankYouBox.style.display = "block";
+      setTimeout(function () {
+        thankYouBox.style.display = "none";
+      }, 2000);
+      contactForm.reset();
+    }
+  });
+  firstName.addEventListener("input", function () {
+    para1.style.display = "none";
+  });
+
+  lastName.addEventListener("input", function () {
+    para2.style.display = "none";
+  });
+
+  emailInput.addEventListener("input", function () {
+    para3.style.display = "none";
+  });
+
+  messageInput.addEventListener("input", function () {
+    para4.style.display = "none";
+  });
+
+  function toggleSignUpForm() {
+    var contactForm = document.getElementById("contactForm");
+    contactForm.style.display = "block"; // or toggle the visibility as needed
+  }
+});
