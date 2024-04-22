@@ -127,43 +127,51 @@ form.addEventListener("submit", function (event) {
   const phoneNumber = document.getElementById("phoneNumber").value.trim();
 
   // Validate inputs
+  let isValid = true; // Track overall validation status
+
   if (firstName === "") {
     document.getElementById("firstNameError").textContent =
       "Please enter your first name.";
+    isValid = false;
   }
 
   if (lastName === "") {
     document.getElementById("lastNameError").textContent =
       "Please enter your last name.";
+    isValid = false;
   }
 
   if (email === "") {
     document.getElementById("emailError").textContent =
       "Please enter your email address.";
+    isValid = false;
   } else if (!isValidEmail(email)) {
     document.getElementById("emailError").textContent =
       "Please enter a valid email address.";
+    isValid = false;
   }
 
   if (phoneNumber === "") {
     document.getElementById("phoneNumberError").textContent =
       "Please enter your phone number.";
+    isValid = false;
   } else if (!isValidPhoneNumber(phoneNumber)) {
     document.getElementById("phoneNumberError").textContent =
       "Please enter a valid phone number.";
+    isValid = false;
   }
 
   // If all inputs are valid, submit the form
-  if (
-    firstName &&
-    lastName &&
-    email &&
-    phoneNumber &&
-    isValidEmail(email) &&
-    isValidPhoneNumber(phoneNumber)
-  ) {
+  if (isValid) {
     // Submit the form
     form.submit();
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Thank you for sign up",
+      showConfirmButton: false,
+      timer: 3000,
+    });
   }
 });
 
