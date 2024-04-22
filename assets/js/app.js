@@ -60,7 +60,7 @@ $(".hero_slider").slick({
   ],
 });
 
-// slider hero
+// advisors_slider
 $(".advisors_slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -72,27 +72,16 @@ $(".advisors_slider").slick({
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
+  centerMode: false, 
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2.4,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1.5,
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 600,
-      settings: {
-        slidesToShow: 1.2,
-      },
-    },
-    {
-      breakpoint: 440,
       settings: {
         slidesToShow: 1,
       },
