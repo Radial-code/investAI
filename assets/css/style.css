@@ -1,34 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    list-style-type: none !important;
-    text-decoration: none !important;
-    box-sizing: border-box !important;
-}
-
-/* body */
-
-body {
-    font-family: "Inter", sans-serif;
-    overflow-x: hidden;
-    background-color: var(--dark-blue) !important;
-}
-
-/* custom container */
-
-.custom_container {
-    max-width: 1164px !important;
-    padding: 0 12px !important;
-}
-
-/* scrollbar  */
-::-webkit-scrollbar {
-    width: 5px !important;
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--light-blue) !important;
-    border-radius: 10px;
-}
 /* hero background image */
 
 .hero_bg {
@@ -36,22 +5,6 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
-}
-
-/* common btn  */
-.common_btn {
-    border: 1px solid #ffffff;
-    padding: 22px 34px;
-    border-radius: 132px;
-    background: var(--light-blue);
-    transition: all 300ms ease-in-out;
-}
-
-.common_btn:hover {
-    box-shadow:
-        0px 4px 53.2px 0px #553af594,
-        inset 0 70px 0 white;
-    color: var(--light-blue) !important;
 }
 
 /* nav bar css  */
@@ -106,6 +59,16 @@ nav ul li a:hover {
 
 /* nav css end */
 /* hero section css start*/
+.side_blur_box_timer {
+    background: #553af5;
+    width: 88px;
+    height: 18px;
+    border-radius: 50%;
+    filter: blur(20px);
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .blur_box {
     background: #553af5;
     width: 310px;
@@ -169,21 +132,18 @@ nav ul li a:hover {
 .form_box_hero input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-.counter_box_timer span {
+.counter_box_timer {
+    border-radius: 10px;
+}
+.counter_box_timer h2 {
     display: inline-block;
-    width: 59px;
+    width: 118px;
     height: 75px;
-    padding: 18px;
-    text-align: center;
     line-height: normal;
     background: #ffffff08;
     border-radius: 10px;
     box-shadow: 0px 9.03px 33.86px 0px #00000069;
     box-shadow: 0px 0px 13.54px 0px #ffffff08 inset;
-    background-image: url("../images/svg/counter-bg.svg") !important;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
 }
 .counter_box {
     background: #8989890d;
@@ -192,54 +152,6 @@ nav ul li a:hover {
     gap: 7px;
     border-radius: 20px;
 }
-/* .flip-clock-dot {
-    display: block;
-    background: #553af5 !important;
-    border-radius: 1px !important;
-    width: 6px !important;
-    height: 6px !important;
-    left: 6px !important;
-}
-.flip-clock-wrapper ul li a div div.inn {
-    font-size: var(--fs-xl) !important;
-    border-radius: 10px !important;
-    box-shadow: 0px 0px 13.54px 0px #ffffff08 inset !important;
-    text-shadow: unset !important;
-    background: #1b1a21 !important;
-    background-image: url("../images/svg/counter-bg.svg") !important;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-}
-.flip-clock-wrapper ul {
-    width: 59px !important;
-    height: 75px !important;
-    margin: 0 !important;
-    background-color: transparent !important;
-}
-.flip-clock-wrapper {
-    margin: 0 !important;
-}
-.flip-clock-divider {
-    height: 75px !important;
-}
-.flip-clock-wrapper ul li a div .shadow {
-    position: unset !important;
-}
-.flip-clock-dot.top {
-    top: 25px !important;
-    transform: rotate(45deg) !important;
-}
-.flip-clock-dot.bottom {
-    top: 50px !important;
-    transform: rotate(45deg) !important;
-}
-.flip-clock-divider .flip-clock-label {
-    display: none !important;
-}
-.flip-clock-wrapper .flip {
-    box-shadow: unset !important;
-} */
 
 /* hero section css end */
 
@@ -351,15 +263,18 @@ nav ul li a:hover {
     filter: blur(80px) !important;
 }
 
+/* How to benefit by investing in AI ETFs for high returns css end */
 /* profit css start */
-.profit_heading{
+.profit_heading {
     max-width: 805px;
     padding-top: 141px;
     padding-bottom: 57px;
 }
+.hand_img_profit {
+    border-radius: 20px;
+}
 /* profit css end */
 
-/* How to benefit by investing in AI ETFs for high returns css end */
 /* partner_slider css start */
 .partner_slider {
     padding-top: 126px;
@@ -378,6 +293,10 @@ nav ul li a:hover {
     width: 41px;
     height: 41px;
     border-radius: 100%;
+    transition: all 300ms linear;
+}
+.footer_social_logo:hover {
+    transform: translateY(-5px);
 }
 .conditions_border {
     border-left: 1px solid white;
@@ -408,8 +327,8 @@ nav ul li a:hover {
         gap: 6px;
     }
 
-    .counter_box_timer span {
-        width: 56px !important;
+    .counter_box_timer h2 {
+        width: 112px !important;
         height: 72px !important;
     }
     .implement_box {
@@ -422,6 +341,9 @@ nav ul li a:hover {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    .profit_heading {
+        padding-top: 100px;
+    }
 }
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
@@ -429,7 +351,7 @@ nav ul li a:hover {
         right: 13px;
     }
     .common_btn {
-        padding: 18px 32px;
+        padding: 15px 32px;
     }
     .main_heading_para_w {
         max-width: unset;
@@ -438,7 +360,7 @@ nav ul li a:hover {
         max-width: unset;
     }
     .hero_input {
-        padding: 18px;
+        padding: 15px;
     }
     .side_blur_box_one {
         width: 250px;
@@ -513,8 +435,8 @@ nav ul li a:hover {
         padding: 8px 8px !important;
         border-radius: 15px;
     }
-    .counter_box_timer span {
-        width: 50px !important;
+    .counter_box_timer h2 {
+        width: 100px !important;
         height: 65px !important;
         padding: 15px;
     }
@@ -535,6 +457,10 @@ nav ul li a:hover {
     .partner_slider {
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+    .profit_heading {
+        padding-top: 70px;
+        padding-bottom: 40px;
     }
 }
 /* media screen  575.98px*/
@@ -561,41 +487,15 @@ nav ul li a:hover {
     .hero_input {
         padding: 12px 18px;
     }
-    /* .flip-clock-wrapper ul {
-        width: 33px !important;
-        height: 60px !important;
-    }
-    .flip-clock-wrapper ul li a div.up {
-        top: 10px !important;
-    }
-
-    .flip-clock-wrapper ul li a div.down {
-        bottom: 5px !important;
-    }
-    .flip-clock-dot {
-        width: 5px !important;
-        height: 5px !important;
-        left: 7px !important;
-    }
-    .flip-clock-divider {
-        height: 65px !important;
-    }
-    .flip-clock-dot.bottom {
-        top: 43px !important;
-    }
-    .flip-clock-wrapper ul li a div div.inn {
-        height: 212% !important;
-    } */
     .live_icon {
         font-size: 14px !important;
-      
     }
     .counter_box {
         padding: 8px !important;
         border-radius: 15px;
     }
-    .counter_box_timer span {
-        width: 34px !important;
+    .counter_box_timer h2 {
+        width: 68px !important;
         height: 45px !important;
         font-size: 20px !important;
         padding: 10px;
@@ -624,23 +524,22 @@ nav ul li a:hover {
         padding-top: 48px;
         padding-bottom: 48px;
     }
+    .profit_heading {
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
 }
 @media (max-width: 374.98px) {
     .live_icon {
         font-size: 12px !important;
-        
-    }
-    .flip-clock-wrapper ul {
-        width: 33px !important;
-        height: 60px !important;
     }
     .counter_box {
         padding: 6px !important;
         border-radius: 11px;
     }
-    .counter_box_timer span {
-        width: 30px !important;
-        height: 40px !important;
+    .counter_box_timer h2 {
+        width: 60px !important;
+        height: 45px !important;
         font-size: 18px !important;
         border-radius: 8px;
         padding: 9px;
