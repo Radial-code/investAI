@@ -51,6 +51,7 @@ body {
     --fs-md: 28px;
     --fs-xl: 32px;
     --fs-2xl: 48px;
+    --fs-3xl: 64px;
     --dark-blue: #0d0c19;
     --light-blue: #553af5;
     --light-indigo: #8b78f8;
@@ -92,6 +93,9 @@ body {
 .fs_2xl {
     font-size: var(--fs-2xl) !important;
 }
+.fs_3xl {
+    font-size: var(--fs-3xl) !important;
+}
 .opacity_80 {
     opacity: 0.8 !important;
 }
@@ -110,7 +114,6 @@ body {
 .transition_300 {
     transition: all 300ms ease-in-out;
 }
-
 
 /* common btn  */
 .common_btn {
@@ -133,6 +136,7 @@ body {
         --fs-2xl: 42px;
         --fs-md: 24px;
         --fs-base: 15px;
+        --fs-3xl: 55px;
     }
 }
 
@@ -141,6 +145,7 @@ body {
         --fs-2xl: 35px;
         --fs-base: 14px;
         --fs-nav: 5vw;
+        --fs-3xl: 50px;
     }
 }
 @media (max-width: 575.98px) {
@@ -151,5 +156,6 @@ body {
         --fs-2xl: 30px;
         --fs-md: 20px;
         --fs-nav: 5vw;
+        --fs-3xl: 45px;
     }
 }
