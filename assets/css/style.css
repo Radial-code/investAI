@@ -132,9 +132,9 @@ nav ul li a:hover {
 }
 .live_icon {
     top: 13px;
-    right: 14px;
+    right: 23px;
     background-color: #c20000;
-    padding: 6px 8px;
+    padding: 3px 10px;
     font-size: 20px !important;
 }
 .counter_para {
@@ -158,6 +158,8 @@ nav ul li a:hover {
     border: none;
 }
 .hero_input::placeholder {
+    font-family: "Inter", sans-serif;
+    line-height: normal;
     color: #191335;
     font-size: var(--fs-base);
     font-weight: 400;
@@ -172,6 +174,7 @@ nav ul li a:hover {
     width: 59px;
     height: 75px;
     padding: 18px;
+    text-align: center;
     line-height: normal;
     background: #ffffff08;
     border-radius: 10px;
@@ -362,7 +365,16 @@ nav ul li a:hover {
 }
 
 /* How to benefit by investing in AI ETFs for high returns css end */
-
+/* partner_slider css start */
+.partner_slider {
+    padding-top: 126px;
+    padding-bottom: 120px;
+}
+.partner_slider .slick-track {
+    display: flex !important;
+    align-items: center !important;
+}
+/* partner_slider css end */
 /* footer css start*/
 .footer_paragraph {
     max-width: 373px;
@@ -372,7 +384,7 @@ nav ul li a:hover {
     height: 41px;
     border-radius: 100%;
 }
-.conditions_border{
+.conditions_border {
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
@@ -411,9 +423,16 @@ nav ul li a:hover {
     .Implement_heading {
         padding-top: 150px;
     }
+    .partner_slider {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
+    .live_icon {
+        right: 13px;
+    }
     .common_btn {
         padding: 18px 32px;
     }
@@ -516,7 +535,11 @@ nav ul li a:hover {
     }
     .Implement_heading,
     .high_returns_heading {
-        padding-top: 90px;
+        padding-top: 70px;
+    }
+    .partner_slider {
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 }
 /* media screen  575.98px*/
@@ -570,6 +593,7 @@ nav ul li a:hover {
     } */
     .live_icon {
         font-size: 14px !important;
+      
     }
     .counter_box {
         padding: 8px !important;
@@ -601,8 +625,16 @@ nav ul li a:hover {
     .hight_return_bg_img {
         top: 60%;
     }
+    .partner_slider {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 }
 @media (max-width: 374.98px) {
+    .live_icon {
+        font-size: 12px !important;
+        
+    }
     .flip-clock-wrapper ul {
         width: 33px !important;
         height: 60px !important;

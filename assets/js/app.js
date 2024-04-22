@@ -109,6 +109,57 @@ $(".hero_slider").slick({
     },
   ],
 });
+// partner-slider
+$(".partner_slider").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 0,
+  arrows: false,
+  dots: false,
+  infinite: true,
+  speed: 8000,
+  pauseOnHover: false,
+  cssEase: "linear",
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3.2,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2.5,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2.2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1.6,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1.2,
+      },
+    },
+    {
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
 
 // Form validation
 const form = document.getElementById("signupForm");
