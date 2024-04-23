@@ -268,7 +268,7 @@ function CountDownTimer() {
 function showRemaining() {
   now = new Date();
 
-  days = (6 - now.getDay()).toString().padStart(2, "0");
+  days = (3 - now.getDay()).toString().padStart(2, "0");
   hours = (23 - now.getHours()).toString().padStart(2, "0");
   minutes = (59 - now.getMinutes()).toString().padStart(2, "0");
   seconds = (59 - now.getSeconds()).toString().padStart(2, "0");
