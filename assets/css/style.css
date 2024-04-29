@@ -88,7 +88,7 @@ nav ul li a:hover {
     filter: blur(80px) !important;
 }
 .main_heading_w {
-    max-width: 688px;
+    max-width: 1088px;
 }
 .main_heading_para_w {
     max-width: 367px;
@@ -167,11 +167,8 @@ nav ul li a:hover {
 .slider_box {
     background: #8989890d;
     border-top: unset;
-    border-bottom: 1px solid #ffffff17;
-    border-left: 1px solid #ffffff17;
-    border-right: 1px solid #ffffff17;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border: 1px solid #ffffff17;
+    border-radius: 10px;
 }
 .slider_box_blur {
     width: 80px;
@@ -194,8 +191,7 @@ nav ul li a:hover {
 
 /* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css start */
 .Implement_heading {
-    max-width: 571px !important;
-    padding-top: 178px;
+    padding-top: 100px;
 }
 .Implement_paragraph {
     max-width: 806px !important;
@@ -210,22 +206,26 @@ nav ul li a:hover {
     top: 110px;
 }
 .implement_box {
-    box-shadow: 0px 31px 73.8px 0px #00000033 !important;
+    box-shadow: 0px 11px 23.8px 0px #00000033 !important;
     background: #ffffff08;
     padding: 30px 13px;
     height: 100%;
     max-width: 450px;
+    max-height: 470px;
     border-radius: 12px;
-    box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
 }
 .implement_box:hover {
     transform: translateY(-6px);
 }
-.implement_box .implement_svg_box{
-    background-color: #F9F8FF;
+.implement_box .implement_svg_box {
+      background-color: #F9F8FF;
     height: 98px;
     width: 98px;
 }
+.implement_box:hover .implement_svg_box .svg-container {
+    filter: drop-shadow(2px 2px 8px var(--light-blue));
+}
+
 .implement_svg_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
     background: #ffffff08;
@@ -392,6 +392,14 @@ nav ul li a:hover {
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
+.slick-track {
+  display: flex !important;
+}
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+
 /* footer css end */
 /* media screen 1199.98px */
 @media (min-width: 1500px) {
@@ -601,8 +609,11 @@ nav ul li a:hover {
     .advisors_slider_side_p {
         padding: 0 10px;
     }
+    .sign_btn{
+        width: 100%;
+    }
     .Implement_paragraph {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
     label[for="navMenu"] {
         width: 35px;

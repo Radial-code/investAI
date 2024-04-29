@@ -60,6 +60,45 @@ $(".hero_slider").slick({
   ],
 });
 
+// understanding slider
+$(".understanding_slider").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 1500,
+  autoplay: true,
+  infinite: true,
+  dots: false,
+  nextArrow: ".left_arrow",
+  prevArrow: ".right_arrow",
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2.4,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.5,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1.2,
+      },
+    },
+    {
+      breakpoint: 440,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
 // slider hero
 $(".advisors_slider").slick({
   slidesToShow: 3,
