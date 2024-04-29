@@ -15,14 +15,14 @@
     }
 }
 .register_paragraph{
-    padding-bottom: 48px !important;
+    padding-bottom: 48px;
 }
 .footer_bg {
   background-image: url("../images/png/background-circle.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  padding: 162px 0px 69px 0px;
+  padding: 262px 0px 69px 0px;
 }
 @media (max-width: 575px) {
     .footer_bg{
