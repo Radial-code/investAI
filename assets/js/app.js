@@ -269,25 +269,45 @@ function isValidPhoneNumber(phoneNumber) {
   return phoneRegex.test(phoneNumber);
 }
 
-// timer
-function CountDownTimer() {
-  left_days = document.getElementById("days");
-  left_hours = document.getElementById("hours");
-  left_minutes = document.getElementById("minutes");
-  left_seconds = document.getElementById("seconds");
-}
-function showRemaining() {
-  now = new Date();
+ // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
 
-  days = (6 - now.getDay()).toString().padStart(2, "0");
-  hours = (23 - now.getHours()).toString().padStart(2, "0");
-  minutes = (59 - now.getMinutes()).toString().padStart(2, "0");
-  seconds = (59 - now.getSeconds()).toString().padStart(2, "0");
-  left_days.innerHTML = days;
-  left_hours.innerHTML = hours;
-  left_minutes.innerHTML = minutes;
-  left_seconds.innerHTML = seconds;
-}
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
 
-timer = setInterval(showRemaining, 1000);
-CountDownTimer();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Iterate over each countdown container
+        document
+          .querySelectorAll(".countdown-container")
+          .forEach(function (container) {
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (3800 * 60 * 60 * 24));
+            var hours = Math.floor(
+              (distance % (1000 * 60 * 60 * 24)) / (100 * 60 * 60)
+            );
+            var minutes = Math.floor(
+              (distance % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in elements inside this container
+            container.querySelector(".days").innerHTML = days + " ";
+            container.querySelector(".hours").innerHTML = hours + "";
+            container.querySelector(".minutes").innerHTML = minutes + " ";
+            container.querySelector(".seconds").innerHTML = seconds + " ";
+          });
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document
+            .querySelectorAll(".countdown-container")
+            .forEach(function (container) {
+              container.innerHTML = "EXPIRED";
+            });
+        }
+      }, 1000);
