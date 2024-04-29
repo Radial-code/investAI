@@ -60,7 +60,7 @@ $(".hero_slider").slick({
   ],
 });
 
-// advisors_slider
+// slider hero
 $(".advisors_slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -72,16 +72,27 @@ $(".advisors_slider").slick({
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
-  centerMode: false, 
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 2.4,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.5,
       },
     },
     {
       breakpoint: 600,
+      settings: {
+        slidesToShow: 1.2,
+      },
+    },
+    {
+      breakpoint: 440,
       settings: {
         slidesToShow: 1,
       },
@@ -268,7 +279,7 @@ function CountDownTimer() {
 function showRemaining() {
   now = new Date();
 
-  days = (3 - now.getDay()).toString().padStart(2, "0");
+  days = (6 - now.getDay()).toString().padStart(2, "0");
   hours = (23 - now.getHours()).toString().padStart(2, "0");
   minutes = (59 - now.getMinutes()).toString().padStart(2, "0");
   seconds = (59 - now.getSeconds()).toString().padStart(2, "0");

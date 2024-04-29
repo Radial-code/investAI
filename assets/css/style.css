@@ -8,22 +8,15 @@
 }
 
 /* nav bar css  */
-.fs_nav {
-    font-size: 16px !important;
-}
-
 .nav_logo {
     z-index: 12;
 }
-
 .nav_line {
     transition: all 300ms linear;
 }
-
 .navbar_link_gap {
     gap: 34px;
 }
-
 .nav_line::after {
     content: "";
     position: absolute;
@@ -36,13 +29,11 @@
     display: inline-block;
     transition: all 400ms linear;
 }
-
 .nav_line:hover::after {
     width: 100%;
     left: 0;
 }
-
-.nav_line:hover {
+nav ul li a:hover {
     color: var(--light-blue) !important;
 }
 
@@ -78,20 +69,17 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
 .blur_box {
     background: #553af5;
     width: 310px;
     height: 310px;
     filter: blur(140px);
 }
-
 .side_blur_box_one {
     top: 110px;
     left: -155px;
     opacity: 0.6;
 }
-
 .side_blur_box_two {
     width: 170px !important;
     top: -90%;
@@ -99,15 +87,12 @@
     right: 0;
     filter: blur(80px) !important;
 }
-
 .main_heading_w {
     max-width: 688px;
 }
-
 .main_heading_para_w {
     max-width: 367px;
 }
-
 .live_icon {
     top: 13px;
     right: 23px;
@@ -115,13 +100,11 @@
     padding: 3px 10px;
     font-size: 20px !important;
 }
-
 .counter_para {
     padding-top: 43px;
     max-width: 519px;
     padding-bottom: 34px;
 }
-
 .form_box_hero {
     background: #8989890d;
     border: 1px solid #ffffff17;
@@ -130,7 +113,6 @@
     max-width: 600px;
     backdrop-filter: blur(8px);
 }
-
 .hero_input {
     padding: 20.5px 18px;
     margin-bottom: 17px;
@@ -138,7 +120,6 @@
     outline: none;
     border: none;
 }
-
 .hero_input::placeholder {
     font-family: "Inter", sans-serif;
     line-height: normal;
@@ -146,17 +127,14 @@
     font-size: var(--fs-base);
     font-weight: 400;
 }
-
 /* input number arrow hidden */
 .form_box_hero input::-webkit-outer-spin-button,
 .form_box_hero input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-
 .counter_box_timer {
     border-radius: 10px;
 }
-
 .counter_box_timer h2 {
     display: inline-block;
     width: 118px;
@@ -167,7 +145,6 @@
     box-shadow: 0px 9.03px 33.86px 0px #00000069;
     box-shadow: 0px 0px 13.54px 0px #ffffff08 inset;
 }
-
 .counter_box {
     background: #8989890d;
     padding: 12px 10px;
@@ -189,7 +166,6 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
 .slider_box_blur {
     width: 80px;
     height: 80px;
@@ -198,7 +174,6 @@
     top: 80px;
     left: 20px;
 }
-
 .slider_box_img {
     width: 101px;
     height: 101px;
@@ -215,13 +190,11 @@
     max-width: 571px !important;
     padding-top: 178px;
 }
-
 .Implement_paragraph {
     max-width: 806px !important;
     width: 100% !important;
     margin-bottom: 58px;
 }
-
 .side_blur_box_three {
     left: 50%;
     transform: translateX(-50%);
@@ -229,7 +202,6 @@
     opacity: 0.23 !important;
     top: 110px;
 }
-
 .implement_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
     background: #ffffff08;
@@ -239,15 +211,12 @@
     border-radius: 12px;
     box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
 }
-
 .implement_box:hover {
     transform: translateY(-6px);
 }
-
 .implement_box:hover .implement_svg_box .svg-container {
     filter: drop-shadow(2px 2px 8px var(--light-blue));
 }
-
 .implement_svg_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
     background: #ffffff08;
@@ -257,12 +226,10 @@
     height: 88px;
     box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
 }
-
 .implement_box h2 {
     padding-top: 31px;
     padding-bottom: 29px;
 }
-
 .implement_box_blur {
     top: unset;
     bottom: -30px !important;
@@ -273,7 +240,6 @@
     border-radius: 40%;
     transform: translateX(-50%);
 }
-
 .background_circle {
     top: 0;
 }
@@ -286,11 +252,9 @@
     max-width: 672px;
     padding-top: 159px;
 }
-
 .hight_return_bg_img {
     top: 44%;
 }
-
 .side_blur_box_four {
     width: 100px;
     height: 100px;
@@ -305,113 +269,80 @@
 .advisors_heading {
     padding-top: 110px;
 }
-
 .advisors_slider_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
     background: #ffffff08;
     border-radius: 12px;
     box-shadow: 0px 0px 73.3px 0px #ffffff08 inset;
 }
-
-.advisors_text {
-    padding: 15px 59px 15px 19px;
-    opacity: 0;
+.advisors_slider_box div {
+    padding: 24px;
 }
-
-.advisors_text:hover {
-    opacity: 1;
-}
-
-.advisors_text_p {
-    padding: 15px 50px 15px 19px;
-}
-
 .advisors_slider_side_p {
     padding: 0px 20px;
 }
-
 .jeff_paragraph {
     max-width: 262px;
 }
-
 .keith_paragraph {
-    max-width: 290px;
+    max-width: 303px;
 }
-
 .left_arrow:hover path {
     fill: #553af5;
 }
-
 .right_arrow:hover path {
     fill: #553af5;
 }
-
 .left_arrow {
     left: -55px;
     top: 50%;
     transform: translateY(-50%);
 }
-
 .right_arrow {
     right: -55px;
     top: 50%;
     transform: translateY(-50%);
 }
-
-.advisors_spacing {
-    padding-bottom: 167px;
-    margin-top: 195px;
-}
-
 .advisors_slider .slick-track {
     display: flex !important;
 }
-
 .advisors_slider .slick-slide {
     height: inherit !important;
     display: flex !important;
 }
-
-.advisors_slider .slick-slide>div {
+.advisors_slider .slick-slide > div {
     display: flex;
 }
-
 /* Advisors css end */
 
 /* STATISTICS FOR TODAY start css start */
 .average_paragraph {
     max-width: 278px;
 }
-
 .today_section_row_w {
     max-width: 861px;
 }
-
 .today_bg {
-    top: 0%;
+    top: 24%;
     left: 0;
 }
-
 .today_side_vector {
     width: 285px;
     height: 437px;
-    top: 0%;
+    top: 24%;
 }
-
 .today_left_side_victor {
     background: linear-gradient(88deg, #0c0b18 23.37%, rgba(10, 13, 35, 0) 98.36%);
     left: 0;
 }
-
 .today_right_side_victor {
     background: linear-gradient(268deg, #0c0b18 23.37%, rgba(10, 13, 35, 0) 98.36%);
     right: 0;
 }
-
 .today_heading {
+    padding-top: 183px;
     padding-bottom: 107px;
 }
-
 /* STATISTICS FOR TODAY start css end */
 
 /* profit css start */
@@ -420,11 +351,9 @@
     padding-top: 141px;
     padding-bottom: 57px;
 }
-
 .hand_img_profit {
     border-radius: 20px;
 }
-
 /* profit css end */
 
 /* partner_slider css start */
@@ -432,126 +361,69 @@
     padding-top: 126px;
     padding-bottom: 120px;
 }
-
 .partner_slider .slick-track {
     display: flex !important;
     align-items: center !important;
 }
-
 /* partner_slider css end */
 /* footer css start*/
 .footer_paragraph {
     max-width: 373px;
 }
-
 .footer_social_logo {
     width: 41px;
     height: 41px;
     border-radius: 100%;
     transition: all 300ms linear;
 }
-
 .footer_social_logo:hover {
     transform: translateY(-5px);
 }
-
 .conditions_border {
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
-
-.footer_hover:hover {
-    opacity: 1 !important;
-}
-
 /* footer css end */
-
-/* HOW IT WORKS CSS CODE START HERE */
-.works_card_bg {
-    box-shadow: 0px 48.87px 183.25px 0px #00000069;
-    border-radius: 12px;
-    max-width: 330px;
-    height: 100%;
-    padding: 42px 28px 55px 28px;
-    transition: all 0.3s ease-in-out;
-}
-
-.works_card_bg:hover {
-    transform: translateY(-10px);
-}
-
-.works_number_bg {
-    border-radius: 100%;
-    width: 118px;
-    height: 118px;
-}
-
-/* RESEARCH AND DATA Css CODE START HERE */
-.research_img img {
-    margin-bottom: -90px;
-}
-
-/* AI EFTs CSS CODE START HERE */
-.ai_eft_parent {
-    padding-top: 278px;
-}
-
 /* media screen 1199.98px */
 @media (min-width: 1500px) {
     .hight_return_bg_img {
         top: 40%;
     }
-
-    .footer_background_circle {
-        top: -10%;
-    }
 }
-
 @media (min-width: 1200px) {
     .main_heading_para_w {
         width: 367px;
     }
-
     .implement_box {
         max-width: 351px;
     }
-
     .register_paragraph {
         padding-bottom: 73px !important;
     }
 }
-
 @media (min-width: 992px) {
     .register_paragraph {
         padding-bottom: 32px;
     }
 }
-
 @media (min-width: 768px) {
     .width_md_full {
         width: 100%;
     }
 }
-
 @media (max-width:1280px) {
     .left_arrow {
-        left: 45%;
+        left:45%;
         top: unset;
         bottom: -25%;
     }
-
     .right_arrow {
         right: 45%;
         top: unset;
         bottom: -25%;
     }
 }
-
 @media (max-width: 1199.98px) {
-    .advisors_spacing {
-        margin-top: 80px;
-    }
-
     .counter_box {
         gap: 6px;
     }
@@ -560,132 +432,69 @@
         width: 112px !important;
         height: 72px !important;
     }
-
     .implement_box {
         padding: 45px 25px;
     }
-
     .Implement_heading {
         padding-top: 150px;
     }
-
     .partner_slider {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-
     .profit_heading {
         padding-top: 100px;
     }
-
     .today_heading {
+        padding-top: 100px;
         padding-bottom: 75px;
     }
-
     .left_arrow {
-        left: 50%;
-        transform: translateX(-50%);
+        left:50%;
+        transform: translateX(-70%);
     }
-
     .right_arrow {
-        right: 50%;
-        transform: translateX(-50%);
+        right:50%;
+        transform: translateX(-70%);
     }
 }
-
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
-    .left_arrow {
-        bottom: -60px;
-        transform: translateX(-50px);
-    }
-
-    .right_arrow {
-        bottom: -60px;
-        transform: translateX(50px);
-    }
-
-    .works_card_bg {
-        max-width: unset;
-        padding: 42px 28px;
-    }
-
-    .works_number_bg {
-        width: 100px;
-        height: 100px;
-    }
-
     .live_icon {
         right: 13px;
     }
-
     .common_btn {
         padding: 15px 32px;
     }
-
     .main_heading_para_w {
         max-width: unset;
     }
-
     .main_heading_w {
         max-width: unset;
     }
-
     .hero_input {
         padding: 15px;
     }
-
     .side_blur_box_one {
         width: 250px;
         height: 250px;
     }
-
     .counter_box {
         margin-bottom: 36px;
     }
-
     .Implement_paragraph {
         margin-bottom: 50px;
     }
-
     .Implement_heading,
     .high_returns_heading {
         padding-top: 120px;
     }
-
     .hight_return_bg_img {
         top: 54%;
     }
 }
-
 /* media screen  765.95px*/
 @media (max-width: 767.98px) {
-    .fs_nav {
-        font-size: 5vw !important;
-    }
-
-    .today_heading {
-        padding-bottom: 40px;
-    }
-
-    .left_arrow {
-        bottom: -50px;
-        width: 35px;
-        height: 35px;
-        transform: translateX(-40px);
-    }
-
-    .right_arrow {
-        bottom: -50px;
-        width: 35px;
-        height: 35px;
-        transform: translateX(40px);
-    }
-
-    .advisors_spacing {
-        padding-bottom: 96px;
-    }
-
     .mobile_navbar {
         position: absolute;
         width: 100%;
@@ -708,7 +517,7 @@
         z-index: 11;
     }
 
-    label[for="navMenu"]>span {
+    label[for="navMenu"] > span {
         width: 100%;
         height: 4px;
         background-color: white;
@@ -722,206 +531,154 @@
     .overflow_hidden {
         overflow: hidden;
     }
-
     .common_btn {
         padding: 14px 30px;
     }
-
     .hero_input {
         padding: 14px 18px;
     }
-
     .counter_para {
         padding-top: 32px;
         padding-bottom: 32px;
     }
-
     .live_icon {
         font-size: 18px !important;
     }
-
     .counter_box {
         padding: 8px 8px !important;
         border-radius: 15px;
     }
-
     .counter_box_timer h2 {
         width: 100px !important;
         height: 65px !important;
         padding: 15px;
     }
-
     .counter_box {
         gap: 5px;
     }
-
     .implement_box h2 {
         padding-top: 24px;
         padding-bottom: 22px;
     }
-
     .Implement_paragraph {
         margin-bottom: 45px;
     }
-
     .Implement_heading,
     .high_returns_heading {
         padding-top: 70px;
     }
-
     .partner_slider {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-
     .profit_heading {
         padding-top: 70px;
         padding-bottom: 40px;
     }
-
     .today_side_vector {
         width: 80px;
         height: 290px;
     }
-
     .today_heading {
+        padding-top: 70px;
         padding-bottom: 40px;
     }
-
     .advisors_heading {
         padding-top: 70px;
     }
 }
-
 /* media screen  575.98px*/
-@media (max-width: 575.98px) {
-    .advisors_spacing {
-        margin-top: 50px;
-    }
-
-    .works_card_bg {
-        max-width: 400px;
-    }
-
-    .works_number_bg {
-        width: 80px;
-        height: 80px;
-    }
-
+@media (max-width: 576.98px) {
     .advisors_slider_side_p {
         padding: 0 10px;
     }
-
     .Implement_paragraph {
         margin-bottom: 35px;
     }
-
     label[for="navMenu"] {
         width: 35px;
         height: 25px;
     }
-
     .common_btn {
         padding: 11px 20px;
     }
-
     .toggle_change .bar1 {
         transform: translate(0, 12px) rotate(-45deg);
     }
-
     .toggle_change .bar3 {
         transform: translate(0, -9px) rotate(45deg);
     }
-
     .navbar_link {
         gap: 24px;
     }
-
     .hero_input {
         padding: 12px 18px;
     }
-
     .live_icon {
         font-size: 14px !important;
     }
-
     .counter_box {
         padding: 8px !important;
         border-radius: 15px;
     }
-
     .counter_box_timer h2 {
         width: 68px !important;
         height: 45px !important;
         font-size: 20px !important;
         padding: 10px;
     }
-
     .counter_box {
         gap: 3px;
     }
-
     .implement_box h2 {
         padding-top: 22px;
         padding-bottom: 20px;
     }
-
     .implement_box {
         padding: 35px 25px;
     }
-
     .Implement_heading,
     .high_returns_heading {
         padding-top: 48px;
     }
-
     .background_circle {
         top: -1.5%;
     }
-
     .hight_return_bg_img {
         top: 60%;
     }
-
     .partner_slider {
         padding-top: 48px;
         padding-bottom: 48px;
     }
-
     .profit_heading {
         padding-top: 48px;
         padding-bottom: 32px;
     }
-
     .today_side_vector {
         width: 40px;
         height: 220px;
         top: 50%;
     }
-
     .today_bg {
         top: 50%;
     }
-
     .today_heading {
+        padding-top: 48px;
         padding-bottom: 32px;
     }
-
     .advisors_heading {
         padding-top: 48px;
     }
 }
-
 @media (max-width: 374.98px) {
     .live_icon {
         font-size: 12px !important;
     }
-
     .counter_box {
         padding: 6px !important;
         border-radius: 11px;
     }
-
     .counter_box_timer h2 {
         width: 60px !important;
         height: 45px !important;
@@ -929,7 +686,6 @@
         border-radius: 8px;
         padding: 9px;
     }
-
     .counter_box {
         gap: 2px;
     }
