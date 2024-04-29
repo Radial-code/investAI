@@ -108,10 +108,12 @@ nav ul li a:hover {
 .form_box_hero {
     background: #8989890d;
     border: 1px solid #ffffff17;
-    padding: 21px 21px 36px 21px;
     border-radius: 20px;
     max-width: 600px;
     backdrop-filter: blur(8px);
+}
+#signupForm{
+    padding: 21px 21px 36px 21px;
 }
 .hero_input {
     padding: 20.5px 18px;
@@ -538,8 +540,8 @@ nav ul li a:hover {
         padding: 14px 18px;
     }
     .counter_para {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
     .live_icon {
         font-size: 18px !important;
