@@ -250,7 +250,7 @@ nav ul li a:hover {
     transform: translateX(-50%);
 }
 .background_circle {
-    top: 0;
+    top: -8%;
 }
 
 /* IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! css end */
@@ -662,7 +662,7 @@ nav ul li a:hover {
         padding-top: 48px;
     }
     .background_circle {
-        top: -1.5%;
+        top: 1%;
     }
     .hight_return_bg_img {
         top: 60%;
