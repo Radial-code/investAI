@@ -350,3 +350,9 @@ function isValidPhoneNumber(phoneNumber) {
             });
         }
       }, 1000);
+
+      // page resize window reload
+
+      window.addEventListener("resize", function () {
+        location.reload();
+      });

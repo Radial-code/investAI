@@ -107,18 +107,17 @@ nav ul li a:hover {
 }
 .form_box_hero {
     background: #8989890d;
-    border: 1px solid #ffffff17;
-    padding: 30px 21px;
+    border: 2px solid #553AF5;
     border-radius: 20px;
     max-width: 600px;
     backdrop-filter: blur(8px);
 }
 #signupForm{
-    padding: 21px 21px 36px 21px;
+    padding:16px ;
 }
 .hero_input {
     padding: 20.5px 18px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     border-radius: 66px;
     outline: none;
     border: none;
@@ -428,6 +427,11 @@ nav ul li a:hover {
         width: 100%;
     }
 }
+@media (min-width: 576px) {
+   #signupForm{
+    padding: 21px 21px 20px 21px;
+}
+}
 @media (max-width:1280px) {
     .left_arrow {
         left:45%;
@@ -634,6 +638,10 @@ nav ul li a:hover {
     .hero_input {
         padding: 12px 18px;
     }
+    .hero_input {
+    margin-bottom: 10px;
+  
+}
     .live_icon {
         font-size: 14px !important;
     }
@@ -665,7 +673,7 @@ nav ul li a:hover {
         top: 1%;
     }
     .hight_return_bg_img {
-        top: 60%;
+        top: 30%;
     }
     .partner_slider {
         padding-top: 48px;
