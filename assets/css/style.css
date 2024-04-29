@@ -130,6 +130,10 @@ nav ul li a:hover {
     font-size: var(--fs-base);
     font-weight: 400;
 }
+.hero_bottom_stars{
+    width: 35%;
+    top: 18%;
+}
 /* input number arrow hidden */
 .form_box_hero input::-webkit-outer-spin-button,
 .form_box_hero input::-webkit-inner-spin-button {
@@ -206,9 +210,9 @@ nav ul li a:hover {
     top: 110px;
 }
 .implement_box {
-    box-shadow: 0px 48.87px 183.25px 0px #00000069;
+    box-shadow: 0px 31px 73.8px 0px #00000033 !important;
     background: #ffffff08;
-    padding: 59px 30px;
+    padding: 30px 13px;
     height: 100%;
     max-width: 450px;
     border-radius: 12px;
@@ -217,8 +221,10 @@ nav ul li a:hover {
 .implement_box:hover {
     transform: translateY(-6px);
 }
-.implement_box:hover .implement_svg_box .svg-container {
-    filter: drop-shadow(2px 2px 8px var(--light-blue));
+.implement_box .implement_svg_box{
+    background-color: #F9F8FF;
+    height: 98px;
+    width: 98px;
 }
 .implement_svg_box {
     box-shadow: 0px 48.87px 183.25px 0px #00000069;
