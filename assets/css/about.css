@@ -1,0 +1,13 @@
+@media (min-width:1200px) {
+    .hand_img_profit {
+        transform: translateX(20px);
+        height: 100%;
+    }
+.footer_top_spacing{
+    margin-top: 256px;
+}
+}
+
+.footer_top_spacing{
+    margin-top: 96px;
+}

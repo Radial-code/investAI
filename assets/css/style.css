@@ -108,7 +108,7 @@ nav ul li a:hover {
 .form_box_hero {
     background: #8989890d;
     border: 1px solid #ffffff17;
-    padding: 21px 21px 36px 21px;
+    padding: 30px 21px;
     border-radius: 20px;
     max-width: 600px;
     backdrop-filter: blur(8px);
@@ -340,7 +340,7 @@ nav ul li a:hover {
     right: 0;
 }
 .today_heading {
-    padding-top: 183px;
+    padding-top: 108px;
     padding-bottom: 107px;
 }
 /* STATISTICS FOR TODAY start css end */
@@ -358,8 +358,8 @@ nav ul li a:hover {
 
 /* partner_slider css start */
 .partner_slider {
-    padding-top: 126px;
-    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-bottom:40px;
 }
 .partner_slider .slick-track {
     display: flex !important;
@@ -398,7 +398,7 @@ nav ul li a:hover {
         max-width: 351px;
     }
     .register_paragraph {
-        padding-bottom: 73px !important;
+        padding-bottom: 96px !important;
     }
 }
 @media (min-width: 992px) {
