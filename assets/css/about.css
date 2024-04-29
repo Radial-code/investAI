@@ -15,7 +15,7 @@
     }
 }
 .register_paragraph{
-    padding-bottom: 48px !important;
+    padding-bottom: 48px;
 }
 .footer_bg {
   background-image: url("../images/png/background-circle.png");
