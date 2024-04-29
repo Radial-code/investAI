@@ -83,18 +83,21 @@ $(".understanding_slider").slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 1.5,
+        dots: true,
       },
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 1.2,
+        dots: true,
       },
     },
     {
       breakpoint: 440,
       settings: {
         slidesToShow: 1,
+        dots: true,
       },
     },
   ],
@@ -355,4 +358,4 @@ function isValidPhoneNumber(phoneNumber) {
 
       window.addEventListener("resize", function () {
         location.reload();
-      });
+      }); 
