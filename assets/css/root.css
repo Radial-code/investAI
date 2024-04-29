@@ -55,6 +55,7 @@ body {
     --dark-blue: #0d0c19;
     --light-blue: #553af5;
     --light-indigo: #8b78f8;
+    --arapawa:#140865;
 }
 /*backgroud color */
 .bg_dark_blue {
@@ -69,6 +70,9 @@ body {
 }
 .text_light_indigo {
     color: var(--light-indigo) !important;
+}
+.text_arapawa{
+    color: #140865;
 }
 
 /* font size  */
@@ -155,7 +159,7 @@ body {
         --fs-xs: 12px;
         --fs-sm: 16px;
         --fs-xl: 24px;
-        --fs-2xl: 30px;
+        --fs-2xl: 24px;
         --fs-md: 20px;
         --fs-nav: 5vw;
         --fs-3xl: 45px;
