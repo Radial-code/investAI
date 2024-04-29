@@ -392,13 +392,13 @@ nav ul li a:hover {
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
-.slick-track {
+/* .slick-track {
   display: flex !important;
 }
 .slick-slide {
   height: inherit !important;
   display: flex !important;
-}
+} */
 
 /* footer css end */
 /* media screen 1199.98px */
