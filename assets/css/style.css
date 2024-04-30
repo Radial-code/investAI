@@ -331,7 +331,13 @@ nav ul li a:hover {
 .advisors_slider .slick-slide > div {
   display: flex;
 }
-/* Advisors css end */
+/* top 5 ai section start here */
+.top_ai_blue_box{
+  background-color: var(--light-blue);
+  height: 80px;
+  width: 86px;
+  border-radius: 10px;
+}
 
 /* STATISTICS FOR TODAY start css start */
 .average_paragraph {

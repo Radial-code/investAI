@@ -78,6 +78,9 @@ body {
 .text_arapawa{
     color: #140865;
 }
+.bg_dark_blue{
+    background-color:var(--dark-blue);
+}
 
 /* font size  */
 .fs_nav {
