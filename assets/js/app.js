@@ -77,6 +77,7 @@ $(".understanding_slider").slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 2.4,
+        dots: true,
       },
     },
     {

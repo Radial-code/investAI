@@ -66,7 +66,10 @@ body {
     background-color: var(--light-blue) !important;
 }
 .bg_mercury{
-    background-color:var( --mercury) !important ;
+    background-color:var(--mercury) !important ;
+}
+.bg_light_blue{
+    background-color:var(--light-blue) !important ;
 }
 /* color */
 .text_light_blue {
@@ -76,7 +79,7 @@ body {
     color: var(--light-indigo) !important;
 }
 .text_arapawa{
-    color: #140865;
+    color: var(--arapawa);
 }
 .bg_dark_blue{
     background-color:var(--dark-blue);

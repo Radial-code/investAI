@@ -1,5 +1,59 @@
-.roadmap_circle{
-    height: 88px;
-    width: 88px;
-    background-color: var( var(--light-blue));
+.roadmap_circle {
+  height: 88px;
+  width: 88px;
+  border-radius: 100%;
+  box-shadow: 0px 9.03px 33.86px 0px #00000069,
+    0px 0px 13.54px 0px #ffffff08 inset;
+}
+.roadmap_circle_sm {
+  height: 100px;
+  width: 100px;
+  font-size: 48px;
+  border-radius: 100%;
+  box-shadow: 0px 9.03px 33.86px 0px #00000069,
+    0px 0px 13.54px 0px #ffffff08 inset;
+}
+.how_work_section .slick-track {
+  display: flex !important;
+}
+.how_work_section .slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+.roadmap_line {
+  width: 70% !important;
+  top: 14%;
+  z-index: 0;
+}
+.works_cards {
+  padding: 30px 20px;
+  width: 100% !important;
+}
+
+.how_work_section .slick-dots li.slick-active button:before {
+  color: #553af5 !important;
+}
+.how_work_section .slick-dots {
+  bottom: -40px !important;
+}
+.how_work_section {
+  padding-bottom: 143px;
+}
+.how_work_section .slick-dots li.slick-active button:before {
+  background-color: #553af5 !important;
+  border: 1px solid transparent !important;
+  opacity: 100 !important;
+}
+.how_work_section .slick-dots li button:before {
+  opacity: 100 !important;
+  width: 12.3px !important;
+  height: 12.3px !important;
+  content: "" !important;
+  border: 1px solid #553af5 !important;
+  border-radius: 50% !important;
+}
+@media (min-width: 992px) {
+  .how_work_section {
+    padding-bottom: 182px;
+  }
 }
