@@ -108,13 +108,20 @@ $(".advisors_slider").slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 1500,
-  autoplay: true,
+  // autoplay: true,
   infinite: true,
+  arrows:true,
   dots: false,
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
   responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        dots: true,
+      },
+    },
     {
       breakpoint: 1024,
       settings: {

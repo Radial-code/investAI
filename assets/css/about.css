@@ -1,17 +1,19 @@
 @media (min-width: 1200px) {
   .hand_img_profit {
     transform: translateX(20px);
-    object-fit: scale-down;
   }
   .footer_top_spacing {
     margin-top: 100px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
   .partner_slider {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
+  .today_bg {
+    top: 10%;
+}
 }
 .register_paragraph {
   padding-bottom: 48px;
@@ -26,7 +28,25 @@
 .form_box_hero {
   padding: 30px 21px;
 }
-
+.advisors_slider_box{
+  cursor: pointer;
+}
+.advisors_text_hover{
+  background: #553AF5;
+  transform: translateY(101%);
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 5;
+}
+.advisors_slider_box:hover .advisors_text_hover{
+  transform: translate(0%);
+}
+#advisors .slick-dots li.slick-active button:before{
+  color:#553AF5 !important;
+}
 @media (max-width: 991.98px) {
   .footer_bg {
     padding: 180px 0px 48px 0px;
@@ -37,6 +57,9 @@
   #partner_slider .slick-slide{
     max-width: 250px;
   }
+  .today_bg {
+    top: 16%;
+}
 }
 
 @media (max-width: 575px) {
