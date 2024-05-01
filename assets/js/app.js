@@ -126,24 +126,32 @@ $(".advisors_slider").slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 2.4,
+        dots: true,
+
       },
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1.5,
+        dots: true,
+
       },
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 1.2,
+        dots: true,
+
       },
     },
     {
       breakpoint: 440,
       settings: {
         slidesToShow: 1,
+        dots: true,
+
       },
     },
   ],
