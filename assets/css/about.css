@@ -44,6 +44,9 @@
 .advisors_slider_box:hover .advisors_text_hover{
   transform: translate(0%);
 }
+#advisors .slick-dots li.slick-active button:before{
+  color:#553AF5 !important;
+}
 @media (max-width: 991.98px) {
   .footer_bg {
     padding: 180px 0px 48px 0px;
