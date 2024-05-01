@@ -15,6 +15,16 @@
     top: 10%;
   }
 }
+.z_5{
+  z-index: 5;
+}
+.research_data_img{
+  z-index: 4;
+  margin-bottom: -100px;
+}
+.overflow_x_hidden{
+  overflow-x: hidden;
+}
 .register_paragraph {
   padding-bottom: 48px;
 }
@@ -75,6 +85,9 @@
   }
   .today_bg {
     top: 16%;
+  }
+  .advisors_text_hover p{
+    font-size: 14px !important;
   }
 }
 
