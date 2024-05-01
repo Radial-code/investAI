@@ -830,6 +830,9 @@ nav ul li a:hover {
   .today_bg {
     top: 14%;
 }
+.research_heading{
+  font-size: var(--fs-2xl) !important ;
+}
 .footer_bg {
   background-size: 150% 110%;
 }
@@ -855,6 +858,9 @@ nav ul li a:hover {
     background-size: 190% 110%;
     padding: 220px 0px 48px 0px;
     
+  }
+  .fs_20{
+    font-size: 20px !important;
   }
 
   .sign_btn {
@@ -895,8 +901,11 @@ nav ul li a:hover {
   .counter_box_timer h2 {
     width: 68px !important;
     height: 45px !important;
-    font-size: 20px !important;
-    padding: 10px;
+    font-size: 18px !important;
+    padding: 10px 0px !important;
+  }
+  .fs_18{
+    font-size: 18px !important;
   }
   .counter_box {
     gap: 3px;
@@ -949,6 +958,10 @@ nav ul li a:hover {
     width: 120px;
     height: 120px;
   }
+  .top5ai_semicircle_image {
+    top: 5%;
+}
+
 }
 @media (max-width: 374.98px) {
   .live_icon {
@@ -965,6 +978,7 @@ nav ul li a:hover {
     border-radius: 8px;
     padding: 9px;
   }
+
   .counter_box {
     gap: 2px;
   }
