@@ -103,59 +103,57 @@ $(".understanding_slider").slick({
   ],
 });
 // slider hero
-$(".advisors_slider").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 1500,
-  // autoplay: true,
-  infinite: true,
-  arrows:true,
-  dots: false,
-  nextArrow: ".left_arrow",
-  prevArrow: ".right_arrow",
-  pauseOnHover: true,
-  responsive: [
-    {
-      breakpoint: 1199,
-      settings: {
-        dots: true,
+$(document).ready(function(){
+  $(".advisors_slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 1500,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    nextArrow: ".right_arrow", // Corrected selector for next arrow
+    prevArrow: ".left_arrow", // Corrected selector for previous arrow
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          dots: true,
+        },
       },
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2.4,
-        dots: true,
-
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2.4,
+          dots: true,
+        },
       },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1.5,
-        dots: true,
-
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.5,
+          dots: true,
+        },
       },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1.2,
-        dots: true,
-
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.2,
+          dots: true,
+        },
       },
-    },
-    {
-      breakpoint: 440,
-      settings: {
-        slidesToShow: 1,
-        dots: true,
-
+      {
+        breakpoint: 440,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        },
       },
-    },
-  ],
+    ],
+  });
 });
+
 // slider hero
 $(".today_slider").slick({
   slidesToShow: 1,
