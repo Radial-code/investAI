@@ -10,10 +10,9 @@
       type="image/x-icon"
     />
     <!-- css link -->
-    <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
-
     <!-- bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -111,7 +110,7 @@
             >
             <div class="d-sm-none">
               <button class="common_btn text-white ff_inter fw-bold fs_base">
-                SIGN UP FOR FREE
+                SIGN UP
               </button>
             </div>
           </div>
@@ -119,7 +118,7 @@
             <button
               class="common_btn text-white ff_inter fw-bold fs_base d-none d-sm-block"
             >
-              SIGN UP FOR FREE
+              SIGN UP
             </button>
           </div>
           <label
@@ -135,11 +134,11 @@
         </nav>
         <!-- nav bar end -->
         <!-- hero section start -->
-        <div class="py-5 my-md-4">
+        <div class="pt-5 pb-lg-5 my-md-4">
           <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-10 col-lg-8">
               <h1
-                class="text-white fw-semibold lh_120 fs_2xl text-capitalize main_heading_w mb-3 mb-lg-0 fw-semibold ff_openSans"
+                class="text-white fw-semibold lh_120 fs_2xl text-capitalize main_heading_w text-center text-lg-start mb-3 mb-lg-0 fw-semibold ff_openSans"
               >
                 AI ETFs are expected to
                 <span class="text_light_blue fw-bolder">grow 119.37%.</span
@@ -148,7 +147,7 @@
             </div>
             <div class="col-12 col-md-10 col-lg-4">
               <p
-                class="text-white opacity_80 main_heading_para_w mb-0 lh_160 fs_sm ff_inter"
+                class="text-white opacity_80 main_heading_para_w text-center text-lg-start px-3 mb-0 lh_160 fs_sm ff_inter"
               >
                 We have seen a significant growth of 40% since last year, which
                 brought the share price from $7 to $10.
@@ -169,8 +168,165 @@
                   src="./assets/images/webp/hero-Ai-img.webp"
                   alt="hero-ai-img"
                 />
+                <div class="d-none d-lg-block countdown-container">
+                  <p
+                    class="ff_inter fw-bold fs_sm lh_120 text-white text-center counter_para mx-auto mb-0"
+                  >
+                    Due to extremely high demand for media coverage,
+                    registration closes in
+                  </p>
+                  <div class="d-flex justify-content-center">
+                    <div
+                      class="counter_box d-flex align-items-center justify-content-center"
+                    >
+                      <div
+                        class="counter_box_timer position-relative overflow-hidden"
+                      >
+                        <h2
+                          class="ff_inter days fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
+                        >
+                          00
+                        </h2>
+                        <div
+                          class="side_blur_box_timer position-absolute"
+                        ></div>
+                      </div>
+                      <img
+                        src="./assets/images/svg/timerdots.svg"
+                        alt="timerdots"
+                      />
+                      <div
+                        class="counter_box_timer overflow-hidden position-relative"
+                      >
+                        <h2
+                          class="ff_inter hours fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
+                        >
+                          00
+                        </h2>
+                        <div
+                          class="side_blur_box_timer position-absolute"
+                        ></div>
+                      </div>
+                      <img
+                        src="./assets/images/svg/timerdots.svg"
+                        alt="timerdots"
+                      />
+                      <div
+                        class="counter_box_timer overflow-hidden position-relative"
+                      >
+                        <h2
+                          class="ff_inter minutes fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
+                        >
+                          00
+                        </h2>
+                        <div
+                          class="side_blur_box_timer position-absolute"
+                        ></div>
+                      </div>
+                      <img
+                        src="./assets/images/svg/timerdots.svg"
+                        alt="timerdots"
+                      />
+                      <div
+                        class="counter_box_timer overflow-hidden position-relative"
+                      >
+                        <h2
+                          class="ff_inter seconds fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
+                        >
+                          00
+                        </h2>
+                        <div
+                          class="side_blur_box_timer position-absolute"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5 pt-3">
+              <div class="form_box_hero mx-auto">
+                <div class="bg_light_blue py-3 rounded-4">
+                  <h2
+                    class="text-white ff_openSans fw-normal fs_xl lh_120 text-center px-3"
+                  >
+                    This is the right time to
+                    <span class="d-block">
+                      invest in
+                      <span class="fw-bold">AI ETF</span>
+                    </span>
+                  </h2>
+                  <p
+                    class="ff_inter text-white lh_160 text-center mb-0 px-sm-5 px-4 fw-normal"
+                  >
+                    In a matter of minutes one of our AI mentors
+                    <span class="d-lg-block"
+                      >will contact you, No Experience Required!</span
+                    >
+                  </p>
+                </div>
+                <form id="signupForm">
+                  <div class="position-relative">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      class="hero_input w-100 ff_inter"
+                      id="firstName"
+                    />
+                    <div
+                      id="firstNameError"
+                      class="error-message fs_xs text-danger position-absolute bottom-0"
+                    ></div>
+                  </div>
+                  <div class="position-relative">
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      class="hero_input w-100 ff_inter"
+                      id="lastName"
+                    />
+                    <div
+                      id="lastNameError"
+                      class="error-message fs_xs text-danger position-absolute bottom-0"
+                    ></div>
+                  </div>
+                  <div class="position-relative">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="hero_input w-100 ff_inter"
+                      id="email"
+                    />
+                    <div
+                      id="emailError"
+                      class="error-message fs_xs text-danger position-absolute bottom-0"
+                    ></div>
+                  </div>
+                  <div class="position-relative">
+                    <input
+                      type="number"
+                      placeholder="Phone Number"
+                      class="hero_input w-100 ff_inter"
+                      id="phoneNumber"
+                    />
+                    <div
+                      id="phoneNumberError"
+                      class="error-message fs_xs text-danger position-absolute bottom-0"
+                    ></div>
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      class="common_btn w-100 text-white ff_inter fw-bold fs_base"
+                    >
+                      SIGN UP
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="d-lg-none countdown-container">
                 <p
-                  class="ff_inter fw-bold fs_sm lh_120 text-white text-center counter_para mx-auto mb-0"
+                  class="ff_inter fw-bold fs_sm lh_120 text-white text-center counter_para mx-auto mb-0 col-9 px-3"
                 >
                   Due to extremely high demand for media coverage, registration
                   closes in
@@ -183,15 +339,13 @@
                       class="counter_box_timer position-relative overflow-hidden"
                     >
                       <h2
-                        class="ff_inter fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
-                        id="days"
+                        class="ff_inter days fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
                       >
                         00
                       </h2>
                       <div class="side_blur_box_timer position-absolute"></div>
                     </div>
                     <img
-                      class=""
                       src="./assets/images/svg/timerdots.svg"
                       alt="timerdots"
                     />
@@ -199,15 +353,13 @@
                       class="counter_box_timer overflow-hidden position-relative"
                     >
                       <h2
-                        class="ff_inter fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
-                        id="hours"
+                        class="ff_inter hours fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
                       >
                         00
                       </h2>
                       <div class="side_blur_box_timer position-absolute"></div>
                     </div>
                     <img
-                      class=""
                       src="./assets/images/svg/timerdots.svg"
                       alt="timerdots"
                     />
@@ -215,15 +367,13 @@
                       class="counter_box_timer overflow-hidden position-relative"
                     >
                       <h2
-                        class="ff_inter fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
-                        id="minutes"
+                        class="ff_inter fs_xl minutes fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
                       >
                         00
                       </h2>
                       <div class="side_blur_box_timer position-absolute"></div>
                     </div>
                     <img
-                      class=""
                       src="./assets/images/svg/timerdots.svg"
                       alt="timerdots"
                     />
@@ -231,8 +381,7 @@
                       class="counter_box_timer overflow-hidden position-relative"
                     >
                       <h2
-                        class="ff_inter fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
-                        id="seconds"
+                        class="ff_inter seconds fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center"
                       >
                         00
                       </h2>
@@ -240,74 +389,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-5">
-              <div class="form_box_hero mx-auto">
-                <h2
-                  class="text-white ff_openSans fw-bold fs_xl lh_120 text-center mb-4 pb-md-2"
-                >
-                  This is the right time to invest in
-                  <span class="text_light_blue">ai ETF</span>
-                </h2>
-                <form id="signupForm">
-                  <div class="position-relative">
-                    <input
-                      type="text"
-                      placeholder="First Name"
-                      class="hero_input w-100"
-                      id="firstName"
-                    />
-                    <div
-                      id="firstNameError"
-                      class="error-message fs_xs text-danger position-absolute bottom-0"
-                    ></div>
-                  </div>
-                  <div class="position-relative">
-                    <input
-                      type="text"
-                      placeholder="Last Name"
-                      class="hero_input w-100"
-                      id="lastName"
-                    />
-                    <div
-                      id="lastNameError"
-                      class="error-message fs_xs text-danger position-absolute bottom-0"
-                    ></div>
-                  </div>
-                  <div class="position-relative">
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      class="hero_input w-100"
-                      id="email"
-                    />
-                    <div
-                      id="emailError"
-                      class="error-message fs_xs text-danger position-absolute bottom-0"
-                    ></div>
-                  </div>
-                  <div class="position-relative">
-                    <input
-                      type="number"
-                      placeholder="Phone Number"
-                      class="hero_input w-100"
-                      id="phoneNumber"
-                    />
-                    <div
-                      id="phoneNumberError"
-                      class="error-message fs_xs text-danger position-absolute bottom-0"
-                    ></div>
-                  </div>
-                  <div class="pt-3 pt-lg-4">
-                    <button
-                      type="submit"
-                      class="common_btn w-100 text-white ff_inter fw-bold fs_base"
-                    >
-                      SIGN UP FOR FREE
-                    </button>
-                  </div>
-                </form>
               </div>
             </div>
           </div>
@@ -318,7 +399,7 @@
     <!-- header and hero section end -->
 
     <!-- section second slider start  -->
-    <section class="pb-5 mb-lg-5 position-relative">
+    <section class="position-relative">
       <div class="blur_box side_blur_box_two position-absolute"></div>
       <div class="d-flex align-items-center hero_slider">
         <div class="px-2 px-sm-3">
@@ -342,7 +423,7 @@
               <span class="fw-normal">Profit:</span> $32,911
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $55,780
             </h2>
@@ -369,7 +450,7 @@
               <span class="fw-normal">Profit:</span> $2, 041
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $4,587
             </h2>
@@ -396,7 +477,7 @@
               <span class="fw-normal">Profit:</span> $62, 233
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $105, 080
             </h2>
@@ -423,7 +504,7 @@
               <span class="fw-normal">Profit:</span> $35, 449
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $68,187
             </h2>
@@ -450,7 +531,7 @@
               <span class="fw-normal">Profit:</span> $4, 930
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span>$12,230
             </h2>
@@ -477,7 +558,7 @@
               <span class="fw-normal">Profit:</span> $32,911
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $55,780
             </h2>
@@ -504,7 +585,7 @@
               <span class="fw-normal">Profit:</span> $2, o41
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $4,587
             </h2>
@@ -531,7 +612,7 @@
               <span class="fw-normal">Profit:</span> $62, 233
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $105, 080
             </h2>
@@ -558,7 +639,7 @@
               <span class="fw-normal">Profit:</span> $35, 449
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span> $68,187
             </h2>
@@ -585,129 +666,145 @@
               <span class="fw-normal">Profit:</span> $4, 930
             </h2>
             <h2
-              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-2"
+              class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1"
             >
               <span class="fw-normal">Current Balance: </span>$12,230
             </h2>
           </div>
         </div>
       </div>
+      <div class="position-relative">
+        <img
+          class="position-absolute start-0 hero_bottom_stars"
+          src="./assets/images/png/hero-bottom-left-starts.png"
+          alt="stars"
+        />
+        <img
+          class="position-absolute end-0 hero_bottom_stars"
+          src="./assets/images/png/hero-bottom-right-starts.png"
+          alt="stars"
+        />
+        <img
+          class="w-100"
+          src="./assets/images/webp/semicircle_with_shade.webp"
+          alt="background-circle"
+        />
+      </div>
     </section>
     <!-- section second slider end  -->
 
     <!-- IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! start-->
-    <section class="position-relative mb-5">
-      <img
-        class="position-absolute start-50 translate-middle-x background_circle w-100"
-        src="./assets/images/webp/background-circle.webp"
-        alt="background-circle"
-      />
+    <section class="position-relative understanding_section pb-5 bg-white">
       <div class="side_blur_box_three blur_box position-absolute"></div>
-      <div class="container custom_container mx-auto position-relative z-1">
+      <div class="max_w_1140 mx-auto position-relative z-1 pb-lg-3 pb-5 mb-1">
         <h2
-          class="text-white fw-bold lh_120 fs_2xl text-capitalize main_heading_w mb-0 ff_openSans Implement_heading text-center mx-auto"
+          class="text_arapawa fw-bold lh_120 fs_2xl text-capitalize main_heading_w mb-0 ff_openSans Implement_heading text-center mx-auto"
         >
-          Implement arbitrage in
-          <span class="text_light_blue"> Your Investments!</span>
+          Understanding leveraged
+          <span class="d-block">
+            accounts and
+            <span class="text_light_blue"> buying power</span>
+          </span>
         </h2>
         <p
-          class="text-white opacity_70 main_heading_para_w lh_160 fs_sm ff_inter Implement_paragraph mt-4 text-center mx-auto"
+          class="text-black opacity_70 main_heading_para_w lh_160 fs_sm ff_inter Implement_paragraph mt-4 text-center mx-auto"
         >
-          Implementing arbitrage in your investment will capitalize on the price
-          differences of identical or similar financial instruments on different
-          markets or in various forms. Here's how AI can yield returns through
-          this strategy.
+          Trading with leveraged accounts in CFDs provides traders with
+          increased buying power, enabling them to attain superior results
+          across various markets. By amplifying potential returns and accessing
+          additional capital, traders can capitalize on market opportunities
+          more effectively, enhancing their overall trading performance.
         </p>
-        <div class="row justify-content-center pb-5">
-          <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+        <div class="understanding_slider h-100">
+          <div
+            class="implement_box transition_300 mx-auto position-relative overflow-hidden"
+          >
             <div
-              class="implement_box transition_300 mx-auto position-relative overflow-hidden"
-            >
-              <div
-                class="slider_box_blur implement_box_blur position-absolute"
-              ></div>
-              <div class="implement_svg_box mx-auto">
-                <img
-                  class="svg-container transition_300"
-                  src="./assets/images/svg/research-opportunities.svg"
-                  alt="research-opportunities"
-                />
-              </div>
-              <h2
-                class="fs_sm ff_inter fw-bold text-white text-center mb-0 lh_normal"
-              >
-                Research Opportunities
-              </h2>
-              <p
-                class="mb-0 fs_base lh_160 fw-normal text-white opacity_70 text-center px-1 ff_inter"
-              >
-                AI will find various markets for discrepancies in asset prices.
-                You can do this manually, or use AI to identify arbitrage
-                opportunities quickly due to market efficiency where such gaps
-                close rapidly
-              </p>
+              class="slider_box_blur implement_box_blur position-absolute"
+            ></div>
+            <div class="implement_svg_box mx-auto">
+              <img
+                class="svg-container transition_300"
+                src="./assets/images/svg/research-opportunities.svg"
+                alt="research-opportunities"
+              />
             </div>
+            <h2
+              class="fs_sm ff_inter fw-bold text_arapawa text-center mb-0 lh_normal"
+            >
+              Magnified Returns
+            </h2>
+            <p
+              class="mb-0 fs_base lh_160 fw-normal text-black opacity_70 text-center px-1 ff_inter"
+            >
+              Leveraged accounts amplify the potential returns on investments.
+              By using borrowed capital, traders can control larger positions
+              than their initial investment, thus increasing the profit
+              potential if the trade moves in their favor.
+            </p>
           </div>
-          <div class="col-12 col-sm-8 col-md-6 col-lg-4 pt-4 pt-md-0">
+          <div
+            class="implement_box transition_300 mx-auto position-relative overflow-hidden"
+          >
             <div
-              class="implement_box transition_300 mx-auto position-relative overflow-hidden"
-            >
-              <div
-                class="slider_box_blur implement_box_blur position-absolute"
-              ></div>
-              <div class="implement_svg_box mx-auto">
-                <img
-                  class="svg-container transition_300"
-                  src="./assets/images/svg/immediate-execution.svg"
-                  alt="immediate-execution"
-                />
-              </div>
-              <h2
-                class="fs_sm ff_inter fw-bold text-white text-center mb-0 lh_normal"
-              >
-                 Immediate Execution
-              </h2>
-              <p
-                class="mb-0 fs_base lh_160 fw-normal text-white opacity_70 text-center px-1 ff_inter"
-              >
-                Successful arbitrage requires immediate execution, as delays can
-                result in the price difference disappearing. AI systems will be
-                utilized for this purpose, especially in high-frequency trading.
-              </p>
+              class="slider_box_blur implement_box_blur position-absolute"
+            ></div>
+            <div class="implement_svg_box mx-auto">
+              <img
+                class="svg-container transition_300"
+                src="./assets/images/svg/immediate-execution.svg"
+                alt="immediate-execution"
+              />
             </div>
+            <h2
+              class="fs_sm ff_inter fw-bold text_arapawa text-center mb-0 lh_normal"
+            >
+              Portfolio Diversification
+            </h2>
+            <p
+              class="mb-0 fs_base lh_160 fw-normal text-black opacity_70 text-center px-1 ff_inter"
+            >
+              Leveraged accounts allow traders to diversify their portfolio
+              without needing to commit a large amount of capital to each
+              position. This enables them to spread their risk across multiple
+              assets or markets, potentially reducing the impact of a single
+              adverse market movement.
+            </p>
           </div>
-          <div class="col-12 col-sm-8 col-md-6 col-lg-4 pt-4 pt-lg-0">
+          <div
+            class="implement_box transition_300 mx-auto position-relative overflow-hidden"
+          >
             <div
-              class="implement_box transition_300 mx-auto position-relative overflow-hidden"
-            >
-              <div
-                class="slider_box_blur implement_box_blur position-absolute"
-              ></div>
-              <div class="implement_svg_box mx-auto">
-                <img
-                  class="svg-container transition_300"
-                  src="./assets/images/svg/simultaneous-transactions.svg"
-                  alt="simultaneous-transactions"
-                />
-              </div>
-              <h2
-                class="fs_sm ff_inter fw-bold text-white text-center mb-0 lh_normal"
-              >
-                Simultaneous Transactions
-              </h2>
-              <p
-                class="mb-0 fs_base lh_160 fw-normal text-white opacity_70 text-center px-1 ff_inter"
-              >
-                AI will execute your buy/sell orders simultaneously. It will buy
-                an asset in one market and simultaneously sell it in another at
-                a higher price.
-              </p>
+              class="slider_box_blur implement_box_blur position-absolute"
+            ></div>
+            <div class="implement_svg_box mx-auto">
+              <img
+                class="svg-container transition_300"
+                src="./assets/images/svg/simultaneous-transactions.svg"
+                alt="simultaneous-transactions"
+              />
             </div>
+            <h2
+              class="fs_sm ff_inter fw-bold text_arapawa text-center mb-0 lh_normal"
+            >
+              Enhanced Trading Opportunities
+            </h2>
+            <p
+              class="mb-0 fs_base lh_160 fw-normal text-black opacity_70 text-center px-1 ff_inter"
+            >
+              With leverage, traders can take advantage of short-term trading
+              opportunities that may not be feasible with a cash-only account.
+              Leveraged accounts enable traders to capitalize on small price
+              movements in the market, opening up a wider range of trading
+              strategies and potentially increasing overall profitability.
+            </p>
           </div>
         </div>
-        <div class="pt-2 text-center">
-          <button class="common_btn text-white ff_inter fw-bold fs_base">
-            SIGN UP FOR FREE
+        <div class="pt-sm-2 pt-4 text-center pb-sm-5 mb-sm-4">
+          <button
+            class="common_btn text-white ff_inter fw-bold fs_base sign_btn"
+          >
+            SIGN UP
           </button>
         </div>
       </div>
@@ -715,25 +812,34 @@
     <!-- IMPLEMENT ARBITRAGE IN YOUR INVESTMENTS! end -->
 
     <!-- How to benefit by investing in AI ETFs for high returns  start-->
-    <section class="position-relative">
-      <div class="side_blur_box_four blur_box position-absolute"></div>
+    <section class="position-relative pb-5 pb-md-0">
+      <div
+        class="side_blur_box_four blur_box position-absolute d-none d-md-block"
+      ></div>
       <img
-        class="position-absolute hight_return_bg_img w-100 start-50 translate-middle-x"
+        class="position-absolute hight_return_bg_img w-100 start-50 d-none d-xl-block translate-middle-x"
         src="./assets/images/svg/hight-retrun.svg"
         alt="hight-retrun"
       />
       <img
+        class="position-absolute hight_return_bg_img w-100 start-50 d-xl-none translate-middle-x"
+        src="./assets/images/png/benifit-sm-circels.png"
+        alt="hight-retrun"
+      />
+      <img
         class="position-absolute start-50 translate-middle-x background_circle w-100"
-        src="./assets/images/webp/background-circle.webp"
+        src="./assets/images/png/benifit-image.png"
         alt="background-circle"
       />
       <div class="side_blur_box_three blur_box position-absolute"></div>
-      <div class="container custom_container mx-auto position-relative z-1">
+      <div
+        class="container custom_container mx-auto position-relative z-1 pt-5"
+      >
         <h2
-          class="text-white fw-bold lh_120 fs_2xl text-capitalize main_heading_w mb-0 ff_openSans high_returns_heading text-center mx-auto"
+          class="text-white fw-bold lh_120 fs_2xl text-capitalize main_heading_w mb-0 ff_openSans high_returns_heading text-center mx-auto pt-5 mt-5 col-10"
         >
           How to benefit by investing in AI ETFs for
-          <span class="text_light_blue"> high returns</span>
+          <span class="text_light_blue d-block d-md-inline"> high returns</span>
         </h2>
         <p
           class="text-white opacity_70 main_heading_para_w lh_160 fs_sm ff_inter Implement_paragraph mt-4 text-center mx-auto"
@@ -742,7 +848,9 @@
           focus only on the companies that have evolved in the development of
           new products or services and technological improvements related to AI.
         </p>
-        <div class="row align-items-center justify-content-center pt-lg-2">
+        <div
+          class="row align-items-center justify-content-center pt-lg-2 pb-md-4 mb-md-3"
+        >
           <div class="col-12 col-sm-8 col-md-5">
             <img
               class="w-100"
@@ -753,7 +861,7 @@
           <div class="col-12 col-md-7 mt-4 pt-3 pt-sm-0 mt-sm-5 mt-md-0">
             <div class="ps-lg-4 ps-xl-5">
               <p
-                class="mb-0 fs_base lh_160 fw-normal text-white opacity_70 ff_inter"
+                class="mb-0 fs_base lh_160 fw-normal text-white opacity_70 ff_inter text-center text-md-start"
               >
                 Artificial intelligence has been significantly advancing in
                 various industries, from healthcare and finance to manufacturing
@@ -761,13 +869,13 @@
                 companies at the forefront of AI innovation.
               </p>
               <p
-                class="fs_base lh_160 fw-normal text-white opacity_70 ff_inter py-3 my-1"
+                class="fs_base lh_160 fw-normal text-white opacity_70 ff_inter py-3 my-1 text-center text-md-start"
               >
                 What are you waiting for? AI is revolutionizing everything, and
                 investors got fantastic returns in AI ETFs during these years.
               </p>
               <p
-                class="mb-0 fs_base lh_160 fw-normal text-white opacity_70 ff_inter"
+                class="fs_base lh_160 fw-normal text-white opacity_70 ff_inter text-center text-md-start pb-2 mb-1 mb-md-0 pb-md-0"
               >
                 From all such technological advancements and the boom in the IT
                 industry, the price of AI ETFs has been increasing tremendously.
@@ -777,7 +885,6 @@
         </div>
       </div>
     </section>
-    <!-- How to benefit by investing in AI ETFs for high returns  end-->
     <section class="bg-white pt-5">
       <div class="container custom_container pt-2">
         <div class="row pt-1">
@@ -807,17 +914,50 @@
         </div>
       </div>
     </section>
+    <!-- top 5 ai section start here -->
+    <section class="bg_dark_blue py-5">
+      <div class="container custom_container my-5 py-5">
+        <h2 class="fs_2xl ff_openSans mb-4 fw-bold text-white text-center">
+          Top 5 AI ETFs
+        </h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="ff_openSans text-white fs_2xl top_ai_blue_box d-flex justify-content-center align-items-center fw-bold mb-3">1</div>
+            <p class="ff_inter text-white opacity_70 fs_base mb-3 pt-1">
+              METV The METV ETF, known as the Round Hill Ball Metaverse ETF,
+              aims to provide investors with a way to tap into the Metaverse. It
+              seeks to mirror the performance of the Ball Metaverse Index before
+              deducting fees and expenses.
+            </p>
+            <p class="ff_inter text-white opacity_70 fs_base mb-0">
+              METV can provide actual exposure to companies developing
+              infrastructure essential to Metaverse, such as Cloudflare and
+              NVIDIA. It also exposes the gaming engines responsible for
+              creating a gaming world, such as Unity and Roblox.
+            </p>
+          </div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- Advisors ADVISORS SECTION START -->
-    <section class="position-relative">
-      <div class="side_blur_box_four blur_box position-absolute"></div>
+    <section class="position-relative pb-4 bg_dark_blue overflow_hidden">
+      <!-- <div class="side_blur_box_four blur_box position-absolute"></div>
       <img
         class="position-absolute start-50 translate-middle-x background_circle w-100"
         src="./assets/images/webp/background-circle.webp"
         alt="background-circle"
+      /> -->
+      <img
+        class="position-absolute start-50 translate-middle-x background_circle w-100"
+        src="./assets/images/png/benifit-image.png"
+        alt="background-circle"
       />
-      <div class="side_blur_box_three blur_box position-absolute"></div>
-      <div class="container custom_container mx-auto position-relative z-1">
+      <!-- <div class="side_blur_box_three blur_box position-absolute"></div> -->
+      <div
+        class="container custom_container mx-auto position-relative z-1 pb-5 mb-5"
+      >
         <h2
           class="text-white fw-bold lh_120 fs_2xl mb-0 ff_openSans advisors_heading text-center mx-auto"
         >
@@ -938,6 +1078,31 @@
               </div>
             </div>
           </div>
+          <!-- <svg class="left_arrow c_pointer rounded-pill position-absolute  " width="46"
+                    height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition_300"
+                        d="M45.1603 22.0971C44.9642 9.87869 34.9269 0.158504 22.7085 0.354595C10.4901 0.550686 0.76987 10.588 0.965962 22.8064C1.16205 35.0248 11.1993 44.745 23.4178 44.5489C35.6362 44.3528 45.3564 34.3155 45.1603 22.0971ZM3.56563 22.7647C3.39248 11.9761 11.9616 3.12741 22.7502 2.95426C33.5388 2.78112 42.3875 11.3502 42.5606 22.1388C42.7338 32.9275 34.1646 41.7761 23.376 41.9492C12.5874 42.1224 3.73877 33.5533 3.56563 22.7647Z"
+                        fill="#434346" />
+                    <path class="transition_300"
+                        d="M25.4462 33.205L14.4845 22.5895L25.0999 11.6278L23.251 9.8372L10.8449 22.6479L23.6557 35.054L25.4462 33.205Z"
+                        fill="#434346" />
+                    <path class="transition_300"
+                        d="M12.6436 21.3188L12.6853 23.9185L34.7824 23.5639L34.7407 20.9642L12.6436 21.3188Z"
+                        fill="#434346" />
+                </svg>
+
+                <svg class="right_arrow c_pointer rounded-pill position-absolute  " width="46"
+                    height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition_300"
+                        d="M0.838752 22.6455C1.03484 10.427 11.0721 0.706843 23.2905 0.902935C35.509 1.09903 45.2292 11.1363 45.0331 23.3547C44.837 35.5731 34.7997 45.2933 22.5813 45.0972C10.3628 44.9012 0.64266 34.8639 0.838752 22.6455ZM42.4334 23.313C42.6065 12.5244 34.0374 3.67574 23.2488 3.5026C12.4602 3.32946 3.61156 11.8986 3.43842 22.6872C3.26527 33.4758 11.8344 42.3244 22.623 42.4976C33.4116 42.6707 42.2603 34.1016 42.4334 23.313Z"
+                        fill="#434346" />
+                    <path class="transition_300"
+                        d="M20.5528 33.7533L31.5146 23.1379L20.8991 12.1761L22.7481 10.3855L35.1541 23.1963L22.3434 35.6023L20.5528 33.7533Z"
+                        fill="#434346" />
+                    <path class="transition_300"
+                        d="M33.3555 21.8672L33.3137 24.4669L11.2166 24.1122L11.2583 21.5126L33.3555 21.8672Z"
+                        fill="#434346" />
+                </svg> -->
         </div>
       </div>
     </section>
@@ -997,7 +1162,7 @@
             </div>
           </div>
           <p
-            class="text-center text_arapawa ff_inter fs_sm lh_normal fw-bold mt-4 pt-md-4  mb-md-0 register_paragraph"
+            class="text-center text_arapawa ff_inter fs_sm lh_normal fw-bold mt-4 pt-md-4 mb-md-0 register_paragraph"
           >
             Places left to register: <span class="text_light_blue">1</span>
           </p>
@@ -1132,7 +1297,7 @@
               />
             </a>
             <a
-              href="http://www.facebook.com/"
+              href="https://instagram.com/"
               class="footer_social_logo bg-white d-flex align-items-center justify-content-center"
             >
               <img
@@ -1141,7 +1306,7 @@
               />
             </a>
             <a
-              href="http://www.facebook.com/"
+              href="https://www.telegram.com/"
               class="footer_social_logo bg-white d-flex align-items-center justify-content-center"
             >
               <img
@@ -1153,9 +1318,7 @@
         </div>
       </div>
 
-      <div
-        class="d-flex justify-content-center bg_light_blue py-1 px-3"
-      >
+      <div class="d-flex justify-content-center bg_light_blue py-1 px-3">
         <a
           class="ff_inter fs_xs fw-normal lh_normal text-white opacity_70 pe-1"
           href="#"
@@ -1175,31 +1338,111 @@
     </footer>
     <!-- footer end -->
     <!-- partner slider start -->
-    <section class="bg-white">
-      <div class="partner_slider">
-        <div class="px-4">
-          <img class="w-100" src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+    <section id="partner_slider" class="bg-white">
+      <div  class="partner_slider">
+        <div>
+          <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
         </div>
-        <div class="px-4">
-          <img class="w-100" src="./assets/images/svg/binance.svg" alt="binance" />
+        <div>
+          <img src="./assets/images/svg/binance.svg" alt="binance" />
         </div>
-        <div class="px-4"><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
-        <div class="px-4">
-          <img class="w-100" src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+        <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+        <div>
+          <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
         </div>
-        <div class="px-4">
-          <img class="w-100" src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+        <div>
+          <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
         </div>
-        <div class="px-4">
-          <img class="w-100" src="./assets/images/svg/binance.svg" alt="binance" />
+        <div>
+          <img src="./assets/images/svg/binance.svg" alt="binance" />
         </div>
-        <div class="px-4"><img class="w" src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
-        <div class="px-4">
-          <img class="w-100" src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+        <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+        <div>
+          <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
         </div>
+        <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/chatgpt.svg" alt="chat-gpt" />
+          </div>
+          <div>
+            <img src="./assets/images/svg/binance.svg" alt="binance" />
+          </div>
+          <div><img src="./assets/images/svg/paypal.svg" alt="paypal" /></div>
+          <div>
+            <img src="./assets/images/svg/microsoft.svg" alt="microsoft" />
+          </div>
       </div>
     </section>
-    <!-- partner slider end -->
+    <!-- footer end -->
 
     <!-- jquery link  -->
     <script
