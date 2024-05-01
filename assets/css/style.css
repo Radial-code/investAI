@@ -332,11 +332,14 @@ nav ul li a:hover {
   display: flex;
 }
 /* top 5 ai section start here */
-.top_ai_blue_box{
+.top_ai_blue_box {
   background-color: var(--light-blue);
-  height: 80px;
-  width: 86px;
+  height: 40px;
+  width: 40px;
   border-radius: 10px;
+}
+.ai_row_gap {
+  gap: 58px;
 }
 
 /* STATISTICS FOR TODAY start css start */
@@ -422,6 +425,17 @@ nav ul li a:hover {
   height: inherit !important;
   display: flex !important;
 }
+.ai_row_gap div img {
+  box-shadow: 0px 6.71px 25.15px 0px #ffffff69,
+    0px 0px 10.06px 0px #ffffff08 inset;
+    border-radius: 12px;
+}
+.top_ai_section{
+  padding-top: 400px;
+}
+.top_ai_section img{
+  max-height: 400px !important;
+}
 
 /* footer css end */
 /* media screen 1199.98px */
@@ -445,15 +459,33 @@ nav ul li a:hover {
   .register_paragraph {
     padding-bottom: 32px;
   }
-}
-@media (min-width: 768px) {
-  .width_md_full {
-    width: 100%;
+  .ai_row_gap {
+    gap: 120px;
   }
 }
 @media (min-width: 576px) {
   #signupForm {
     padding: 21px 21px 20px 21px;
+  }
+  .top_ai_blue_box {
+    background-color: var(--light-blue);
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+  }
+  @media (min-width: 768px) {
+    .width_md_full {
+      width: 100%;
+    }
+    .ai_row_gap {
+      gap: 70px;
+    }
+    .top_ai_blue_box {
+      background-color: var(--light-blue);
+      height: 80px;
+      width: 86px;
+      border-radius: 10px;
+    }
   }
 }
 @media (max-width: 1280px) {
@@ -478,7 +510,7 @@ nav ul li a:hover {
     height: 72px !important;
   }
   .implement_box {
-    padding:20px;
+    padding: 20px;
   }
   .Implement_heading {
     padding-top: 150px;
