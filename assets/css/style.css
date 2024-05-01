@@ -428,16 +428,23 @@ nav ul li a:hover {
 .ai_row_gap div img {
   box-shadow: 0px 6.71px 25.15px 0px #ffffff69,
     0px 0px 10.06px 0px #ffffff08 inset;
-    border-radius: 12px;
+  border-radius: 12px;
 }
 /* .top_ai_section{
 } */
-.top5ai_top_stars{
-   width: 40%;
+.top5ai_top_stars {
+  width: 40%;
   top: 1%;
 }
-.top_ai_section img{
-  max-height: 400px !important;
+.top_ai_section {
+  padding-top: 271px;
+}
+
+.top5ai_semicircle_image {
+  left: 50%;
+  top: 4%;
+  width: 120%;
+  transform: translateX(-50%);
 }
 
 /* footer css end */
@@ -451,10 +458,10 @@ nav ul li a:hover {
   .main_heading_para_w {
     width: 367px;
   }
-  .top5ai_top_stars{
-   width: 30%;
-  top: 18%;
-}
+  .top5ai_top_stars {
+    width: 30%;
+    top: 18%;
+  }
   .implement_box {
     max-width: 351px;
   }
@@ -469,16 +476,15 @@ nav ul li a:hover {
   .ai_row_gap {
     gap: 120px;
   }
-  .top5ai_top_stars{
-   width: 30%;
-  top: 3%;
-}
+  .top5ai_top_stars {
+    width: 30%;
+    top: 3%;
+  }
 }
 @media (min-width: 576px) {
   #signupForm {
     padding: 21px 21px 20px 21px;
   }
-  
   .top_ai_blue_box {
     background-color: var(--light-blue);
     height: 60px;
@@ -492,7 +498,10 @@ nav ul li a:hover {
     .ai_row_gap {
       gap: 70px;
     }
-    
+    .top_ai_section {
+      padding-top: 400px;
+    }
+
     .top_ai_blue_box {
       background-color: var(--light-blue);
       height: 80px;
