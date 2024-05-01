@@ -284,9 +284,7 @@ nav ul li a:hover {
 /* How to benefit by investing in AI ETFs for high returns css end */
 
 /* Advisors css start */
-.advisors_heading {
-  padding-top: 110px;
-}
+
 .advisors_slider_box {
   box-shadow: 0px 48.87px 183.25px 0px #00000069;
   background: #ffffff08;
@@ -383,7 +381,7 @@ nav ul li a:hover {
 /* profit css start */
 .profit_heading {
   max-width: 805px;
-  padding-top: 141px;
+  padding-top: 100px;
   padding-bottom: 57px;
 }
 .hand_img_profit {
@@ -545,6 +543,12 @@ nav ul li a:hover {
   }
 }
 @media (min-width: 1200px) {
+  .ai_row_gap {
+    gap: 150px !important;
+}
+  .advisors_heading {
+    padding-top: 110px;
+  }
   .main_heading_para_w {
     width: 367px;
   }
@@ -564,6 +568,7 @@ nav ul li a:hover {
   .footer_top_spacing {
     margin-top: 100px;
   }
+
 }
 @media (min-width: 992px) {
   .register_paragraph {
@@ -575,6 +580,10 @@ nav ul li a:hover {
   .top5ai_top_stars {
     width: 30%;
     top: 3%;
+  }
+  .top_ai_blue_box {
+    height: 80px;
+    width: 86px;
   }
 }
 @media (min-width: 576px) {
@@ -597,13 +606,11 @@ nav ul li a:hover {
     .top_ai_section {
       padding-top: 400px;
     }
-
     .top_ai_blue_box {
-      background-color: var(--light-blue);
-      height: 80px;
-      width: 86px;
-      border-radius: 10px;
+      height: 72px;
+      width: 72px;
     }
+  
   }
 }
 @media (max-width: 1280px) {
@@ -622,7 +629,6 @@ nav ul li a:hover {
   .counter_box {
     gap: 6px;
   }
-
   .counter_box_timer h2 {
     width: 95px !important;
     height: 72px !important;
@@ -659,9 +665,15 @@ nav ul li a:hover {
   .today_bg {
     top: 10%;
   }
+  .footer_bg{
+    background-size: 115% 100%;
+  }
 }
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
+  .advisors_slider_side_p {
+    padding: 0 10px;
+  } 
   .live_icon {
     right: 13px;
   }
@@ -717,6 +729,9 @@ nav ul li a:hover {
 }
 .footer_para{
   font-size: 14px !important;
+}
+.research_heading{
+  font-size: 32px !important;
 }
 }
 /* media screen  765.95px*/
@@ -841,9 +856,7 @@ nav ul li a:hover {
     padding: 220px 0px 48px 0px;
     
   }
-  .advisors_slider_side_p {
-    padding: 0 10px;
-  }
+
   .sign_btn {
     width: 100%;
   }
