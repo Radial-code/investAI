@@ -156,6 +156,20 @@ $(".advisors_slider").slick({
     },
   ],
 });
+// slider hero
+$(".today_slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplaySpeed: 1500,
+  // autoplay: true,
+  infinite: true,
+  arrows:true,
+  dots: true,
+  nextArrow: ".left_arrow",
+  prevArrow: ".right_arrow",
+  pauseOnHover: true,
+
+});
 // partner-slider
 $(".partner_slider").slick({
   slidesToShow: 5,
