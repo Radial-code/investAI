@@ -507,7 +507,36 @@ nav ul li a:hover {
 #advisors .slick-dots {
   bottom: -60px !important;
 }
+/* DEFINE TODAY SLIDER CODE */
 
+#today .slick-dots li.slick-active button:before {
+  color: #553af5 !important;
+}
+#today .slick-dots li.slick-active button:before {
+  background-color: #553af5 !important;
+  border: 1px solid transparent !important;
+  opacity: 100 !important;
+}
+#today .slick-dots li button:before {
+  opacity: 100 !important;
+  width: 12.3px !important;
+  height: 12.3px !important;
+  content: "" !important;
+  border: 1px solid #553af5 !important;
+  border-radius: 50% !important;
+}
+#today .slick-dots {
+  bottom: -48px !important;
+}
+#today .slick-dots li button{
+  pad: 0px !important;
+  width: 12.3px !important;
+  height: 12.3px !important;
+}
+.slick-dots li{
+  width: 12.3px !important;
+  height: 12.3px !important;
+}
 /* footer css end */
 /* media screen 1199.98px */
 @media (min-width: 1500px) {
@@ -675,7 +704,10 @@ nav ul li a:hover {
     max-width: 250px;
   }
   .today_bg {
-    top: 16%;
+    top: 18%;
+  }
+  .top5ai_semicircle_image{
+    top: 8%;
   }
   .advisors_text_hover p{
     font-size: 14px !important;
@@ -774,6 +806,9 @@ nav ul li a:hover {
   .advisors_heading {
     padding-top: 70px;
   }
+  .today_bg {
+    top: 14%;
+}
 }
 /* media screen  575.98px*/
 @media (max-width: 1023.98px) {
@@ -870,7 +905,7 @@ nav ul li a:hover {
     top: 50%;
   }
   .today_bg {
-    top: 50%;
+    top: 19.5%;
   }
   .today_heading {
     padding-top: 48px;
@@ -885,6 +920,10 @@ nav ul li a:hover {
   }
   .form_box_hero {
     padding: 16px;
+  }
+  .today_shade{
+    width: 120px;
+    height: 120px;
   }
 }
 @media (max-width: 374.98px) {

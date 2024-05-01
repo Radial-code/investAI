@@ -1270,8 +1270,9 @@
     <!-- Advisors ADVISORS SECTION END -->
 
     <!-- STATISTICS FOR TODAY start -->
-    <section class="bg_mercury">
-      <div class="custom_container container mx-auto position-relative pt-md-5 pt-xl-0">
+    <section class="bg_mercury position-relative">
+      <img class="position-absolute bottom-0 end-0 today_shade" src="./assets/images/svg/today-box-shade.svg" alt="today-box-shade">
+      <div class="custom_container container mx-auto position-relative pt-3 pb-3 pb-md-0 pt-md-5 pt-xl-0">
         <img
           class="position-absolute w-100 today_bg"
           src="./assets/images/svg/today_bg.svg"
@@ -1284,6 +1285,7 @@
           statistics for <span class="text_light_blue"> today</span>
         </h2>
         <div class="today_section_row_w mx-auto position-relative z-1">
+          <div class="d-md-block d-none">
           <div class="row justify-content-center">
             <div class="col-12 col-sm-6 col-md-4">
               <h2
@@ -1321,9 +1323,48 @@
                 The Average Earnings Increase
               </p>
             </div>
+          </div></div>
+          <!-- DEFINE SLIDE CODE -->
+          <div id="today" class="today_slider d-md-none">
+            <div class="col-12 col-sm-6 col-md-4">
+              <h2
+                class="text_arapawa fs_3xl text-center lh_120 ff_openSans fw-bold mb-4 mb-lg-5"
+              >
+                757$
+              </h2>
+              <p
+                class="text_arapawa opacity_70 fs_base lh_160 fw-normal ff_inter text-center mx-auto mb-0 average_paragraph"
+              >
+                Average earnings of a registered user from a deposit of $250
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <h2
+                class="text_arapawa fs_3xl text-center lh_120 ff_openSans fw-bold mb-4 mb-lg-5"
+              >
+                128
+              </h2>
+              <p
+                class="text_arapawa opacity_70 fs_base lh_160 fw-normal ff_inter text-center mx-auto mb-0"
+              >
+                Average Registrations per day
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 ">
+              <h2
+                class="text_arapawa fs_3xl text-center lh_120 ff_openSans fw-bold mb-4 mb-lg-5"
+              >
+                4x
+              </h2>
+              <p
+                class="text_arapawa opacity_70 fs_base lh_160 fw-normal ff_inter text-center mx-auto mb-0"
+              >
+                The Average Earnings Increase
+              </p>
+            </div>
           </div>
           <p
-            class="text-center text_arapawa ff_inter fs_sm lh_normal fw-bold mt-4 pt-md-4 mb-md-0 register_paragraph"
+            class="text-center text_arapawa ff_inter fs_sm lh_normal fw-bold mt-4 pt-5 pt-md-4 mb-md-0 register_paragraph"
           >
             Places left to register: <span class="text_light_blue">1</span>
           </p>
