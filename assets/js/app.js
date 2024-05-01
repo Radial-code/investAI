@@ -60,6 +60,48 @@ $(".hero_slider").slick({
   ],
 });
 
+// understanding slider
+$(".understanding_slider").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 1500,
+  autoplay: true,
+  infinite: true,
+  dots: false,
+  nextArrow: ".left_arrow",
+  prevArrow: ".right_arrow",
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2.4,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.5,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1.2,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 440,
+      settings: {
+        slidesToShow: 1,
+        dots: true,
+      },
+    },
+  ],
+});
 // slider hero
 $(".advisors_slider").slick({
   slidesToShow: 3,
@@ -95,7 +137,7 @@ $(".advisors_slider").slick({
     {
       breakpoint: 440,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2.5,
       },
     },
   ],
@@ -317,4 +359,4 @@ function isValidPhoneNumber(phoneNumber) {
 
       window.addEventListener("resize", function () {
         location.reload();
-      });
+      }); 

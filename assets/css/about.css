@@ -6,16 +6,15 @@
   .footer_top_spacing {
     margin-top: 100px;
   }
-
 }
 @media (max-width: 1200px) {
-    .partner_slider {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
-    }
+  .partner_slider {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
 }
-.register_paragraph{
-    padding-bottom: 48px;
+.register_paragraph {
+  padding-bottom: 48px;
 }
 .footer_bg {
   background-image: url("../images/png/background-circle.png");
@@ -24,17 +23,28 @@
   background-size: 100% 100%;
   padding: 262px 0px 69px 0px;
 }
-@media (max-width:991.98) {
-    .footer_bg{
-        padding: 18 0px 0px 48px 0px;
+.form_box_hero {
+  padding: 30px 21px;
+}
 
-    }
+@media (max-width: 991.98px) {
+  .footer_bg {
+    padding: 180px 0px 48px 0px;
+  }
+  #partner_slider .slick-slide img {
+    max-width: 200px;
+  }
+  #partner_slider .slick-slide{
+    max-width: 250px;
+  }
 }
 
 @media (max-width: 575px) {
-    .footer_bg{
-        background-size: cover;
-        padding: 130px 0px 48px 0px;
-
-    }
+  .footer_bg {
+    background-size: cover;
+    padding: 130px 0px 48px 0px;
+  }
+  .form_box_hero{
+    padding: 16px;
+  }
 }
