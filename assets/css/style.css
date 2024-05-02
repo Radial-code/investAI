@@ -479,11 +479,7 @@ nav ul li a:hover {
   padding-bottom: 48px;
 }
 /* DEFINE FOOTER CSS CODE */
-.footer_bg {
-  background-image: url("../images/png/background-circle.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+.footer_section {
   padding: 262px 0px 69px 0px;
 }
 .form_box_hero {
@@ -704,9 +700,7 @@ nav ul li a:hover {
   .today_bg {
     top: 10%;
   }
-  .footer_bg{
-    background-size: 115% 100%;
-  }
+ 
 }
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
@@ -745,7 +739,7 @@ nav ul li a:hover {
   .hight_return_bg_img {
     top: 54%;
   }
-  .footer_bg {
+  .footer_section {
     padding: 180px 0px 48px 0px;
   }
   #partner_slider .slick-slide img {
@@ -763,9 +757,7 @@ nav ul li a:hover {
   .advisors_text_hover p{
     font-size: 14px !important;
   }
-  .footer_bg {
-    background-size: 130% 110%;
-}
+ 
 .footer_para{
   font-size: 14px !important;
 }
@@ -872,9 +864,6 @@ nav ul li a:hover {
 .research_heading{
   font-size: var(--fs-2xl) !important ;
 }
-.footer_bg {
-  background-size: 150% 110%;
-}
 }
 /* media screen  575.98px*/
 @media (max-width: 1023.98px) {
@@ -893,8 +882,7 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 575.98px) {
-  .footer_bg {
-    background-size: 190% 110%;
+  .footer_section {
     padding: 220px 0px 48px 0px;
     
   }
