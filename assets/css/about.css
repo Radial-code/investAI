@@ -83,11 +83,11 @@
   right: -10%;
 }
 .top_ai_blur_box{
-  top: 0;
+  top: 5%;
   left: 0;
   width: 100px;
   height: 100px;
-  filter: blur(80px) !important;
+  filter: blur(60px) !important;
   background-color: #553af5 !important;
 }
 @media (min-width: 992px) {
