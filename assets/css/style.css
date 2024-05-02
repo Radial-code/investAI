@@ -652,7 +652,7 @@ nav ul li a:hover {
 /* animation  */
 .animation_circle {
   top: 8% !important;
-  animation: rotate 10s linear infinite;
+  animation: rotate 16s linear infinite;
 }
 
 @keyframes rotate {
@@ -761,7 +761,7 @@ nav ul li a:hover {
     width: 100%;
   }
   .animation_circle {
-  top: 9% !important;
+  top: 8% !important;
 }
 
   .ai_row_gap {
