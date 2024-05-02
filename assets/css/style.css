@@ -326,7 +326,6 @@ nav ul li a:hover {
 
 .high_returns_heading {
   max-width: 672px;
-  padding-top: 159px;
 }
 
 .hight_return_bg_img {
@@ -522,6 +521,14 @@ nav ul li a:hover {
   width: 50%;
   top: 6%;
 }
+.hero_left_bottom_stars {
+  width: 50%;
+  bottom: 6%;
+}
+.hero_right_bottom_stars {
+  width: 50%;
+  bottom: 6%;
+}
 
 .top_ai_section {
   padding-top: 400px;
@@ -534,6 +541,12 @@ nav ul li a:hover {
 .top5ai_semicircle_image {
   left: 50%;
   top: 10%;
+  width: 120%;
+  transform: translateX(-50%);
+}
+.hero_semicircle_image {
+  left: 50%;
+  top: 150%;
   width: 120%;
   transform: translateX(-50%);
 }
@@ -654,6 +667,10 @@ nav ul li a:hover {
   top: 8% !important;
   animation: rotate 16s linear infinite;
 }
+.hero_animation_circle {
+  top: 8% !important;
+  animation: rotate 16s linear infinite;
+}
 
 @keyframes rotate {
   0% {
@@ -714,6 +731,14 @@ nav ul li a:hover {
     width: 30%;
     top: 8%;
   }
+  .hero_left_bottom_stars {
+  width: 30%;
+    bottom: 8%;
+}
+  .hero_right_bottom_stars {
+  width: 30%;
+    bottom: 8%;
+}
 
   .top_ai_blue_box {
     height: 80px !important;
@@ -732,8 +757,17 @@ nav ul li a:hover {
   .animation_circle {
   top: 5% !important;
 }
+.hero_animation_circle {
+  top: 108% !important;
+}
 .top5ai_top_stars {
   top: 4%;
+}
+.hero_left_bottom_stars {
+bottom: -130%;
+}
+.hero_right_bottom_stars {
+bottom: -130%;
 }
 
   .research_data_img {
@@ -762,6 +796,9 @@ nav ul li a:hover {
   }
   .animation_circle {
   top: 8% !important;
+}
+.hero_animation_circle {
+  top: 120% !important;
 }
 
   .ai_row_gap {
@@ -890,8 +927,7 @@ nav ul li a:hover {
     margin-bottom: 50px;
   }
 
-  .Implement_heading,
-  .high_returns_heading {
+  .Implement_heading {
     padding-top: 120px;
   }
 
@@ -917,6 +953,9 @@ nav ul li a:hover {
 
   .top5ai_semicircle_image {
     top: 12%;
+  }
+  .hero_semicircle_image {
+    top: 144%;
   }
 
   .advisors_text_hover p {
@@ -946,6 +985,9 @@ nav ul li a:hover {
   }
    .top5ai_semicircle_image {
     top: 6.5%;
+  }
+   .hero_semicircle_image {
+    top: 150%;
   }
 
   label[for="navMenu"] {
@@ -1015,8 +1057,7 @@ nav ul li a:hover {
     margin-bottom: 45px;
   }
 
-  .Implement_heading,
-  .high_returns_heading {
+  .Implement_heading {
     padding-top: 70px;
   }
 
@@ -1151,8 +1192,7 @@ nav ul li a:hover {
     padding: 35px 25px;
   }
 
-  .Implement_heading,
-  .high_returns_heading {
+  .Implement_heading {
     padding-top: 48px;
   }
 
@@ -1204,6 +1244,9 @@ nav ul li a:hover {
     right: -40px;
   }
 
+  .top5ai_semicircle_image {
+    top: 9%;
+  }
   .top5ai_semicircle_image {
     top: 9%;
   }
