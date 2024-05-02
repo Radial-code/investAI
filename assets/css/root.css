@@ -57,6 +57,7 @@ body {
     --fs-xl: 32px;
     --fs-2xl: 48px;
     --fs-3xl: 64px;
+    --light-black:#0B0A14;
     --dark-blue: #0d0c19;
     --light-blue: #553af5;
     --light-indigo: #8b78f8;
@@ -67,6 +68,9 @@ body {
 /*backgroud color */
 .bg_dark_blue {
     background-color: var(--dark-blue) !important;
+}
+.text_light_black {
+    color: var( --light-black) !important;
 }
 
 .bg_light_blue {
