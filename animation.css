@@ -3,6 +3,16 @@ body {
     background-color: #060606 !important;
 }
 
+.hero_bottom_spacing {
+    padding-bottom: 270px;
+}
+
+.curver_animation {
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .modified_container {
     max-width: 1140px;
 }
@@ -44,15 +54,28 @@ body {
 }
 
 .footer_animation_img {
-    width: 82vw;
+    width: 70vw;
     border-radius: 50%;
+
 }
 
 /*=== footer animation ========*/
 .footer_animation {
     z-index: -10;
     position: absolute;
-    bottom: -700px;
+    bottom: -490px;
+    left: 220px;
+    height: auto;
+
+    -webkit-animation: footer_animation 20s linear infinite;
+    animation: footer_animation 20s linear infinite;
+}
+
+.footer_animation2 {
+    z-index: -10;
+    position: absolute;
+    bottom: -490px;
+    left: 220px;
     height: auto;
 
     -webkit-animation: footer_animation 20s linear infinite;
