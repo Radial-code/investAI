@@ -329,6 +329,7 @@ nav ul li a:hover {
 
 .hight_return_bg_img {
   top: 44%;
+  scale: 1 !important;
 }
 
 .side_blur_box_four {
@@ -522,7 +523,7 @@ nav ul li a:hover {
 } */
 .top5ai_top_stars {
   width: 50%;
-  top: 6%;
+  top: 3%;
 }
 .hero_left_bottom_stars {
   width: 50%;
@@ -691,6 +692,7 @@ nav ul li a:hover {
 @media (min-width: 1500px) {
   .hight_return_bg_img {
     top: 40%;
+    scale: 1 !important;
   }
 }
 
@@ -958,6 +960,7 @@ nav ul li a:hover {
 
   .hight_return_bg_img {
     top: 54%;
+     scale: 3;
   }
 
   .footer_section {
@@ -1226,7 +1229,7 @@ nav ul li a:hover {
   }
 
   .hight_return_bg_img {
-    top: 30%;
+    top: 40%;
   }
 
   .partner_slider {
