@@ -8,6 +8,48 @@ function toggleNavigationMenu() {
   changeButton.classList.toggle("toggle_change");
 }
 
+// counter
+
+var countDownDate = new Date("sep 5, 2024").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function () {
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Iterate over each countdown container
+  document
+    .querySelectorAll(".countdown-container")
+    .forEach(function (container) {
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (3800 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (100 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in elements inside this container
+      container.querySelector(".days").innerHTML = days + " ";
+      container.querySelector(".hours").innerHTML = hours + "";
+      container.querySelector(".minutes").innerHTML = minutes + " ";
+      container.querySelector(".seconds").innerHTML = seconds + " ";
+    });
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document
+      .querySelectorAll(".countdown-container")
+      .forEach(function (container) {
+        container.innerHTML = "EXPIRED";
+      });
+  }
+}, 1000);
+
 // slider hero
 $(".hero_slider").slick({
   slidesToShow: 6,
@@ -104,7 +146,7 @@ $(".understanding_slider").slick({
   ],
 });
 // slider hero
-$(document).ready(function(){
+$(document).ready(function () {
   $(".advisors_slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -162,12 +204,11 @@ $(".today_slider").slick({
   autoplaySpeed: 1500,
   // autoplay: true,
   infinite: true,
-  arrows:true,
+  arrows: true,
   dots: true,
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
-
 });
 // partner-slider
 $(".partner_slider").slick({
@@ -338,55 +379,8 @@ function isValidPhoneNumber(phoneNumber) {
   const phoneRegex = /^[0-9]{10}$/;
   return phoneRegex.test(phoneNumber);
 }
+// page resize window reload
 
- // Set the date we're counting down to
-      var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Iterate over each countdown container
-        document
-          .querySelectorAll(".countdown-container")
-          .forEach(function (container) {
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (3800 * 60 * 60 * 24));
-            var hours = Math.floor(
-              (distance % (1000 * 60 * 60 * 24)) / (100 * 60 * 60)
-            );
-            var minutes = Math.floor(
-              (distance % (1000 * 60 * 60)) / (1000 * 60)
-            );
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in elements inside this container
-            container.querySelector(".days").innerHTML = days + " ";
-            container.querySelector(".hours").innerHTML = hours + "";
-            container.querySelector(".minutes").innerHTML = minutes + " ";
-            container.querySelector(".seconds").innerHTML = seconds + " ";
-          });
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document
-            .querySelectorAll(".countdown-container")
-            .forEach(function (container) {
-              container.innerHTML = "EXPIRED";
-            });
-        }
-      }, 1000);
-
-      // page resize window reload
-
-      window.addEventListener("resize", function () {
-        location.reload();
-      }); 
-
-
- 
+window.addEventListener("resize", function () {
+  location.reload();
+});
