@@ -523,11 +523,11 @@ nav ul li a:hover {
 }
 .hero_left_bottom_stars {
   width: 50%;
-  bottom: 6%;
+  bottom: -106% !important;
 }
 .hero_right_bottom_stars {
   width: 50%;
-  bottom: 6%;
+  bottom: -106% !important;
 }
 
 .top_ai_section {
