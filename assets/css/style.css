@@ -396,7 +396,7 @@ nav ul li a:hover {
   display: flex !important;
 }
 
-.advisors_slider .slick-slide > div {
+.advisors_slider .slick-slide>div {
   display: flex;
 }
 
@@ -433,20 +433,16 @@ nav ul li a:hover {
 }
 
 .today_left_side_victor {
-  background: linear-gradient(
-    88deg,
-    #0c0b18 23.37%,
-    rgba(10, 13, 35, 0) 98.36%
-  );
+  background: linear-gradient(88deg,
+      #0c0b18 23.37%,
+      rgba(10, 13, 35, 0) 98.36%);
   left: 0;
 }
 
 .today_right_side_victor {
-  background: linear-gradient(
-    268deg,
-    #0c0b18 23.37%,
-    rgba(10, 13, 35, 0) 98.36%
-  );
+  background: linear-gradient(268deg,
+      #0c0b18 23.37%,
+      rgba(10, 13, 35, 0) 98.36%);
   right: 0;
 }
 
@@ -525,10 +521,12 @@ nav ul li a:hover {
   width: 50%;
   top: 3%;
 }
+
 .hero_left_bottom_stars {
   width: 50%;
   bottom: -50% !important;
 }
+
 .hero_right_bottom_stars {
   width: 50%;
   bottom: -50% !important;
@@ -548,12 +546,14 @@ nav ul li a:hover {
   width: 120%;
   transform: translateX(-50%);
 }
+
 .footer_semicircle_image {
   left: 50%;
   top: 10%;
   width: 120%;
   transform: translateX(-50%);
 }
+
 .hero_semicircle_image {
   left: 50%;
   top: 150%;
@@ -681,15 +681,18 @@ nav ul li a:hover {
   top: 8% !important;
   animation: rotate 12s linear infinite;
 }
+
 .footer_animation_circle {
   top: 11% !important;
   animation: rotate 12s linear infinite;
 }
+
 .hero_animation_circle {
   top: 110% !important;
   animation: rotate 12s linear infinite;
 }
-.max_w_1920{
+
+.max_w_1920 {
   max-width: 1920px;
 }
 
@@ -715,9 +718,11 @@ nav ul li a:hover {
   .ai_row_gap {
     gap: 150px !important;
   }
+
   .hero_left_bottom_stars {
     bottom: 2% !important;
   }
+
   .hero_right_bottom_stars {
     bottom: 2% !important;
   }
@@ -751,27 +756,35 @@ nav ul li a:hover {
   #signupForm {
     padding: 21px 21px 20px 21px;
   }
+
   .hero_left_bottom_stars {
     bottom: 22% !important;
   }
+
   .hero_right_bottom_stars {
     bottom: 22% !important;
   }
+
   .animation_circle {
     top: 5% !important;
   }
+
   .footer_animation_circle {
     top: 5% !important;
   }
+
   .hero_animation_circle {
     top: 108% !important;
   }
+
   .top5ai_top_stars {
     top: 4%;
   }
+
   .hero_left_bottom_stars {
     bottom: -92% !important;
   }
+
   .hero_right_bottom_stars {
     bottom: -92% !important;
   }
@@ -804,9 +817,11 @@ nav ul li a:hover {
   .animation_circle {
     top: 8% !important;
   }
+
   .footer_animation_circle {
     top: 6% !important;
   }
+
   .hero_animation_circle {
     top: 120% !important;
   }
@@ -833,10 +848,12 @@ nav ul li a:hover {
   .register_paragraph {
     padding-bottom: 32px;
   }
+
   .understanding_slider .slick-slide {
     padding-left: 21px !important;
     padding-right: 21px !important;
   }
+
   .ai_row_gap {
     gap: 120px;
   }
@@ -845,10 +862,12 @@ nav ul li a:hover {
     width: 30%;
     top: 8%;
   }
+
   .hero_left_bottom_stars {
     width: 30%;
     bottom: 8%;
   }
+
   .hero_right_bottom_stars {
     width: 30%;
     bottom: 8%;
@@ -862,9 +881,11 @@ nav ul li a:hover {
   .advisor_new_img {
     max-height: 290px !important;
   }
+
   .hero_left_bottom_stars {
     bottom: -132% !important;
   }
+
   .hero_right_bottom_stars {
     bottom: -132% !important;
   }
@@ -1003,9 +1024,11 @@ nav ul li a:hover {
   .top5ai_semicircle_image {
     top: 12%;
   }
+
   .footer_semicircle_image {
     top: 12%;
   }
+
   .hero_semicircle_image {
     top: 144%;
   }
@@ -1039,9 +1062,11 @@ nav ul li a:hover {
   .top5ai_semicircle_image {
     top: 6.5%;
   }
+
   .footer_semicircle_image {
     top: 6.5%;
   }
+
   .hero_semicircle_image {
     top: 122%;
   }
@@ -1057,7 +1082,7 @@ nav ul li a:hover {
     z-index: 11;
   }
 
-  label[for="navMenu"] > span {
+  label[for="navMenu"]>span {
     width: 100%;
     height: 4px;
     background-color: white;
@@ -1147,6 +1172,11 @@ nav ul li a:hover {
 
   .research_heading {
     font-size: var(--fs-2xl) !important;
+  }
+
+  .ai_row_gap div img {
+    box-shadow: 0 0 0 0;
+
   }
 }
 
@@ -1302,6 +1332,7 @@ nav ul li a:hover {
   .footer_semicircle_image {
     top: 14%;
   }
+
   .top5ai_semicircle_image {
     top: 9%;
   }
