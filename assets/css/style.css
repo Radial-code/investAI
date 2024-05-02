@@ -15,6 +15,9 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
     pointer-events: none;
 }
+.cursor_pointer{
+  cursor: pointer;
+}
 /* hero background image */
 .hero_bg {
   background-image: url("../images/webp/hero-section-bg.webp");
@@ -132,7 +135,7 @@ nav ul li a:hover {
   padding: 16px;
 }
 .hero_input {
-  padding: 20.5px 18px;
+  padding: 20.5px;
   margin-bottom: 20px;
   border-radius: 66px;
   outline: none;
