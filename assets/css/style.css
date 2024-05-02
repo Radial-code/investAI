@@ -583,6 +583,9 @@ nav ul li a:hover {
 .footer_section {
   padding: 262px 0px 69px 0px;
 }
+.footer_section div{
+   background-color: #0A0916;
+}
 
 .form_box_hero {
   padding: 30px 10px;
@@ -679,7 +682,7 @@ nav ul li a:hover {
   animation: rotate 12s linear infinite;
 }
 .footer_animation_circle {
-  top: 8% !important;
+  top: 11% !important;
   animation: rotate 12s linear infinite;
 }
 .hero_animation_circle {
@@ -1297,7 +1300,7 @@ nav ul li a:hover {
   }
 
   .footer_semicircle_image {
-    top: 9%;
+    top: 14%;
   }
   .top5ai_semicircle_image {
     top: 9%;
