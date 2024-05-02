@@ -676,7 +676,9 @@ nav ul li a:hover {
   top: 110% !important;
   animation: rotate 12s linear infinite;
 }
-
+.max_w_1920{
+  max-width: 1920px;
+}
 
 @keyframes rotate {
   0% {
@@ -700,7 +702,7 @@ nav ul li a:hover {
   .ai_row_gap {
     gap: 150px !important;
   }
-    .hero_left_bottom_stars {
+  .hero_left_bottom_stars {
     bottom: 2% !important;
   }
   .hero_right_bottom_stars {
@@ -841,7 +843,7 @@ nav ul li a:hover {
   .advisor_new_img {
     max-height: 290px !important;
   }
-   .hero_left_bottom_stars {
+  .hero_left_bottom_stars {
     bottom: -132% !important;
   }
   .hero_right_bottom_stars {
@@ -960,7 +962,7 @@ nav ul li a:hover {
 
   .hight_return_bg_img {
     top: 54%;
-     scale: 3;
+    scale: 3;
   }
 
   .footer_section {
