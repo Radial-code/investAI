@@ -52,6 +52,9 @@
   border: 1px solid #553af5 !important;
   border-radius: 50% !important;
 }
+.hero_mobile{
+  max-width:300px;
+}
 @media (min-width: 992px) {
   .how_work_section {
     padding-bottom: 182px;
