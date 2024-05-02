@@ -548,6 +548,12 @@ nav ul li a:hover {
   width: 120%;
   transform: translateX(-50%);
 }
+.footer_semicircle_image {
+  left: 50%;
+  top: 10%;
+  width: 120%;
+  transform: translateX(-50%);
+}
 .hero_semicircle_image {
   left: 50%;
   top: 150%;
@@ -672,6 +678,10 @@ nav ul li a:hover {
   top: 8% !important;
   animation: rotate 12s linear infinite;
 }
+.footer_animation_circle {
+  top: 8% !important;
+  animation: rotate 12s linear infinite;
+}
 .hero_animation_circle {
   top: 110% !important;
   animation: rotate 12s linear infinite;
@@ -747,6 +757,9 @@ nav ul li a:hover {
   .animation_circle {
     top: 5% !important;
   }
+  .footer_animation_circle {
+    top: 5% !important;
+  }
   .hero_animation_circle {
     top: 108% !important;
   }
@@ -787,6 +800,9 @@ nav ul li a:hover {
 
   .animation_circle {
     top: 8% !important;
+  }
+  .footer_animation_circle {
+    top: 6% !important;
   }
   .hero_animation_circle {
     top: 120% !important;
@@ -984,6 +1000,9 @@ nav ul li a:hover {
   .top5ai_semicircle_image {
     top: 12%;
   }
+  .footer_semicircle_image {
+    top: 12%;
+  }
   .hero_semicircle_image {
     top: 144%;
   }
@@ -1015,6 +1034,9 @@ nav ul li a:hover {
   }
 
   .top5ai_semicircle_image {
+    top: 6.5%;
+  }
+  .footer_semicircle_image {
     top: 6.5%;
   }
   .hero_semicircle_image {
@@ -1274,7 +1296,7 @@ nav ul li a:hover {
     right: -40px;
   }
 
-  .top5ai_semicircle_image {
+  .footer_semicircle_image {
     top: 9%;
   }
   .top5ai_semicircle_image {
