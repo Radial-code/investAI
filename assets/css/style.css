@@ -680,7 +680,7 @@ nav ul li a:hover {
 }
 
 .footer_animation_circle {
-  top: 8% !important;
+  top: 11% !important;
   animation: rotate 12s linear infinite;
 }
 
@@ -691,6 +691,10 @@ nav ul li a:hover {
 
 .max_w_1920 {
   max-width: 1920px;
+}
+.footer_top_stars{
+  width: 50%;
+  top: 10%;
 }
 
 @keyframes rotate {
@@ -709,6 +713,9 @@ nav ul li a:hover {
     top: 40%;
     scale: 1 !important;
   }
+  .footer_section div{
+   background-color: #0A0916;
+}
 }
 
 @media (min-width: 1200px) {
@@ -753,6 +760,11 @@ nav ul li a:hover {
   #signupForm {
     padding: 21px 21px 20px 21px;
   }
+  .footer_top_stars{
+  width: 50%;
+  top: 0%;
+}
+
 
   .hero_left_bottom_stars {
     bottom: 22% !important;
@@ -850,6 +862,9 @@ nav ul li a:hover {
     padding-left: 21px !important;
     padding-right: 21px !important;
   }
+  .footer_top_stars{
+  width: 30%;
+  top: 0%;}
 
   .ai_row_gap {
     gap: 120px;
@@ -1327,7 +1342,7 @@ nav ul li a:hover {
   }
 
   .footer_semicircle_image {
-    top: 9%;
+    top: 14%;
   }
 
   .top5ai_semicircle_image {
