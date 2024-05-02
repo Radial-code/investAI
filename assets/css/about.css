@@ -91,16 +91,53 @@
   filter: blur(60px) !important;
   background-color: #553af5 !important;
 }
-
+.benifit_section {
+  padding-top: 140px;
+  background-color: #0c0b17;
+}
+.heading_circle {
+  width: 70px;
+  height: 70px;
+  filter: blur(50px) !important;
+  background-color: #563af5d5 !important;
+  top: -70%;
+  right: 0%;
+}
+.filter_animation {
+  animation: filter-animation 10s linear infinite;
+}
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(100deg);
+  }
+}
 
 @media (min-width: 576px) {
   .hero_mobile {
     max-width: 300px;
     max-height: unset;
   }
+  .benifit_section {
+    padding-top: 160px;
+  }
+  .heading_circle {
+    width: 200px;
+    height: 200px;
+    filter: blur(60px) !important;
+    background-color: #563af554 !important;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 @media (min-width: 992px) {
   .how_work_section {
     padding-bottom: 182px;
+  }
+  .benifit_section {
+    padding-top: 245px;
   }
 }
