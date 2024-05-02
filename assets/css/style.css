@@ -540,7 +540,7 @@ nav ul li a:hover {
 
 /* DEFINE RESEARCH CARD DATA CSS DATA */
 .z_5 {
-  z-index: 5;
+  z-index: 5 !important;
 }
 
 .research_data_img {
