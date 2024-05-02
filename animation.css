@@ -297,10 +297,3 @@ body {
 .overflow_x_clip {
     overflow-x: clip !important;
 }
-
-.footer_parent {
-    background-image: url("./assets/images/png/footer_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}

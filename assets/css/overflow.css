@@ -1,0 +1,143 @@
+/* nav bar css */
+.nav_logo {
+    z-index: 12;
+}
+
+.nav_line {
+    transition: all 300ms linear;
+}
+
+.navbar_link_gap {
+    gap: 34px;
+}
+
+.nav_line::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--light-blue);
+    left: 50%;
+    bottom: -5px;
+    display: inline-block;
+    transition: all 400ms linear;
+}
+
+.nav_line:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: var(--light-blue) !important;
+}
+
+.toggle_change {
+    transition: all 500ms ease-in-out;
+}
+
+.toggle_change .bar1 {
+    transform: translate(0, 14px) rotate(-45deg);
+    transition: all 300ms ease-in-out;
+}
+
+.toggle_change .bar2 {
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle_change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    transition: all 300ms ease-in-out;
+}
+
+/* nav css end */
+/* hero section css start*/
+.side_blur_box_timer {
+    background: #553af5;
+    width: 88px;
+    height: 18px;
+    border-radius: 50%;
+    filter: blur(20px);
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blur_box {
+    background: #553af5;
+    width: 310px;
+    height: 310px;
+    filter: blur(140px);
+}
+
+.side_blur_box_one {
+    top: 110px;
+    left: -155px;
+    opacity: 0.6;
+}
+
+.side_blur_box_two {
+    width: 170px !important;
+    top: -90%;
+    opacity: 0.23;
+    right: 0;
+    filter: blur(80px) !important;
+}
+
+.main_heading_w {
+    max-width: 1088px;
+}
+
+.main_heading_para_w {
+    max-width: 367px;
+}
+
+.live_icon {
+    top: 13px;
+    right: 23px;
+    background-color: #c20000;
+    padding: 3px 10px;
+    font-size: 20px !important;
+}
+
+.counter_para {
+    padding-top: 43px;
+    max-width: 519px;
+    padding-bottom: 34px;
+}
+
+.form_box_hero {
+    background: #8989890d;
+    border: 2px solid #553af5;
+    border-radius: 20px;
+    max-width: 600px;
+    backdrop-filter: blur(8px);
+}
+
+#signupForm {
+    padding: 16px;
+}
+
+.hero_input {
+    padding: 20.5px;
+    margin-bottom: 20px;
+    border-radius: 66px;
+    outline: none;
+    border: none;
+}
+
+.hero_input::placeholder {
+    font-family: "Inter", sans-serif;
+    line-height: normal;
+    color: #191335;
+    font-size: var(--fs-base);
+    font-weight: 400;
+}
+
+.hero_bottom_stars {
+    width: 35%;
+    top: 18%;
+}
