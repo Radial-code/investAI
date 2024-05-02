@@ -648,6 +648,7 @@ nav ul li a:hover {
   width: 12.3px !important;
   height: 12.3px !important;
 }
+
 /* animaction */
 /* animation  */
 .animation_circle {
@@ -659,10 +660,12 @@ nav ul li a:hover {
   0% {
     rotate: 0;
   }
+
   100% {
     rotate: 360deg;
   }
 }
+
 /* media screen 1199.98px */
 @media (min-width: 1500px) {
   .hight_return_bg_img {
@@ -729,12 +732,14 @@ nav ul li a:hover {
   #signupForm {
     padding: 21px 21px 20px 21px;
   }
+
   .animation_circle {
-  top: 5% !important;
-}
-.top5ai_top_stars {
-  top: 4%;
-}
+    top: 5% !important;
+  }
+
+  .top5ai_top_stars {
+    top: 4%;
+  }
 
   .research_data_img {
     margin-bottom: -100px;
@@ -760,9 +765,10 @@ nav ul li a:hover {
   .width_md_full {
     width: 100%;
   }
+
   .animation_circle {
-  top: 8% !important;
-}
+    top: 8% !important;
+  }
 
   .ai_row_gap {
     gap: 70px;
@@ -944,7 +950,8 @@ nav ul li a:hover {
     transition: all 500ms ease-in-out;
     z-index: 10;
   }
-   .top5ai_semicircle_image {
+
+  .top5ai_semicircle_image {
     top: 6.5%;
   }
 

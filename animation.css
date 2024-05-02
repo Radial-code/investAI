@@ -17,6 +17,10 @@ body {
     transform: translateX(-50%);
 }
 
+.advisor_curve_mg {
+    top: 0;
+}
+
 .modified_container {
     max-width: 1140px;
 }
@@ -132,9 +136,11 @@ body {
 
     .footer_animation_img {
         width: 100vw;
-
     }
 
+    .advisor_Implement_paragraph {
+        max-width: 600px !important;
+    }
 }
 
 @media (max-width:767.98px) {
@@ -171,3 +177,27 @@ body {
 
 
 /*  */
+
+#advisors {
+    padding-top: 100px;
+}
+
+.advisor_bg {
+    background-image: url("./assets/images/png/advisor_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advisor_animation_circle {
+    top: -11% !important;
+}
+
+.advisors_top_ai_blur_box {
+    z-index: 1;
+    top: 20%;
+}
+
+.overflow_x_clip {
+    overflow-x: clip !important;
+}
