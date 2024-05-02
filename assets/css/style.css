@@ -386,6 +386,7 @@ nav ul li a:hover {
 }
 .hand_img_profit {
   border-radius: 20px;
+  object-fit: contain;
 }
 /* profit css end */
 
