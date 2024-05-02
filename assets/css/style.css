@@ -437,6 +437,9 @@ nav ul li a:hover {
 .top_ai_section {
   padding-top: 271px;
 }
+.top_ai_section p{
+  font-size: 14px !important;
+}
 
 .top5ai_semicircle_image {
   left: 50%;
@@ -450,7 +453,7 @@ nav ul li a:hover {
 }
 .research_data_img {
   z-index: 4;
-  margin-bottom: -100px;
+  margin-bottom: -180px;
 }
 .overflow_x_hidden {
   overflow-x: hidden;
@@ -590,12 +593,18 @@ nav ul li a:hover {
   #signupForm {
     padding: 21px 21px 20px 21px;
   }
+  .research_data_img {
+  margin-bottom: -100px;
+}
   .top_ai_blue_box {
     background-color: var(--light-blue);
     height: 60px;
     width: 60px;
     border-radius: 10px;
   }
+  .top_ai_section p{
+  font-size: var( --fs-base) !important;
+}}
   @media (min-width: 768px) {
     .width_md_full {
       width: 100%;
@@ -612,7 +621,6 @@ nav ul li a:hover {
     }
   
   }
-}
 @media (max-width: 1280px) {
   .left_arrow {
     left: 45%;
@@ -828,7 +836,7 @@ nav ul li a:hover {
     padding-top: 70px;
   }
   .today_bg {
-    top: 14%;
+    top: 19%;
 }
 .research_heading{
   font-size: var(--fs-2xl) !important ;
@@ -941,7 +949,7 @@ nav ul li a:hover {
     top: 50%;
   }
   .today_bg {
-    top: 19.5%;
+    top: 21%;
   }
   .today_heading {
     padding-top: 48px;
