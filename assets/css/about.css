@@ -103,17 +103,18 @@
   top: -70%;
   right: 0%;
 }
-.filter_animation {
-  animation: filter-animation 10s linear infinite;
-}
-@keyframes filter-animation {
-  0% {
-    filter: hue-rotate(0deg);
+  .filter_animation {
+    animation: filter-animation 10s linear infinite;
   }
-  100% {
-    filter: hue-rotate(100deg);
+
+  @keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg); /* Changed from 100deg to 360deg for a complete rotation */
+    }
   }
-}
 
 @media (min-width: 576px) {
   .hero_mobile {

@@ -107,7 +107,7 @@ $(".understanding_slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: false,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 3500,
   autoplay: true,
   infinite: true,
   dots: false,
