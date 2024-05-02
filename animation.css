@@ -149,6 +149,25 @@ body {
     left: 90px;
 }
 
+.registration_top,
+.registration_top_left,
+.registration_top_right,
+.center_img,
+.registration_bottom,
+.registration_bottom_right,
+.registration_bottom_left {
+    transition: all 0.2s linear;
+}
+
+.registration_top:hover,
+.registration_top_left:hover,
+.registration_top_right:hover,
+.center_img:hover,
+.registration_bottom:hover,
+.registration_bottom_right:hover,
+.registration_bottom_left:hover {
+    transform: scale(1.1);
+}
 
 @media (max-width:1199.98px) {
     .footer_animation {
@@ -165,7 +184,7 @@ body {
         transform: translateX(0);
     }
 
-    .centet_img {
+    .center_img {
         width: 40%;
     }
 
