@@ -486,6 +486,10 @@ nav ul li a:hover {
   position: absolute;
   z-index: 5;
 }
+.advisor_new_img{
+  max-height:270px;
+  object-fit: cover;
+}
 .advisors_slider_box:hover .advisors_text_hover {
   transform: translate(0%);
 }
@@ -588,6 +592,9 @@ nav ul li a:hover {
     height: 80px;
     width: 86px;
   }
+   .advisor_new_img{
+  max-height:290px !important;
+}
 }
 @media (min-width: 576px) {
   #signupForm {
@@ -602,6 +609,10 @@ nav ul li a:hover {
     width: 60px;
     border-radius: 10px;
   }
+    .advisor_new_img{
+  max-height:370px;
+}
+ 
   .top_ai_section p{
   font-size: var( --fs-base) !important;
 }}
@@ -619,6 +630,9 @@ nav ul li a:hover {
       height: 72px;
       width: 72px;
     }
+     .advisor_new_img{
+  max-height:273px;
+}
   
   }
 @media (max-width: 1280px) {
