@@ -519,7 +519,7 @@ nav ul li a:hover {
 } */
 .top5ai_top_stars {
   width: 50%;
-  top: 3%;
+  top: 19%;
 }
 
 .hero_left_bottom_stars {
@@ -675,7 +675,7 @@ nav ul li a:hover {
 /* animaction */
 /* animation  */
 .animation_circle {
-  top: 8% !important;
+  top: 24% !important;
   animation: rotate 12s linear infinite;
 }
 
@@ -765,7 +765,6 @@ nav ul li a:hover {
   top: 0%;
 }
 
-
   .hero_left_bottom_stars {
     bottom: 22% !important;
   }
@@ -775,7 +774,7 @@ nav ul li a:hover {
   }
 
   .animation_circle {
-    top: 5% !important;
+    top: 17% !important;
   }
 
   .footer_animation_circle {
@@ -787,7 +786,7 @@ nav ul li a:hover {
   }
 
   .top5ai_top_stars {
-    top: 4%;
+    top: 6%;
   }
 
   .hero_left_bottom_stars {
@@ -1072,7 +1071,7 @@ nav ul li a:hover {
   }
 
   .top5ai_semicircle_image {
-    top: 6.5%;
+    top: 22%;
   }
 
   .footer_semicircle_image {
@@ -1346,7 +1345,7 @@ nav ul li a:hover {
   }
 
   .top5ai_semicircle_image {
-    top: 9%;
+    top: 28%;
   }
 }
 
