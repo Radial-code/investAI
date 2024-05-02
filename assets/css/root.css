@@ -96,7 +96,7 @@ body {
     font-size: var(--fs-base) !important;
 }
 .fs_sm {
-    font-size: var(--fs-sm) !important;
+    font-size: var(--fs-sm) ;
 }
 .fs_md {
     font-size: var(--fs-md) !important;
@@ -105,7 +105,7 @@ body {
     font-size: var(--fs-xl) !important;
 }
 .fs_2xl {
-    font-size: var(--fs-2xl) !important;
+    font-size: var(--fs-2xl) ;
 }
 .fs_3xl {
     font-size: var(--fs-3xl) !important;
@@ -168,7 +168,7 @@ body {
         --fs-xs: 12px;
         --fs-sm: 16px;
         --fs-xl: 24px;
-        --fs-2xl: 24px;
+        --fs-2xl: 25px;
         --fs-md: 20px;
         --fs-nav: 5vw;
         --fs-3xl: 45px;

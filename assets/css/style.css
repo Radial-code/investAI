@@ -1,5 +1,21 @@
+/* lenis */
+html.lenis {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+    -ms-scroll-chaining: none;
+    overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
 /* hero background image */
-
 .hero_bg {
   background-image: url("../images/webp/hero-section-bg.webp");
   background-position: top;
@@ -263,8 +279,8 @@ nav ul li a:hover {
 }
 
 .understanding_slider .slick-slide {
-  padding-left: 12px !important;
-  padding-right: 12px;
+  padding-left: 21px !important;
+  padding-right: 21px;
 }
 .high_returns_heading {
   max-width: 672px;
@@ -284,9 +300,7 @@ nav ul li a:hover {
 /* How to benefit by investing in AI ETFs for high returns css end */
 
 /* Advisors css start */
-.advisors_heading {
-  padding-top: 110px;
-}
+
 .advisors_slider_box {
   box-shadow: 0px 48.87px 183.25px 0px #00000069;
   background: #ffffff08;
@@ -383,11 +397,12 @@ nav ul li a:hover {
 /* profit css start */
 .profit_heading {
   max-width: 805px;
-  padding-top: 141px;
+  padding-top: 100px;
   padding-bottom: 57px;
 }
 .hand_img_profit {
   border-radius: 20px;
+  object-fit: contain;
 }
 /* profit css end */
 
@@ -439,6 +454,9 @@ nav ul li a:hover {
 .top_ai_section {
   padding-top: 271px;
 }
+.top_ai_section p{
+  font-size: 14px !important;
+}
 
 .top5ai_semicircle_image {
   left: 50%;
@@ -452,7 +470,7 @@ nav ul li a:hover {
 }
 .research_data_img {
   z-index: 4;
-  margin-bottom: -100px;
+  margin-bottom: -180px;
 }
 .overflow_x_hidden {
   overflow-x: hidden;
@@ -484,6 +502,10 @@ nav ul li a:hover {
   border-radius: 12px;
   position: absolute;
   z-index: 5;
+}
+.advisor_new_img{
+  max-height:270px;
+  object-fit: cover;
 }
 .advisors_slider_box:hover .advisors_text_hover {
   transform: translate(0%);
@@ -545,6 +567,12 @@ nav ul li a:hover {
   }
 }
 @media (min-width: 1200px) {
+  .ai_row_gap {
+    gap: 150px !important;
+}
+  .advisors_heading {
+    padding-top: 110px;
+  }
   .main_heading_para_w {
     width: 367px;
   }
@@ -564,6 +592,7 @@ nav ul li a:hover {
   .footer_top_spacing {
     margin-top: 100px;
   }
+
 }
 @media (min-width: 992px) {
   .register_paragraph {
@@ -576,17 +605,34 @@ nav ul li a:hover {
     width: 30%;
     top: 3%;
   }
+  .top_ai_blue_box {
+    height: 80px;
+    width: 86px;
+  }
+   .advisor_new_img{
+  max-height:290px !important;
+}
 }
 @media (min-width: 576px) {
   #signupForm {
     padding: 21px 21px 20px 21px;
   }
+  .research_data_img {
+  margin-bottom: -100px;
+}
   .top_ai_blue_box {
     background-color: var(--light-blue);
     height: 60px;
     width: 60px;
     border-radius: 10px;
   }
+    .advisor_new_img{
+  max-height:370px;
+}
+ 
+  .top_ai_section p{
+  font-size: var( --fs-base) !important;
+}}
   @media (min-width: 768px) {
     .width_md_full {
       width: 100%;
@@ -597,15 +643,15 @@ nav ul li a:hover {
     .top_ai_section {
       padding-top: 400px;
     }
-
     .top_ai_blue_box {
-      background-color: var(--light-blue);
-      height: 80px;
-      width: 86px;
-      border-radius: 10px;
+      height: 72px;
+      width: 72px;
     }
-  }
+     .advisor_new_img{
+  max-height:273px;
 }
+  
+  }
 @media (max-width: 1280px) {
   .left_arrow {
     left: 45%;
@@ -622,7 +668,6 @@ nav ul li a:hover {
   .counter_box {
     gap: 6px;
   }
-
   .counter_box_timer h2 {
     width: 95px !important;
     height: 72px !important;
@@ -659,9 +704,15 @@ nav ul li a:hover {
   .today_bg {
     top: 10%;
   }
+  .footer_bg{
+    background-size: 115% 100%;
+  }
 }
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
+  .advisors_slider_side_p {
+    padding: 0 10px;
+  } 
   .live_icon {
     right: 13px;
   }
@@ -717,6 +768,9 @@ nav ul li a:hover {
 }
 .footer_para{
   font-size: 14px !important;
+}
+.research_heading{
+  font-size: 32px !important;
 }
 }
 /* media screen  765.95px*/
@@ -813,7 +867,10 @@ nav ul li a:hover {
     padding-top: 70px;
   }
   .today_bg {
-    top: 14%;
+    top: 19%;
+}
+.research_heading{
+  font-size: var(--fs-2xl) !important ;
 }
 .footer_bg {
   background-size: 150% 110%;
@@ -841,9 +898,10 @@ nav ul li a:hover {
     padding: 220px 0px 48px 0px;
     
   }
-  .advisors_slider_side_p {
-    padding: 0 10px;
+  .fs_20{
+    font-size: 20px !important;
   }
+
   .sign_btn {
     width: 100%;
   }
@@ -882,8 +940,11 @@ nav ul li a:hover {
   .counter_box_timer h2 {
     width: 68px !important;
     height: 45px !important;
-    font-size: 20px !important;
-    padding: 10px;
+    font-size: 18px !important;
+    padding: 10px 0px !important;
+  }
+  .fs_18{
+    font-size: 18px !important;
   }
   .counter_box {
     gap: 3px;
@@ -919,7 +980,7 @@ nav ul li a:hover {
     top: 50%;
   }
   .today_bg {
-    top: 19.5%;
+    top: 21%;
   }
   .today_heading {
     padding-top: 48px;
@@ -933,9 +994,15 @@ nav ul li a:hover {
     padding: 16px;
   }
   .today_shade{
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
+    bottom: -30px;
+    right: -40px;
   }
+  .top5ai_semicircle_image {
+    top: 5%;
+}
+
 }
 @media (max-width: 374.98px) {
   .live_icon {
@@ -952,6 +1019,7 @@ nav ul li a:hover {
     border-radius: 8px;
     padding: 9px;
   }
+
   .counter_box {
     gap: 2px;
   }
