@@ -387,3 +387,6 @@ function isValidPhoneNumber(phoneNumber) {
       window.addEventListener("resize", function () {
         location.reload();
       }); 
+
+
+ 

@@ -1239,6 +1239,9 @@
       </div>
     </section>
   </div>
+
+  <!-- lenis js cdn -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
   <!-- jquery link  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -1269,8 +1272,6 @@
     });
 
     function startCounter() {
-      // Your counter logic goes here
-      // For example, you can increment the counter value every second
       var counters = [0, 0, 0]; // Initial values for counters
       var maxCounts = [757, 124, 4]; // Change these to your desired maximum counts
 
@@ -1297,6 +1298,26 @@
         intervals.push(interval);
       });
     }
+  </script>
+  <script>
+    const lenis = new Lenis();
+    function smoothScrollToId(id) {
+    const element = document.getElementById(id);
+    if (element) {
+    element.scrollIntoView({
+    behavior: "unset",
+    });
+    }
+    }
+    const modalContent = document.querySelector(".modal-content");
+    function raf(time) {
+    lenis.raf(time, modalContent);
+    requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+    document.querySelector("#distroyer").addEventListener("click", function () {
+    lenis.destroy();
+    });
   </script>
 </body>
 

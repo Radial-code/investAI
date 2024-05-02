@@ -1,5 +1,21 @@
+/* lenis */
+html.lenis {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+    -ms-scroll-chaining: none;
+    overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
 /* hero background image */
-
 .hero_bg {
   background-image: url("../images/webp/hero-section-bg.webp");
   background-position: top;
