@@ -62,7 +62,8 @@ $(".hero_slider").slick({
   speed: 8000,
   pauseOnHover: false,
   cssEase: "linear",
-  responsive: [{
+  responsive: [
+    {
       breakpoint: 1700,
       settings: {
         slidesToShow: 5,
@@ -113,7 +114,8 @@ $(".understanding_slider").slick({
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
-  responsive: [{
+  responsive: [
+    {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2.4,
@@ -156,7 +158,8 @@ $(document).ready(function () {
     nextArrow: ".right_arrow", // Corrected selector for next arrow
     prevArrow: ".left_arrow", // Corrected selector for previous arrow
     pauseOnHover: true,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1199,
         settings: {
           dots: true,
@@ -219,7 +222,8 @@ $(".partner_slider").slick({
   speed: 8000,
   pauseOnHover: false,
   cssEase: "linear",
-  responsive: [{
+  responsive: [
+    {
       breakpoint: 1700,
       settings: {
         slidesToShow: 4,
