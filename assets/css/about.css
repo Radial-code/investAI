@@ -72,7 +72,8 @@
   transform: translate(-50%, -50%);
 }
 .hero_mobile {
-  max-width: 300px;
+  max-width: 256px;
+  max-height: 511px;
 }
 .high_returns_sm_circle {
   bottom: 14%;
@@ -82,13 +83,21 @@
   top: 5%;
   right: -10%;
 }
-.top_ai_blur_box{
+.top_ai_blur_box {
   top: 5%;
   left: 0;
   width: 100px;
   height: 100px;
   filter: blur(60px) !important;
   background-color: #553af5 !important;
+}
+
+
+@media (min-width: 576px) {
+  .hero_mobile {
+    max-width: 300px;
+    max-height: unset;
+  }
 }
 @media (min-width: 992px) {
   .how_work_section {

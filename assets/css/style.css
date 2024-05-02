@@ -519,12 +519,12 @@ nav ul li a:hover {
 /* .top_ai_section{
 } */
 .top5ai_top_stars {
-  width: 40%;
-  top: 1%;
+  width: 50%;
+  top: 6%;
 }
 
 .top_ai_section {
-  padding-top: 271px;
+  padding-top: 400px;
 }
 
 .top_ai_section p {
@@ -533,7 +533,7 @@ nav ul li a:hover {
 
 .top5ai_semicircle_image {
   left: 50%;
-  top: 4%;
+  top: 10%;
   width: 120%;
   transform: translateX(-50%);
 }
@@ -648,8 +648,21 @@ nav ul li a:hover {
   width: 12.3px !important;
   height: 12.3px !important;
 }
+/* animaction */
+/* animation  */
+.animation_circle {
+  top: 8% !important;
+  animation: rotate 10s linear infinite;
+}
 
-/* footer css end */
+@keyframes rotate {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
 /* media screen 1199.98px */
 @media (min-width: 1500px) {
   .hight_return_bg_img {
@@ -668,11 +681,6 @@ nav ul li a:hover {
 
   .main_heading_para_w {
     width: 367px;
-  }
-
-  .top5ai_top_stars {
-    width: 30%;
-    top: 18%;
   }
 
   .implement_box {
@@ -704,12 +712,12 @@ nav ul li a:hover {
 
   .top5ai_top_stars {
     width: 30%;
-    top: 3%;
+    top: 8%;
   }
 
   .top_ai_blue_box {
-    height: 80px;
-    width: 86px;
+    height: 80px !important;
+    width: 86px !important;
   }
 
   .advisor_new_img {
@@ -721,6 +729,12 @@ nav ul li a:hover {
   #signupForm {
     padding: 21px 21px 20px 21px;
   }
+  .animation_circle {
+  top: 5% !important;
+}
+.top5ai_top_stars {
+  top: 4%;
+}
 
   .research_data_img {
     margin-bottom: -100px;
@@ -746,6 +760,9 @@ nav ul li a:hover {
   .width_md_full {
     width: 100%;
   }
+  .animation_circle {
+  top: 9% !important;
+}
 
   .ai_row_gap {
     gap: 70px;
@@ -899,7 +916,7 @@ nav ul li a:hover {
   }
 
   .top5ai_semicircle_image {
-    top: 8%;
+    top: 12%;
   }
 
   .advisors_text_hover p {
@@ -926,6 +943,9 @@ nav ul li a:hover {
     background-color: var(--dark-blue);
     transition: all 500ms ease-in-out;
     z-index: 10;
+  }
+   .top5ai_semicircle_image {
+    top: 6.5%;
   }
 
   label[for="navMenu"] {
@@ -1075,7 +1095,7 @@ nav ul li a:hover {
   }
 
   .common_btn {
-    padding: 12px 20px !important;
+    padding: 22px 20px !important;
   }
 
   .toggle_change .bar1 {
@@ -1185,7 +1205,7 @@ nav ul li a:hover {
   }
 
   .top5ai_semicircle_image {
-    top: 5%;
+    top: 9%;
   }
 
 }
