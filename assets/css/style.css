@@ -578,7 +578,7 @@ nav ul li a:hover {
 
 .footer_semicircle_image {
   left: 50%;
-  top: 10%;
+  top: 24%;
   width: 120%;
   transform: translateX(-50%);
 }
@@ -1025,6 +1025,10 @@ nav ul li a:hover {
 
   .today_bg {
     top: 10%;
+  }
+
+  .footer_semicircle_image {
+    top: 20%;
   }
 }
 
