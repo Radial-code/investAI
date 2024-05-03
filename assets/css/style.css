@@ -142,7 +142,7 @@ nav ul li a:hover {
 }
 
 .hero_mobile_input {
-  padding: 8px 14px;
+  padding: 11px 14px;
   width: 230px !important;
   margin-bottom: 20px;
   border-radius: 66px;
@@ -910,7 +910,8 @@ input::-webkit-inner-spin-button {
   .register_paragraph {
     padding-bottom: 32px;
   }
-   .footer_animation_circle {
+
+  .footer_animation_circle {
     top: 15% !important;
   }
 
@@ -1053,10 +1054,6 @@ input::-webkit-inner-spin-button {
     padding: 15px;
   }
 
-  .hero_mobile_input {
-    padding: 15px;
-  }
-
   .side_blur_box_one {
     width: 250px;
     height: 250px;
@@ -1185,10 +1182,6 @@ input::-webkit-inner-spin-button {
   }
 
   .hero_input {
-    padding: 14px 18px;
-  }
-
-  .hero_mobile_input {
     padding: 14px 18px;
   }
 
@@ -1325,10 +1318,6 @@ input::-webkit-inner-spin-button {
   .hero_input {
     padding: 12px 18px;
     margin-bottom: 10px;
-  }
-
-  .hero_mobile_input {
-    padding: 12px 18px;
   }
 
   .live_icon {
