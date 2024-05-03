@@ -20,12 +20,8 @@
 
 /*  */
 
-.translate_lg_registration {
+.translate_registration {
     transform: translateX(20px);
-}
-
-.registration_img_parent {
-    animation: rotateCircles 12s linear infinite;
 }
 
 @keyframes rotateCircles {
@@ -90,7 +86,7 @@
 
 
 @media (max-width:1299.98px) {
-    .translate_lg_registration {
+    .translate_registration {
         transform: translateX(20px) scale(0.8);
     }
 }
@@ -106,7 +102,7 @@
         width: 20%;
     }
 
-    .translate_lg_registration {
+    .translate_registration {
         transform: translateX(10px) scale(0.9);
     }
 
@@ -204,6 +200,10 @@
 
     #advisors {
         padding-top: 70px !important;
+    }
+
+    .translate_registration {
+        transform: none;
     }
 }
 
