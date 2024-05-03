@@ -1438,6 +1438,10 @@ nav ul li a:hover {
   .advisor_img {
     max-height: 190px;
   }
+
+  .px_mobile_0 {
+    padding: 0 !important;
+  }
 }
 
 @media (max-width: 374.98px) {
