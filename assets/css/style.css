@@ -3,6 +3,11 @@ html.lenis {
   height: auto;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
 .lenis.lenis-smooth {
   scroll-behavior: auto;
 }
@@ -420,8 +425,9 @@ nav ul li a:hover {
   display: flex !important;
 }
 
-.advisors_slider .slick-slide>div {
+.slick-initialized .slick-slide>div {
   display: flex;
+  width: 100%;
 }
 
 /* top 5 ai section start here */
