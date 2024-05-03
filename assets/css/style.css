@@ -565,6 +565,10 @@ nav ul li a:hover {
   width: 50%;
   top: 3%;
 }
+.advisor_top_stars {
+  width: 50%;
+  top: 3%;
+}
 
 .hero_left_bottom_stars {
   width: 50%;
@@ -752,7 +756,7 @@ nav ul li a:hover {
 
 .footer_top_stars {
   width: 50%;
-  top: 10%;
+  top: 4%;
 }
 
 @keyframes rotate {
@@ -856,6 +860,9 @@ nav ul li a:hover {
   .benifit_top_stars {
     top: 2%;
   }
+  .advisor_top_stars {
+    top: 2%;
+  }
 
   .hero_left_bottom_stars {
     bottom: -92% !important;
@@ -951,6 +958,10 @@ nav ul li a:hover {
   .benifit_top_stars {
     width: 30%;
     top: 8%;
+  }
+  .advisor_top_stars {
+    width: 30%;
+    top: 5%;
   }
 
   .hero_left_bottom_stars {
