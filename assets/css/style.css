@@ -1349,6 +1349,10 @@ nav ul li a:hover {
     top: 14%;
   }
 
+  .footer_semicircle_image {
+    width: 220%;
+  }
+
   .top5ai_semicircle_image {
     top: 28%;
   }
