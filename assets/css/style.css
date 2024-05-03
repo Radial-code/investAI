@@ -279,16 +279,17 @@ nav ul li a:hover {
 }
 
 .implement_box {
-  box-shadow: 0px 0px 20px 0px #00000033 !important;
+  box-shadow: 0px 0px 16px 0px #00000033 !important;
   background: #ffffff4d;
   padding: 30px 13px;
   height: 100%;
   max-width: 450px;
   border-radius: 12px;
+  transition: all 200ms linear !important;
 }
 
 .implement_box:hover {
-  transform: translateY(-6px);
+  transform: translateY(-10px);
 }
 
 .implement_box .implement_svg_box {
@@ -492,8 +493,8 @@ nav ul li a:hover {
 
 /* partner_slider css start */
 .partner_slider {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .partner_slider .slick-track {
@@ -914,8 +915,8 @@ nav ul li a:hover {
   }
 
   .understanding_slider .slick-slide {
-    padding-left: 21px !important;
-    padding-right: 21px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
   .footer_top_stars {
@@ -1001,11 +1002,6 @@ nav ul li a:hover {
     padding-top: 150px;
   }
 
-  .partner_slider {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
   .profit_heading {
     padding-top: 100px;
   }
@@ -1025,11 +1021,6 @@ nav ul li a:hover {
     transform: translateX(-70%);
   }
 
-  .partner_slider {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-  }
-
   .today_bg {
     top: 10%;
   }
@@ -1040,11 +1031,6 @@ nav ul li a:hover {
   .live_icon {
     right: 13px;
   }
-
-  .common_btn {
-    padding: 15px 32px;
-  }
-
   .main_heading_para_w {
     max-width: unset;
   }
@@ -1234,11 +1220,6 @@ nav ul li a:hover {
     padding-top: 70px;
   }
 
-  .partner_slider {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
   .profit_heading {
     padding-top: 70px;
     padding-bottom: 40px;
@@ -1324,6 +1305,11 @@ nav ul li a:hover {
     gap: 24px;
   }
 
+  .partner_slider {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
   .hero_input {
     padding: 12px 18px;
     margin-bottom: 10px;
@@ -1376,11 +1362,6 @@ nav ul li a:hover {
 
   .hight_return_bg_img {
     top: 40%;
-  }
-
-  .partner_slider {
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
 
   .profit_heading {
@@ -1464,4 +1445,6 @@ nav ul li a:hover {
   .counter_box {
     gap: 2px;
   }
+
+
 }

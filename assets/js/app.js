@@ -132,10 +132,18 @@ $(".understanding_slider").slick({
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
-  responsive: [{
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2.4,
+        dots: true,
+      },
+    },
+    {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2.5,
+        slidesToShow: 2,
         dots: true,
       },
     },
