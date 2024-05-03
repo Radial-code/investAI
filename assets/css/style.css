@@ -562,7 +562,7 @@ nav ul li a:hover {
 }
 
 .top_ai_section {
-  padding-top: 400px;
+  padding-top: 340px;
 }
 
 .top_ai_section p {
@@ -716,7 +716,7 @@ nav ul li a:hover {
 }
 
 .benifit_animation_circle {
-  top: 25% !important;
+  top: 24% !important;
   animation: rotate 12s linear infinite;
 }
 
@@ -1248,9 +1248,10 @@ nav ul li a:hover {
   }
 
   .ai_row_gap div img {
-    box-shadow: 0 0 0 0;
+  box-shadow: 0px 2.71px 12.15px 0px #ffffff69,
 
   }
+
 }
 
 /* media screen  575.98px*/
@@ -1275,7 +1276,10 @@ nav ul li a:hover {
   .footer_section {
     padding: 180px 0px 48px 0px;
   }
+ .ai_row_gap div img {
+  box-shadow: 0px 0px 0px 0px #ffffff69;
 
+  }
   .fs_20 {
     font-size: 20px !important;
   }
@@ -1412,7 +1416,7 @@ nav ul li a:hover {
   }
 
   .benifit_semicircle_image {
-    top: 29%;
+    top: 26%;
   }
 
   .advisors_slider_box div {
