@@ -780,10 +780,6 @@ nav ul li a:hover {
   transform: translateX(20px);
 }
 
- .registration_img_parent {
-  animation: rotate 12s linear infinite;
-}
-
 @keyframes rotate {
   0% {
     rotate: 0;
@@ -792,7 +788,7 @@ nav ul li a:hover {
   100% {
     rotate: 360deg;
   }
-} 
+}
 
 .registration_top {
   top: -150px;
@@ -1012,9 +1008,11 @@ nav ul li a:hover {
   .register_paragraph {
     padding-bottom: 32px;
   }
- .footer_animation_circle {
+
+  .footer_animation_circle {
     top: 20% !important;
   }
+
   .understanding_slider .slick-slide {
     padding-left: 16px !important;
     padding-right: 16px !important;
