@@ -52,12 +52,13 @@ body {
     --fs-nav: 16px;
     --fs-xs: 14px;
     --fs-base: 16px;
+    --fs-lg: 18px;
     --fs-sm: 20px;
     --fs-md: 28px;
     --fs-xl: 32px;
     --fs-2xl: 48px;
     --fs-3xl: 64px;
-    --light-black:#0B0A14;
+    --light-black: #0B0A14;
     --dark-blue: #0d0c19;
     --light-blue: #553af5;
     --light-indigo: #8b78f8;
@@ -69,8 +70,9 @@ body {
 .bg_dark_blue {
     background-color: var(--dark-blue) !important;
 }
+
 .text_light_black {
-    color: var( --light-black) !important;
+    color: var(--light-black) !important;
 }
 
 .bg_light_blue {
@@ -113,6 +115,10 @@ body {
 
 .fs_base {
     font-size: var(--fs-base) !important;
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
 }
 
 .fs_sm {
