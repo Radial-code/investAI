@@ -1,5 +1,6 @@
-html.body{
-  overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden !important;
 }
 
 /* hero form */
@@ -26,7 +27,7 @@ html.body{
   height: 300px;
   max-width: 650px;
 }
-.slider_box:hover{
+.slider_box:hover {
   border-color: rgba(255, 255, 255, 0.575);
 }
 /* common btn  */
@@ -39,15 +40,12 @@ html.body{
 }
 
 .hero_mobile_form_btn:hover {
-  box-shadow:
-    0px 4px 53.2px 0px #553af594,
-    inset 0 70px 0 white;
+  box-shadow: 0px 4px 53.2px 0px #553af594, inset 0 70px 0 white;
   color: var(--light-blue) !important;
 }
 
 .btn_shadow {
-  box-shadow:
-    0px 4px 53.2px 0px #553af594;
+  box-shadow: 0px 4px 53.2px 0px #553af594;
 }
 
 /* backto top */
