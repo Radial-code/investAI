@@ -232,6 +232,7 @@ nav ul li a:hover {
 /* slider section start */
 
 .slider_box {
+  transition: all 300ms linear;
   background: #8989890d;
   border-top: unset;
   border: 1px solid #ffffff17;
@@ -726,6 +727,7 @@ nav ul li a:hover {
 .hero_animation_circle {
   top: 110% !important;
   animation: rotate 12s linear infinite;
+  z-index: -1;
 }
 
 .max_w_1920 {

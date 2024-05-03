@@ -20,6 +20,9 @@
   height: 300px;
   max-width: 650px;
 }
+.slider_box:hover{
+  border-color: rgba(255, 255, 255, 0.575);
+}
 /* common btn  */
 .hero_mobile_form_btn {
     border: 1px solid #ffffff;
