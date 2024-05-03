@@ -7,11 +7,29 @@ function toggleNavigationMenu() {
   document.body.classList.toggle("overflow_hidden");
   changeButton.classList.toggle("toggle_change");
 }
+// backtotop
+  let mybutton = document.getElementById("back-top");
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 // counter
-
 var countDownDate = new Date("sep 5, 2024").getTime();
-
 // Update the count down every 1 second
 var x = setInterval(function () {
   // Get today's date and time
