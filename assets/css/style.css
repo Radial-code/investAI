@@ -497,6 +497,15 @@ nav ul li a:hover {
   padding-bottom: 20px;
 }
 
+.partner_slider img {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.partner_slider img:hover {
+  transform: scale(1.1);
+}
+
 .partner_slider .slick-track {
   display: flex !important;
   align-items: center !important;
@@ -1031,6 +1040,7 @@ nav ul li a:hover {
   .live_icon {
     right: 13px;
   }
+
   .main_heading_para_w {
     max-width: unset;
   }
@@ -1248,7 +1258,7 @@ nav ul li a:hover {
   }
 
   .ai_row_gap div img {
-  box-shadow: 0px 2.71px 12.15px 0px #ffffff69,
+    box-shadow: 0px 2.71px 12.15px 0px #ffffff69,
 
   }
 
@@ -1276,10 +1286,12 @@ nav ul li a:hover {
   .footer_section {
     padding: 180px 0px 48px 0px;
   }
- .ai_row_gap div img {
-  box-shadow: 0px 0px 0px 0px #ffffff69;
+
+  .ai_row_gap div img {
+    box-shadow: 0px 0px 0px 0px #ffffff69;
 
   }
+
   .fs_20 {
     font-size: 20px !important;
   }
@@ -1425,6 +1437,10 @@ nav ul li a:hover {
 
   .advisor_img {
     max-height: 190px;
+  }
+
+  .px_mobile_0 {
+    padding: 0 !important;
   }
 }
 
