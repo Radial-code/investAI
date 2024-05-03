@@ -162,8 +162,28 @@ nav ul li a:hover {
   outline: none;
   border: none;
 }
+.hero_mobile_input {
+  padding: 8px 14px;
+  width: 230px !important;
+  margin-bottom: 20px;
+  border-radius: 66px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: all 200ms linear;
+}
+.hero_mobile_input:hover{
+  border: 1px solid var(--light-blue);
+}
 
 .hero_input::placeholder {
+  font-family: "Inter", sans-serif;
+  line-height: normal;
+  color: #191335;
+  font-size: var(--fs-base);
+  font-weight: 400;
+}
+
+.hero_mobile_input::placeholder {
   font-family: "Inter", sans-serif;
   line-height: normal;
   color: #191335;
@@ -1024,6 +1044,9 @@ nav ul li a:hover {
   .hero_input {
     padding: 15px;
   }
+  .hero_mobile_input {
+    padding: 15px;
+  }
 
   .side_blur_box_one {
     width: 250px;
@@ -1150,6 +1173,9 @@ nav ul li a:hover {
   }
 
   .hero_input {
+    padding: 14px 18px;
+  }
+  .hero_mobile_input {
     padding: 14px 18px;
   }
 
@@ -1286,10 +1312,10 @@ nav ul li a:hover {
 
   .hero_input {
     padding: 12px 18px;
+      margin-bottom: 10px;
   }
-
-  .hero_input {
-    margin-bottom: 10px;
+  .hero_mobile_input {
+    padding: 12px 18px;
   }
 
   .live_icon {
