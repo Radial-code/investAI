@@ -14,10 +14,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -80,7 +77,8 @@ $(".hero_slider").slick({
   speed: 8000,
   pauseOnHover: false,
   cssEase: "linear",
-  responsive: [{
+  responsive: [
+    {
       breakpoint: 1700,
       settings: {
         slidesToShow: 5,
@@ -130,7 +128,8 @@ $(".understanding_slider").slick({
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
-  responsive: [{
+  responsive: [
+    {
       breakpoint: 1200,
       settings: {
         slidesToShow: 2.4,
@@ -180,7 +179,8 @@ $(document).ready(function () {
     nextArrow: ".right_arrow", // Corrected selector for next arrow
     prevArrow: ".left_arrow", // Corrected selector for previous arrow
     pauseOnHover: true,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1199,
         settings: {
           dots: true,
@@ -243,7 +243,8 @@ $(".partner_slider").slick({
   speed: 8000,
   pauseOnHover: false,
   cssEase: "linear",
-  responsive: [{
+  responsive: [
+    {
       breakpoint: 1700,
       settings: {
         slidesToShow: 4,

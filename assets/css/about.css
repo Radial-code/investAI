@@ -221,7 +221,6 @@
 
   100% {
     filter: hue-rotate(360deg);
-    /* Changed from 100deg to 360deg for a complete rotation */
   }
 }
 
