@@ -8,26 +8,26 @@ function toggleNavigationMenu() {
   changeButton.classList.toggle("toggle_change");
 }
 // backtotop
-  let mybutton = document.getElementById("back-top");
-  window.onscroll = function () {
-    scrollFunction();
-  };
+let mybutton = document.getElementById("back-top");
+window.onscroll = function () {
+  scrollFunction();
+};
 
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
   }
+}
 
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 // counter
 var countDownDate = new Date("sep 5, 2024").getTime();
 // Update the count down every 1 second
@@ -123,16 +123,14 @@ $(".hero_slider").slick({
 $(".understanding_slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 3500,
   autoplay: true,
+  autoplaySpeed: 3500,
   infinite: true,
   dots: true,
   nextArrow: ".left_arrow",
   prevArrow: ".right_arrow",
   pauseOnHover: true,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1200,
       settings: {
         slidesToShow: 2.4,
@@ -212,7 +210,6 @@ $(document).ready(function () {
       {
         breakpoint: 440,
         settings: {
-          centerMode: true,
           slidesToShow: 1,
           dots: true,
         },
