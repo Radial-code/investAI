@@ -491,8 +491,8 @@ nav ul li a:hover {
 
 /* partner_slider css start */
 .partner_slider {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .partner_slider .slick-track {
@@ -999,11 +999,6 @@ nav ul li a:hover {
     padding-top: 150px;
   }
 
-  .partner_slider {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
   .profit_heading {
     padding-top: 100px;
   }
@@ -1021,11 +1016,6 @@ nav ul li a:hover {
   .right_arrow {
     right: 50%;
     transform: translateX(-70%);
-  }
-
-  .partner_slider {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
   }
 
   .today_bg {
@@ -1232,11 +1222,6 @@ nav ul li a:hover {
     padding-top: 70px;
   }
 
-  .partner_slider {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
   .profit_heading {
     padding-top: 70px;
     padding-bottom: 40px;
@@ -1322,6 +1307,11 @@ nav ul li a:hover {
     gap: 24px;
   }
 
+  .partner_slider {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
   .hero_input {
     padding: 12px 18px;
     margin-bottom: 10px;
@@ -1374,11 +1364,6 @@ nav ul li a:hover {
 
   .hight_return_bg_img {
     top: 40%;
-  }
-
-  .partner_slider {
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
 
   .profit_heading {
@@ -1462,4 +1447,6 @@ nav ul li a:hover {
   .counter_box {
     gap: 2px;
   }
+
+
 }
