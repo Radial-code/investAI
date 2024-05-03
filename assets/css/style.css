@@ -780,7 +780,7 @@ nav ul li a:hover {
   transform: translateX(20px);
 }
 
-.registration_img_parent {
+/* .registration_img_parent {
   animation: rotateCircles 12s linear infinite;
 }
 
@@ -792,15 +792,15 @@ nav ul li a:hover {
   100% {
     rotate: 360deg;
   }
-}
+} */
 
 .registration_top {
   top: -150px;
 }
 
 .registration_top_right {
-  top: -20px;
-  right: -130px;
+  top: -40px;
+  right: -140px;
 }
 
 .registration_top_left {
@@ -823,16 +823,68 @@ nav ul li a:hover {
   left: 90px;
 }
 
-.registration_top,
-.registration_top_left,
-.registration_top_right,
-.center_img,
-.registration_bottom,
-.registration_bottom_right,
-.registration_bottom_left {
-  transition: all 0.2s linear;
+
+
+
+/* Define keyframes for the animation */
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
 }
 
+/* Apply the animation to the images with separate delays */
+.registration_top {
+  animation: scaleAnimation 2s infinite;
+  animation-delay: 0.2s;
+  /* Add a delay of 0.2 seconds for this image */
+}
+
+.registration_top_left {
+  animation: scaleAnimation 2s infinite;
+  animation-delay: 0.4s;
+  /* Add a delay of 0.4 seconds for this image */
+}
+
+.registration_top_right {
+  animation: scaleAnimation 2s infinite;
+  animation-delay: 0.6s;
+  /* Add a delay of 0.6 seconds for this image */
+}
+
+.center_img {
+  animation: scaleAnimation 2s infinite;
+  animation-delay: 0.8s;
+  /* Add a delay of 0.8 seconds for this image */
+}
+
+.registration_bottom {
+  animation: scaleAnimation 2s infinite;
+  animation-delay: 1s;
+  /* Add a delay of 1 second for this image */
+}
+
+.registration_bottom_right {
+  animation: scaleAnimation 2s infinite;
+  animation-delay: 1.2s;
+  /* Add a delay of 1.2 seconds for this image */
+}
+
+.registration_bottom_left {
+  animation: scaleAnimation 2s infinite;
+  animation-delay: 1.4s;
+  /* Add a delay of 1.4 seconds for this image */
+}
+
+/* Pause animation on hover */
 .registration_top:hover,
 .registration_top_left:hover,
 .registration_top_right:hover,
@@ -840,18 +892,12 @@ nav ul li a:hover {
 .registration_bottom:hover,
 .registration_bottom_right:hover,
 .registration_bottom_left:hover {
-  transform: scale(1.1);
+  animation-play-state: paused;
 }
 
-@keyframes rotate {
-  0% {
-    rotate: 0;
-  }
 
-  100% {
-    rotate: 360deg;
-  }
-}
+
+
 
 @media (min-width: 576px) {
   #signupForm {
