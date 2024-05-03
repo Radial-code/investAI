@@ -1,47 +1,48 @@
 /* backto top */
-   #back-top {
-            display: none;
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            font-size: 20px;
-            font-family: 'poppins';
-            font-weight: 800;
-            background-color: #313EF7;
-            border: 2px solid #313EF7;
-            z-index: 100;
-        }
+#back-top {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  font-family: "poppins";
+  font-weight: 800;
+  background-color: #313ef7;
+  border: 2px solid #313ef7;
+  z-index: 100;
+  border: 1px solid transparent;
+}
 
-        .back_top_img {
-            height: 40px;
-            width: 40px;
-        }
+.back_top_img {
+  height: 40px;
+  width: 40px;
+}
 
-        #back-top:hover {
-            background-color: black;
-            border: 2px solid black;
-        }
+#back-top:hover {
+  background-color: black;
+  border: 1px solid white;
+}
 
-        @media (max-width:1279.98px) {
-            #back-top {
-                right: 20px;
-                bottom: 54px;
-            }
-        }
+@media (max-width: 1279.98px) {
+  #back-top {
+    right: 20px;
+    bottom: 54px;
+  }
+}
 
-        @media (max-width:767.98px) {
-            #back-top {
-                right: 20px;
-                bottom: 20px;
-            }
-        }
+@media (max-width: 767.98px) {
+  #back-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
 
-        @media (max-width:575.98px) {
-            #back-top {
-                right: 10px;
-                bottom: 10px;
-            }
-        }
+@media (max-width: 575.98px) {
+  #back-top {
+    right: 10px;
+    bottom: 10px;
+  }
+}
 .roadmap_circle {
   height: 88px;
   width: 88px;
