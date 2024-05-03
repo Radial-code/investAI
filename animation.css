@@ -1,47 +1,9 @@
-body {
-    overflow-x: hidden !important;
-    background-color: #060606 !important;
-}
-
 .hero_bottom_spacing {
     padding-bottom: 270px;
 }
 
-.index_3 {
-    z-index: 3;
-}
-
-.curve_animation {
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.advisor_curve_mg {
-    top: 0;
-}
-
-.modified_container {
-    max-width: 1140px;
-}
-
 .position_relative {
     position: relative;
-}
-
-.main_parent {
-    position: relative;
-    z-index: 0;
-    height: 100vh;
-    margin-top: 100px;
-}
-
-
-.footer_animation_img {
-    max-width: 1000px;
-    width: 70vw;
-    border-radius: 50%;
-
 }
 
 /*=== footer animation ========*/
@@ -55,65 +17,6 @@ body {
     -webkit-animation: footer_animation 20s linear infinite;
     animation: footer_animation 20s linear infinite;
 }
-
-.footer_animation2 {
-    z-index: -10;
-    position: absolute;
-    bottom: -350px !important;
-    height: auto;
-
-    -webkit-animation: footer_animation2 20s linear infinite;
-    animation: footer_animation2 20s linear infinite;
-}
-
-@-webkit-keyframes footer_animation {
-    0% {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    }
-
-    100% {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-    }
-}
-
-@keyframes footer_animation {
-    0% {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    }
-
-    100% {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-    }
-}
-
-@-webkit-keyframes footer_animation2 {
-    to {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    }
-
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-    }
-}
-
-@keyframes footer_animation2 {
-    to {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    }
-
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg, 0deg);
-    }
-}
-
 
 /*  */
 .registration_img_parent {
@@ -176,10 +79,6 @@ body {
         left: 300px;
     }
 
-    .footer_animation_img {
-        width: 90vw;
-    }
-
     .registration_img_parent {
         transform: translateX(0);
     }
@@ -235,10 +134,6 @@ body {
         left: 350px;
     }
 
-    .footer_animation_img {
-        width: 100vw;
-    }
-
     .advisor_Implement_paragraph {
         max-width: 600px !important;
     }
@@ -260,10 +155,6 @@ body {
         left: 320px;
     }
 
-    .footer_animation_img {
-        width: 120vw;
-    }
-
     .ai_etf_scrollbar {
         max-height: 720px;
         overflow-y: auto;
@@ -272,14 +163,6 @@ body {
 }
 
 @media (max-width:575.98px) {
-    .curve_animation {
-        width: 600px !important;
-    }
-
-    .curve_animation img {
-        width: 100%;
-    }
-
     .hero_bottom_spacing {
         padding-bottom: 130px !important;
     }
@@ -319,8 +202,4 @@ body {
 .advisors_top_ai_blur_box {
     z-index: 1;
     top: 20%;
-}
-
-.overflow_x_clip {
-    overflow-x: clip !important;
 }
