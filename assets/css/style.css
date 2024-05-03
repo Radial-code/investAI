@@ -1176,8 +1176,9 @@ input::-webkit-inner-spin-button {
     left: 0;
   }
 
-  .overflow_hidden {
-    overflow: hidden;
+  .navbar_overlay {
+    overflow: hidden !important;
+    height: 100vh !important;
   }
 
   .hero_input {
