@@ -156,12 +156,13 @@ nav ul li a:hover {
 }
 
 .hero_input {
-  padding: 20.5px;
+  padding: 20.5px 28px;
   margin-bottom: 20px;
   border-radius: 66px;
   outline: none;
   border: none;
 }
+
 .hero_mobile_input {
   padding: 8px 14px;
   width: 230px !important;
@@ -171,7 +172,8 @@ nav ul li a:hover {
   border: 1px solid transparent;
   transition: all 200ms linear;
 }
-.hero_mobile_input:hover{
+
+.hero_mobile_input:hover {
   border: 1px solid var(--light-blue);
 }
 
@@ -1052,6 +1054,7 @@ nav ul li a:hover {
   .hero_input {
     padding: 15px;
   }
+
   .hero_mobile_input {
     padding: 15px;
   }
@@ -1187,6 +1190,7 @@ nav ul li a:hover {
   .hero_input {
     padding: 14px 18px;
   }
+
   .hero_mobile_input {
     padding: 14px 18px;
   }
@@ -1286,7 +1290,7 @@ nav ul li a:hover {
 
 @media (max-width: 575.98px) {
   .footer_section {
-    padding: 220px 0px 48px 0px;
+    padding: 180px 0px 48px 0px;
   }
 
   .fs_20 {
@@ -1320,8 +1324,9 @@ nav ul li a:hover {
 
   .hero_input {
     padding: 12px 18px;
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
+
   .hero_mobile_input {
     padding: 12px 18px;
   }
@@ -1412,7 +1417,7 @@ nav ul li a:hover {
   }
 
   .footer_semicircle_image {
-    top: 14%;
+    top: 13%;
   }
 
   .footer_semicircle_image {

@@ -179,6 +179,10 @@
     .ai_etf_scrollbar {
         max-height: 570px;
     }
+
+    #advisors {
+        padding-top: 70px !important;
+    }
 }
 
 
@@ -202,4 +206,8 @@
 .advisors_top_ai_blur_box {
     z-index: 1;
     top: 20%;
+}
+
+.max-h-full {
+    max-height: 100% !important;
 }
