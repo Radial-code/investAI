@@ -726,7 +726,7 @@ nav ul li a:hover {
 
 /* animation  */
 .animation_circle {
-  top: 4% !important;
+  top: -5% !important;
   animation: rotate 12s linear infinite;
 }
 
@@ -780,11 +780,11 @@ nav ul li a:hover {
   transform: translateX(20px);
 }
 
-/* .registration_img_parent {
-  animation: rotateCircles 12s linear infinite;
+ .registration_img_parent {
+  animation: rotate 12s linear infinite;
 }
 
-@keyframes rotateCircles {
+@keyframes rotate {
   0% {
     rotate: 0;
   }
@@ -792,7 +792,7 @@ nav ul li a:hover {
   100% {
     rotate: 360deg;
   }
-} */
+} 
 
 .registration_top {
   top: -150px;
@@ -895,10 +895,6 @@ nav ul li a:hover {
   animation-play-state: paused;
 }
 
-
-
-
-
 @media (min-width: 576px) {
   #signupForm {
     padding: 21px 21px 20px 21px;
@@ -983,11 +979,11 @@ nav ul li a:hover {
   }
 
   .animation_circle {
-    top: 8% !important;
+    top: -4% !important;
   }
 
   .footer_animation_circle {
-    top: 6% !important;
+    top: 10% !important;
   }
 
   .hero_animation_circle {
@@ -1016,7 +1012,9 @@ nav ul li a:hover {
   .register_paragraph {
     padding-bottom: 32px;
   }
-
+ .footer_animation_circle {
+    top: 20% !important;
+  }
   .understanding_slider .slick-slide {
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -1024,7 +1022,7 @@ nav ul li a:hover {
 
   .footer_top_stars {
     width: 30%;
-    top: 0%;
+    top: 10%;
   }
 
   .ai_row_gap {
