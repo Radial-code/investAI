@@ -46,7 +46,7 @@
 </head>
 
 <body>
-  <div class="overflow-hidden max_w_1920 mx-auto">
+  <div class="max_w_1920 mx-auto">
     <div id="home" class="position-relative overflow-hidden hero_bottom_spacing overflow-hidden z-1">
       <!-- header and hero section start -->
       <div class="hero_bg position-relative">
@@ -748,7 +748,6 @@
         </div>
       </div>
     </section>
-
     <!-- how works section start here -->
     <section class="bg-white how_work_section overflow-hidden pt-5">
       <div class="container custom_container mt-lg-4 pt-lg-2">
@@ -1230,7 +1229,7 @@
       </div>
     </section>
     <!-- footer start -->
-    <div class="position-relative">
+    <div class="position-relative overflow-x-hidden">
       <img class="position-absolute start-0 footer_top_stars" src="./assets/images/svg/animation-starts-left.svg"
         alt="stars" />
       <img class="position-absolute end-0 footer_top_stars" src="./assets/images/svg/animation-starts-right.svg"
@@ -1421,9 +1420,6 @@
 
     </div>
 
-    <!-- lenis js cdn -->
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
-
     <!-- jquery link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -1493,28 +1489,7 @@
         });
       }
     </script>
-    <script>
-      const lenis = new Lenis();
-
-      function smoothScrollToId(id) {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({
-            behavior: "unset",
-          });
-        }
-      }
-      const modalContent = document.querySelector(".modal-content");
-
-      function raf(time) {
-        lenis.raf(time, modalContent);
-        requestAnimationFrame(raf);
-      }
-      requestAnimationFrame(raf);
-      document.querySelector("#distroyer").addEventListener("click", function () {
-        lenis.destroy();
-      });
-    </script>
+   
 
 
 </body>
