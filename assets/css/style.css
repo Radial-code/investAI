@@ -881,7 +881,7 @@ input::-webkit-inner-spin-button {
   }
 
   .footer_animation_circle {
-    top: 6% !important;
+    top: 12% !important;
   }
 
   .hero_animation_circle {
@@ -909,6 +909,9 @@ input::-webkit-inner-spin-button {
 @media (min-width: 992px) {
   .register_paragraph {
     padding-bottom: 32px;
+  }
+   .footer_animation_circle {
+    top: 15% !important;
   }
 
   .understanding_slider .slick-slide {
