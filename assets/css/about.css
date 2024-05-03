@@ -1,3 +1,7 @@
+html.body{
+  overflow-x: hidden;
+}
+
 /* hero form */
 .sign_up_btn:hover {
   box-shadow: 23px 20px 20px 22px #0084ff inset !important;
