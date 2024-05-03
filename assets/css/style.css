@@ -521,6 +521,7 @@ nav ul li a:hover {
   width: 50%;
   top: 20%;
 }
+
 .benifit_top_stars {
   width: 50%;
   top: 3%;
@@ -550,6 +551,7 @@ nav ul li a:hover {
   width: 120%;
   transform: translateX(-50%);
 }
+
 .top5ai_semicircle_image {
   left: 50%;
   top: 10%;
@@ -688,6 +690,7 @@ nav ul li a:hover {
   top: 4% !important;
   animation: rotate 12s linear infinite;
 }
+
 .benifit_animation_circle {
   top: 25% !important;
   animation: rotate 12s linear infinite;
@@ -793,6 +796,7 @@ nav ul li a:hover {
   .animation_circle {
     top: 5% !important;
   }
+
   .benifit_animation_circle {
     top: 18% !important;
   }
@@ -808,6 +812,7 @@ nav ul li a:hover {
   .top5ai_top_stars {
     top: 12%;
   }
+
   .benifit_top_stars {
     top: 2%;
   }
@@ -840,10 +845,12 @@ nav ul li a:hover {
   .width_md_full {
     width: 100%;
   }
-    .top5ai_top_stars {
+
+  .top5ai_top_stars {
     top: 6%;
   }
-.benifit_animation_circle {
+
+  .benifit_animation_circle {
     top: 8% !important;
   }
 
@@ -900,6 +907,7 @@ nav ul li a:hover {
     width: 30%;
     top: 8%;
   }
+
   .benifit_top_stars {
     width: 30%;
     top: 8%;
@@ -1066,6 +1074,7 @@ nav ul li a:hover {
   .top5ai_semicircle_image {
     top: 12%;
   }
+
   .benifit_semicircle_image {
     top: 12%;
   }
@@ -1089,6 +1098,10 @@ nav ul li a:hover {
   .research_heading {
     font-size: 32px !important;
   }
+
+  .common_btn {
+    padding: 14px 30px !important;
+  }
 }
 
 /* media screen  765.95px*/
@@ -1107,6 +1120,7 @@ nav ul li a:hover {
   .top5ai_semicircle_image {
     top: 8%;
   }
+
   .benifit_semicircle_image {
     top: 23%;
   }
@@ -1145,9 +1159,7 @@ nav ul li a:hover {
     overflow: hidden;
   }
 
-  .common_btn {
-    padding: 14px 30px;
-  }
+
 
   .hero_input {
     padding: 14px 18px;
@@ -1268,10 +1280,6 @@ nav ul li a:hover {
     height: 25px;
   }
 
-  .common_btn {
-    padding: 22px 20px !important;
-  }
-
   .toggle_change .bar1 {
     transform: translate(0, 12px) rotate(-45deg);
   }
@@ -1388,6 +1396,7 @@ nav ul li a:hover {
   .top5ai_semicircle_image {
     top: 7%;
   }
+
   .benifit_semicircle_image {
     top: 29%;
   }
