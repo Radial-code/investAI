@@ -1,3 +1,43 @@
+/* hero form */
+.sign_up_btn:hover {
+  box-shadow: 23px 20px 20px 22px #0084ff inset !important;
+}
+
+/* SECTION SECOND START HERE  */
+.profit_heading {
+  max-width: 778px;
+}
+.input_phone {
+  background-image: url("/assets/images/webp/hero-mobile-frame.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 300px;
+  width: 100%;
+  height: 600px;
+}
+
+/* common btn  */
+.hero_mobile_form_btn {
+    border: 1px solid #ffffff;
+    padding: 10px 24px;
+    border-radius: 132px;
+    background: var(--light-blue);
+    transition: all 300ms ease-in-out;
+}
+
+.hero_mobile_form_btn:hover {
+    box-shadow:
+        0px 4px 53.2px 0px #553af594,
+        inset 0 70px 0 white;
+    color: var(--light-blue) !important;
+}
+
+.btn_shadow {
+    box-shadow:
+        0px 4px 53.2px 0px #553af594;
+}
+
 /* backto top */
 #back-top {
   display: none;
