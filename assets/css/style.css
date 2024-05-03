@@ -342,9 +342,31 @@ nav ul li a:hover {
   filter: blur(80px) !important;
 }
 
-/* How to benefit by investing in AI ETFs for high returns css end */
 
 /* Advisors css start */
+#advisors {
+  padding-top: 100px;
+}
+
+.advisor_bg {
+  background-image: url("./assets/images/png/advisor_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advisor_animation_circle {
+  top: -11% !important;
+}
+
+.advisors_top_ai_blur_box {
+  z-index: 1;
+  top: 20%;
+}
+
+.max-h-full {
+  max-height: 100% !important;
+}
 
 .advisors_slider_box {
   box-shadow: 0px 48.87px 183.25px 0px #00000069;
@@ -735,8 +757,36 @@ nav ul li a:hover {
   width: 50%;
   top: 4%;
 }
+/* footer animation */
+.hero_bottom_spacing {
+  padding-bottom: 270px;
+}
 
-@keyframes rotate {
+.position_relative {
+  position: relative;
+}
+
+/*=== footer animation ========*/
+.footer_animation {
+  z-index: -10;
+  position: absolute;
+  bottom: -490px;
+  left: 220px;
+  height: auto;
+
+  -webkit-animation: footer_animation 20s linear infinite;
+  animation: footer_animation 20s linear infinite;
+}
+
+.translate_lg_registration {
+  transform: translateX(20px);
+}
+
+.registration_img_parent {
+  animation: rotateCircles 12s linear infinite;
+}
+
+@keyframes rotateCircles {
   0% {
     rotate: 0;
   }
@@ -746,53 +796,62 @@ nav ul li a:hover {
   }
 }
 
-/* media screen 1199.98px */
-@media (min-width: 1500px) {
-  .hight_return_bg_img {
-    top: 40%;
-    scale: 1 !important;
-  }
-
-  .footer_section div {
-    background-color: #0a0916;
-  }
+.registration_top {
+  top: -150px;
 }
 
-@media (min-width: 1200px) {
-  .ai_row_gap {
-    gap: 150px !important;
+.registration_top_right {
+  top: -20px;
+  right: -130px;
+}
+
+.registration_top_left {
+  top: -20px;
+  left: -140px;
+}
+
+.registration_bottom_left {
+  bottom: -50px;
+  left: -120px;
+}
+
+.registration_bottom_right {
+  bottom: -40px;
+  left: 300px;
+}
+
+.registration_bottom {
+  bottom: -150px;
+  left: 90px;
+}
+
+.registration_top,
+.registration_top_left,
+.registration_top_right,
+.center_img,
+.registration_bottom,
+.registration_bottom_right,
+.registration_bottom_left {
+  transition: all 0.2s linear;
+}
+
+.registration_top:hover,
+.registration_top_left:hover,
+.registration_top_right:hover,
+.center_img:hover,
+.registration_bottom:hover,
+.registration_bottom_right:hover,
+.registration_bottom_left:hover {
+  transform: scale(1.1);
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0;
   }
 
-  .hero_left_bottom_stars {
-    bottom: 2% !important;
-  }
-
-  .hero_right_bottom_stars {
-    bottom: 2% !important;
-  }
-
-  .advisors_heading {
-    padding-top: 110px;
-  }
-
-  .main_heading_para_w {
-    width: 367px;
-  }
-
-  .implement_box {
-    max-width: 351px;
-  }
-
-  .register_paragraph {
-    padding-bottom: 96px !important;
-  }
-
-  .hand_img_profit {
-    transform: translateX(20px);
-  }
-
-  .footer_top_spacing {
-    margin-top: 100px;
+  100% {
+    rotate: 360deg;
   }
 }
 
@@ -969,6 +1028,56 @@ nav ul li a:hover {
   }
 }
 
+@media (min-width: 1200px) {
+  .ai_row_gap {
+    gap: 150px !important;
+  }
+
+  .hero_left_bottom_stars {
+    bottom: 2% !important;
+  }
+
+  .hero_right_bottom_stars {
+    bottom: 2% !important;
+  }
+
+  .advisors_heading {
+    padding-top: 110px;
+  }
+
+  .main_heading_para_w {
+    width: 367px;
+  }
+
+  .implement_box {
+    max-width: 351px;
+  }
+
+  .register_paragraph {
+    padding-bottom: 96px !important;
+  }
+
+  .hand_img_profit {
+    transform: translateX(20px);
+  }
+
+  .footer_top_spacing {
+    margin-top: 100px;
+  }
+}
+
+/* media screen 1199.98px */
+@media (min-width: 1500px) {
+  .hight_return_bg_img {
+    top: 40%;
+    scale: 1 !important;
+  }
+
+  .footer_section div {
+    background-color: #0a0916;
+  }
+}
+
 @media (max-width: 1280px) {
   .left_arrow {
     left: 45%;
@@ -984,6 +1093,58 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1199.98px) {
+  .footer_animation {
+    z-index: -10;
+    bottom: -450px;
+    left: 300px;
+  }
+
+  .center_img {
+    width: 20%;
+  }
+
+  .translate_lg_registration {
+    transform: translateX(10px) scale(0.9);
+  }
+
+  .registration_black_img {
+    width: 80%;
+  }
+
+  .registration_top {
+    top: -110px;
+    width: 40%;
+  }
+
+  .registration_top_right {
+    top: -20px;
+    right: -50px;
+    width: 40%;
+  }
+
+  .registration_top_left {
+    top: -20px;
+    left: -50px;
+    width: 40%;
+  }
+
+  .registration_bottom_left {
+    bottom: -20px;
+    left: -50px;
+    width: 40%;
+  }
+
+  .registration_bottom_right {
+    bottom: -20px;
+    left: 290px;
+    width: 40%;
+  }
+
+  .registration_bottom {
+    bottom: -110px;
+    left: 120px;
+    width: 40%;
+  }
   .counter_box {
     gap: 6px;
   }
@@ -1028,9 +1189,32 @@ nav ul li a:hover {
     top: 10%;
   }
 }
+@media (max-width:1299.98px) {
+    .translate_lg_registration {
+        transform: translateX(20px) scale(0.8);
+    }
+}
+
 
 /* media screen 991.98 */
 @media (max-width: 991.98px) {
+  .footer_animation {
+    bottom: -330px;
+    left: 350px;
+  }
+
+  .advisor_Implement_paragraph {
+    max-width: 600px !important;
+  }
+
+  .submit_btn {
+    padding: 14px !important;
+  }
+
+  .understanding_slider .slick-slide {
+    padding-left: 10px !important;
+    padding-right: 10px;
+  }
   .live_icon {
     right: 13px;
   }
@@ -1122,138 +1306,6 @@ nav ul li a:hover {
   }
 }
 
-/* media screen  765.95px*/
-@media (max-width: 767.98px) {
-  .mobile_navbar {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    left: -100%;
-    top: 0;
-    background-color: var(--dark-blue);
-    transition: all 500ms ease-in-out;
-    z-index: 10;
-  }
-
-  .top5ai_semicircle_image {
-    top: 8%;
-  }
-
-  .benifit_semicircle_image {
-    top: 23%;
-  }
-
-  .footer_semicircle_image {
-    top: 6.5%;
-  }
-
-  .hero_semicircle_image {
-    top: 122%;
-  }
-
-  label[for="navMenu"] {
-    width: 40px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-    justify-content: space-between;
-    z-index: 11;
-  }
-
-  label[for="navMenu"] > span {
-    width: 100%;
-    height: 4px;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  .show {
-    left: 0;
-  }
-
-  .overflow_hidden {
-    overflow: hidden;
-  }
-
-  .hero_input {
-    padding: 14px 18px;
-  }
-
-  .hero_mobile_input {
-    padding: 14px 18px;
-  }
-
-  .counter_para {
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-
-  .live_icon {
-    font-size: 18px !important;
-  }
-
-  .counter_box {
-    padding: 8px 8px !important;
-    border-radius: 15px;
-  }
-
-  .counter_box_timer h2 {
-    width: 100px !important;
-    height: 65px !important;
-    padding: 15px;
-  }
-
-  .counter_box {
-    gap: 5px;
-  }
-
-  .implement_box h2 {
-    padding-top: 24px;
-    padding-bottom: 22px;
-  }
-
-  .Implement_paragraph {
-    margin-bottom: 45px;
-  }
-
-  .Implement_heading {
-    padding-top: 70px;
-  }
-
-  .profit_heading {
-    padding-top: 70px;
-    padding-bottom: 40px;
-  }
-
-  .today_side_vector {
-    width: 80px;
-    height: 290px;
-  }
-
-  .today_heading {
-    padding-top: 70px;
-    padding-bottom: 40px;
-  }
-
-  .advisors_heading {
-    padding-top: 70px;
-  }
-
-  .today_bg {
-    top: 19%;
-  }
-
-  .research_heading {
-    font-size: var(--fs-2xl) !important;
-  }
-
-  .ai_row_gap div img {
-    box-shadow: 0px 2.71px 12.15px 0px #ffffff69;
-  }
-}
-
 /* media screen  575.98px*/
 @media (max-width: 1023.98px) {
   .understanding_slider .slick-dots li.slick-active button:before {
@@ -1273,6 +1325,26 @@ nav ul li a:hover {
 }
 
 @media (max-width: 575.98px) {
+  .hero_bottom_spacing {
+    padding-bottom: 130px !important;
+  }
+
+  .footer_animation {
+    bottom: -300px;
+    left: 30px;
+  }
+
+  .submit_btn {
+    padding: 12px !important;
+  }
+
+  .ai_etf_scrollbar {
+    max-height: 570px;
+  }
+
+  #advisors {
+    padding-top: 70px !important;
+  }
   .footer_section {
     padding: 180px 0px 48px 0px;
   }
