@@ -617,7 +617,6 @@ input::-webkit-inner-spin-button {
   overflow-x: hidden;
 }
 
-
 /* DEFINE FOOTER CSS CODE */
 .footer_section {
   padding: 262px 0px 69px 0px;
@@ -904,7 +903,6 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (min-width: 992px) {
-
   .footer_animation_circle {
     top: 15% !important;
   }
