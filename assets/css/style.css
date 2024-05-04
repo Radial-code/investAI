@@ -1709,68 +1709,94 @@ body {
     padding-top: 245px;
   }
 }
+
 /*====================================== animation css =======================================*/
 .hero_bottom_spacing {
-    padding-bottom: 270px;
+  padding-bottom: 270px;
 }
 
 .position_relative {
-    position: relative;
+  position: relative;
 }
 
 /*=== footer animation ========*/
 .footer_animation {
-    z-index: -10;
-    position: absolute;
-    bottom: -490px;
-    left: 220px;
-    height: auto;
+  z-index: -10;
+  position: absolute;
+  bottom: -490px;
+  left: 220px;
+  height: auto;
 
-    -webkit-animation: footer_animation 20s linear infinite;
-    animation: footer_animation 20s linear infinite;
+  -webkit-animation: footer_animation 20s linear infinite;
+  animation: footer_animation 20s linear infinite;
 }
 
 .translate_registration {
-    transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.registration_img_parent {
+  animation: rotateCircles 16s linear infinite;
+  -webkit-animation: rotateCircles 16s linear infinite;
 }
 
 @keyframes rotateCircles {
-    0% {
-        rotate: 0;
-    }
+  0% {
+    rotate: 0;
+  }
 
-    100% {
-        rotate: 360deg;
-    }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.registration_bottom,
+.registration_top_right,
+.registration_top_left,
+.registration_bottom_left,
+.registration_bottom_right,
+.registration_top {
+  animation: rotateCirclesReverse 16s linear infinite forwards;
+  -webkit-animation: rotateCirclesReverse 16s linear infinite forwards;
+}
+
+@keyframes rotateCirclesReverse {
+  0% {
+    rotate: 0;
+  }
+
+  100% {
+    rotate: -360deg;
+  }
 }
 
 .registration_top {
-    top: -150px;
+  top: -150px;
 }
 
 .registration_top_right {
-    top: -20px;
-    right: -130px;
+  top: -20px;
+  right: -130px;
 }
 
 .registration_top_left {
-    top: -20px;
-    left: -140px;
+  top: -20px;
+  left: -140px;
 }
 
 .registration_bottom_left {
-    bottom: -50px;
-    left: -120px;
+  bottom: -50px;
+  left: -120px;
 }
 
 .registration_bottom_right {
-    bottom: -40px;
-    left: 300px;
+  bottom: -40px;
+  left: 300px;
 }
 
 .registration_bottom {
-    bottom: -150px;
-    left: 90px;
+  bottom: -150px;
+  left: 90px;
 }
 
 .registration_top,
@@ -1780,7 +1806,7 @@ body {
 .registration_bottom,
 .registration_bottom_right,
 .registration_bottom_left {
-    transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .registration_top:hover,
@@ -1790,153 +1816,153 @@ body {
 .registration_bottom:hover,
 .registration_bottom_right:hover,
 .registration_bottom_left:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
 
 @media (max-width:1299.98px) {
-    .translate_registration {
-        transform: translateX(20px) scale(0.8);
-    }
+  .translate_registration {
+    transform: translateX(20px) scale(0.8);
+  }
 }
 
 @media (max-width:1199.98px) {
-    .footer_animation {
-        z-index: -10;
-        bottom: -450px;
-        left: 300px;
-    }
+  .footer_animation {
+    z-index: -10;
+    bottom: -450px;
+    left: 300px;
+  }
 
-    .center_img {
-        width: 20%;
-    }
+  .center_img {
+    width: 20%;
+  }
 
-    .translate_registration {
-        transform: translateX(10px) scale(0.9);
-    }
+  .translate_registration {
+    transform: translateX(0) scale(0.9);
+  }
 
-    .registration_black_img {
-        width: 80%;
-    }
+  .registration_black_img {
+    width: 80%;
+  }
 
-    .registration_top {
-        top: -110px;
-        width: 40%;
-    }
+  .registration_top {
+    top: -110px;
+    width: 40%;
+  }
 
-    .registration_top_right {
-        top: -20px;
-        right: -50px;
-        width: 40%;
-    }
+  .registration_top_right {
+    top: -20px;
+    right: -50px;
+    width: 40%;
+  }
 
-    .registration_top_left {
-        top: -20px;
-        left: -50px;
-        width: 40%;
-    }
+  .registration_top_left {
+    top: -20px;
+    left: -50px;
+    width: 40%;
+  }
 
-    .registration_bottom_left {
-        bottom: -20px;
-        left: -50px;
-        width: 40%;
-    }
+  .registration_bottom_left {
+    bottom: -20px;
+    left: -50px;
+    width: 40%;
+  }
 
-    .registration_bottom_right {
-        bottom: -20px;
-        left: 290px;
-        width: 40%;
-    }
+  .registration_bottom_right {
+    bottom: -20px;
+    left: 290px;
+    width: 40%;
+  }
 
-    .registration_bottom {
-        bottom: -110px;
-        left: 120px;
-        width: 40%;
-    }
+  .registration_bottom {
+    bottom: -110px;
+    left: 120px;
+    width: 40%;
+  }
 }
 
 @media (max-width:991.98px) {
-    .footer_animation {
-        bottom: -330px;
-        left: 350px;
-    }
+  .footer_animation {
+    bottom: -330px;
+    left: 350px;
+  }
 
-    .advisor_Implement_paragraph {
-        max-width: 600px !important;
-    }
+  .translate_registration {
+    transform: none;
+  }
 
-    .submit_btn {
-        padding: 14px !important;
-    }
+  .advisor_Implement_paragraph {
+    max-width: 600px !important;
+  }
 
-    .understanding_slider .slick-slide {
-        padding-left: 10px !important;
-        padding-right: 10px;
-    }
+  .submit_btn {
+    padding: 14px !important;
+  }
+
+  .understanding_slider .slick-slide {
+    padding-left: 10px !important;
+    padding-right: 10px;
+  }
 
 }
 
 @media (max-width:767.98px) {
-    .footer_animation {
-        bottom: -320px;
-        left: 320px;
-    }
+  .footer_animation {
+    bottom: -320px;
+    left: 320px;
+  }
 
-    .ai_etf_scrollbar {
-        max-height: 720px;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
+  .ai_etf_scrollbar {
+    max-height: 720px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width:575.98px) {
-    .hero_bottom_spacing {
-        padding-bottom: 130px !important;
-    }
+  .hero_bottom_spacing {
+    padding-bottom: 130px !important;
+  }
 
-    .footer_animation {
-        bottom: -300px;
-        left: 30px;
-    }
+  .footer_animation {
+    bottom: -300px;
+    left: 30px;
+  }
 
-    .submit_btn {
-        padding: 12px !important;
-    }
+  .submit_btn {
+    padding: 12px !important;
+  }
 
-    .ai_etf_scrollbar {
-        max-height: 570px;
-    }
+  .ai_etf_scrollbar {
+    max-height: 570px;
+  }
 
-    #advisors {
-        padding-top: 70px !important;
-    }
-
-    .translate_registration {
-        transform: none;
-    }
+  #advisors {
+    padding-top: 70px !important;
+  }
 }
 
 #advisors {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .advisor_bg {
-    background-image: url("./assets/images/png/advisor_bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("./assets/images/png/advisor_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advisor_animation_circle {
-    top: -11% !important;
+  top: -11% !important;
 }
 
 .advisors_top_ai_blur_box {
-    z-index: 1;
-    top: 20%;
+  z-index: 1;
+  top: 20%;
 }
 
 .max-h-full {
-    max-height: 100% !important;
+  max-height: 100% !important;
 }
