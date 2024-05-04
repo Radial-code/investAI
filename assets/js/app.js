@@ -35,50 +35,46 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// counter
-// Set the initial countdown date
-var countDownDate = new Date("Sep 4, 2024 00:00:01").getTime();
+function countdown() {
+  let desktopDays = document.getElementById("desktopDays");
+  let desktopHours = document.getElementById("desktopHours");
+  let desktopMinutes = document.getElementById("desktopMinutes");
+  let desktopSeconds = document.getElementById("desktopSeconds");
+  let mobileDays = document.getElementById("mobileDays");
+  let mobileHours = document.getElementById("mobileHours");
+  let mobileMintus = document.getElementById("mobileMintus");
+  let mobileSeconds = document.getElementById("mobileSeconds");
+  const now = new Date().getTime();
+  const targetTime = now + 3600000; // 1 hour in milliseconds
+  // 5184000
+  const x = setInterval(function () {
+    const currentTime = new Date().getTime();
+    let distance = targetTime - currentTime;
 
-// Add 1 hour in milliseconds (1 hour = 3600000 milliseconds)
-countDownDate += 3600000;
-
-// Update the count down every 1 second
-var x = setInterval(function () {
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Iterate over each countdown container
-  document
-    .querySelectorAll(".countdown-container")
-    .forEach(function (container) {
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (68000 * 60 * 60 * 24));
-      var hours = Math.floor(
+    if (distance < 0) {
+      clearInterval(x);
+      countdown(); // Reset the countdown
+    } else {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Output the result in elements inside this container
-      container.querySelector(".days").innerHTML = days + " ";
-      container.querySelector(".hours").innerHTML = hours + "";
-      container.querySelector(".minutes").innerHTML = minutes + " ";
-      container.querySelector(".seconds").innerHTML = seconds + " ";
-    });
+      desktopDays.innerHTML = days.toString().padStart(2, "0");
+      desktopHours.innerHTML = hours.toString().padStart(2, "0");
+      desktopMinutes.innerHTML = minutes.toString().padStart(2, "0");
+      desktopSeconds.innerHTML = seconds.toString().padStart(2, "0");
+      mobileDays.innerHTML = days.toString().padStart(2, "0");
+      mobileHours.innerHTML = hours.toString().padStart(2, "0");
+      mobileMintus.innerHTML = minutes.toString().padStart(2, "0");
+      mobileSeconds.innerHTML = seconds.toString().padStart(2, "0");
+    }
+  }, 1000);
+}
 
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document
-      .querySelectorAll(".countdown-container")
-      .forEach(function (container) {
-        container.innerHTML = "EXPIRED";
-      });
-  }
-}, 1000);
+countdown();
 
 // slider hero
 $(".hero_slider").slick({

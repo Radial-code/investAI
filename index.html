@@ -127,17 +127,19 @@
                       registration closes in
                     </p>
                     <div class="d-flex justify-content-center">
-                      <div class="counter_box d-flex align-items-center justify-content-center">
+                      <div class="counter_box d-flex align-items-center justify-content-center countdown"
+                        >
                         <div class="counter_box_timer position-relative overflow-hidden">
-                          <h2
-                            class="ff_inter days fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
+                          <h2 id="desktopDays"
+                            class="ff_inter days fs_xl fw-bold text-white mb-0 d-flex align-items-center
+                            justify-content-center">
                             00
                           </h2>
                           <div class="side_blur_box_timer position-absolute"></div>
                         </div>
                         <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
                         <div class="counter_box_timer overflow-hidden position-relative">
-                          <h2
+                          <h2 id="desktopHours"
                             class="ff_inter hours fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
                             00
                           </h2>
@@ -145,7 +147,7 @@
                         </div>
                         <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
                         <div class="counter_box_timer overflow-hidden position-relative">
-                          <h2
+                          <h2 id="desktopMinutes"
                             class="ff_inter minutes fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
                             00
                           </h2>
@@ -153,7 +155,7 @@
                         </div>
                         <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
                         <div class="counter_box_timer overflow-hidden position-relative">
-                          <h2
+                          <h2 id="desktopSeconds"
                             class="ff_inter seconds fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
                             00
                           </h2>
@@ -212,39 +214,38 @@
                     Due to extremely high demand for media coverage, registration
                     closes in
                   </p>
-                  <div class="d-flex justify-content-center">
-                    <div class="counter_box d-flex align-items-center justify-content-center">
-                      <div class="counter_box_timer position-relative overflow-hidden">
-                        <h2
-                          class="ff_inter days fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
-                          00
-                        </h2>
-                        <div class="side_blur_box_timer position-absolute"></div>
-                      </div>
-                      <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
-                      <div class="counter_box_timer overflow-hidden position-relative">
-                        <h2
-                          class="ff_inter hours fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
-                          00
-                        </h2>
-                        <div class="side_blur_box_timer position-absolute"></div>
-                      </div>
-                      <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
-                      <div class="counter_box_timer overflow-hidden position-relative">
-                        <h2
-                          class="ff_inter fs_xl minutes fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
-                          00
-                        </h2>
-                        <div class="side_blur_box_timer position-absolute"></div>
-                      </div>
-                      <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
-                      <div class="counter_box_timer overflow-hidden position-relative">
-                        <h2
-                          class="ff_inter seconds fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
-                          00
-                        </h2>
-                        <div class="side_blur_box_timer position-absolute"></div>
-                      </div>
+                  <div class="counter_box d-flex align-items-center justify-content-center countdown" id="countdown">
+                    <div class="counter_box_timer position-relative overflow-hidden">
+                      <h2 id="mobileDays"
+                        class="ff_inter days fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
+                        00
+                      </h2>
+                      <div class="side_blur_box_timer position-absolute"></div>
+                    </div>
+                    <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
+                    <div class="counter_box_timer overflow-hidden position-relative">
+                      <h2 id="mobileHours"
+                        class="ff_inter hours fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
+                        00
+                      </h2>
+                      <div class="side_blur_box_timer position-absolute"></div>
+                    </div>
+                    <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
+                    <div class="counter_box_timer overflow-hidden position-relative">
+                      <h2 id="mobileMintus"
+                        class="ff_inter minutes fs_xl fw-bold text-white mb-0 d-flex align-items-center justify-content-center">
+                        00
+                      </h2>
+                      <div class="side_blur_box_timer position-absolute"></div>
+                    </div>
+                    <img src="./assets/images/svg/timerdots.svg" alt="timerdots" />
+                    <div class="counter_box_timer overflow-hidden position-relative">
+                      <h2 id="mobileSeconds"
+                        class="ff_inter seconds fs_xl fw-bold text-white mb-0 d-flex align-items-center
+                        justify-content-center">
+                        00
+                      </h2>
+                      <div class="side_blur_box_timer position-absolute"></div>
                     </div>
                   </div>
                 </div>
@@ -981,7 +982,8 @@
                       win-win, and I’m very excited to see where it goes.
                   </div>
                   <div class="slider_box_blur implement_box_blur position-absolute"></div>
-                  <img class="w-100 advisor_img" src="./assets/images/webp/bill-gates.webp" alt="keith-rupert-murdoch" />
+                  <img class="w-100 advisor_img" src="./assets/images/webp/bill-gates.webp"
+                    alt="keith-rupert-murdoch" />
                   <div>
                     <h2 class="ff_inter fs_sm fw-bold text-white text-center lh_normal mb-1">
                       Bill Gates
