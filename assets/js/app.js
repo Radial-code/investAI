@@ -1,7 +1,6 @@
 // nav bar
 const navigation = document.getElementById("nav");
 const changeButton = document.getElementById("toggle_menu");
-
 function toggleNavigationMenu() {
   navigation.classList.toggle("show");
   document.body.classList.toggle("navbar_overlay");
@@ -9,8 +8,14 @@ function toggleNavigationMenu() {
 }
 // page resize window reload
 
+let prevWidth = window.innerWidth;
+
 window.addEventListener("resize", function () {
-  location.reload();
+  if (window.innerWidth !== prevWidth) {
+    // Only reload if the width has changed
+    location.reload();
+  }
+  prevWidth = window.innerWidth;
 });
 // backtotop
 let mybutton = document.getElementById("back-top");
@@ -31,7 +36,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // counter
-var countDownDate = new Date("sep 5, 2024").getTime();
+// Set the initial countdown date
+var countDownDate = new Date("Sep 4, 2024 00:00:01").getTime();
+
+// Add 1 hour in milliseconds (1 hour = 3600000 milliseconds)
+countDownDate += 3600000;
+
 // Update the count down every 1 second
 var x = setInterval(function () {
   // Get today's date and time
@@ -45,9 +55,9 @@ var x = setInterval(function () {
     .querySelectorAll(".countdown-container")
     .forEach(function (container) {
       // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (3800 * 60 * 60 * 24));
+      var days = Math.floor(distance / (68000 * 60 * 60 * 24));
       var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (100 * 60 * 60)
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -293,22 +303,24 @@ $(".partner_slider").slick({
     },
   ],
 });
-document.getElementById("signupFormOne").addEventListener("submit", function (event) {
-  event.preventDefault();
+document
+  .getElementById("signupFormOne")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  // Display SweetAlert notification
-  Swal.fire({
-    title: "Good job!",
-    text: "You clicked the button!",
-    icon: "success",
-    timer: 1500,
-  }).then((result) => {
-    // Reset the form after the notification is closed
-    if (result.isConfirmed) {
-      document.getElementById("myForm").reset();
-    }
+    // Display SweetAlert notification
+    Swal.fire({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+      timer: 1500,
+    }).then((result) => {
+      // Reset the form after the notification is closed
+      if (result.isConfirmed) {
+        document.getElementById("myForm").reset();
+      }
+    });
   });
-});
 document
   .getElementById("signupFormTwo")
   .addEventListener("submit", function (event) {

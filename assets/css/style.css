@@ -531,7 +531,7 @@ input::-webkit-inner-spin-button {
 } */
 .top5ai_top_stars {
   width: 50%;
-  top: 20%;
+  top: 6%;
 }
 
 .benifit_top_stars {
@@ -709,7 +709,7 @@ input::-webkit-inner-spin-button {
 }
 
 .benifit_animation_circle {
-  top: 24% !important;
+  top: 7% !important;
   animation: rotate 12s linear infinite;
 }
 
@@ -812,7 +812,7 @@ input::-webkit-inner-spin-button {
   }
 
   .benifit_animation_circle {
-    top: 18% !important;
+    top: 4% !important;
   }
 
   .footer_animation_circle {
@@ -1139,7 +1139,7 @@ input::-webkit-inner-spin-button {
   }
 
   .benifit_semicircle_image {
-    top: 23%;
+    top: 6%;
   }
 
   .footer_semicircle_image {
@@ -1238,7 +1238,8 @@ input::-webkit-inner-spin-button {
   }
 
   .today_bg {
-    top: 19%;
+    top: 39% !important;
+    rotate: 90deg;
   }
 
   .research_heading {
@@ -1409,7 +1410,7 @@ input::-webkit-inner-spin-button {
   }
 
   .benifit_semicircle_image {
-    top: 26%;
+    top: 8%;
   }
 
   .advisors_slider_box div {
@@ -1472,11 +1473,6 @@ body {
   max-width: 300px;
   width: 100%;
   height: 600px;
-}
-
-.hero_video {
-  height: 300px;
-  max-width: 650px;
 }
 
 .slider_box:hover {
@@ -1913,11 +1909,6 @@ body {
     left: 320px;
   }
 
-  .ai_etf_scrollbar {
-    max-height: 720px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
 }
 
 @media (max-width:575.98px) {
@@ -1932,10 +1923,6 @@ body {
 
   .submit_btn {
     padding: 12px !important;
-  }
-
-  .ai_etf_scrollbar {
-    max-height: 570px;
   }
 
   #advisors {
