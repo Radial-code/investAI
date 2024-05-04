@@ -123,9 +123,18 @@ nav ul li a:hover {
 
 .form_box_hero {
   background: #8989890d;
+  padding: 30px 20px;
   border: 2px solid #553af5;
   border-radius: 20px;
   max-width: 600px;
+  backdrop-filter: blur(8px);
+}
+.form_box_hero_section {
+  background: #8989890d;
+  border-radius: 20px;
+  max-width: 600px;
+  padding: 30px 20px;
+
   backdrop-filter: blur(8px);
 }
 
@@ -398,7 +407,7 @@ input::-webkit-inner-spin-button {
   display: flex !important;
 }
 
-.slick-initialized .slick-slide>div {
+.slick-initialized .slick-slide > div {
   display: flex;
   width: 100%;
 }
@@ -436,16 +445,20 @@ input::-webkit-inner-spin-button {
 }
 
 .today_left_side_victor {
-  background: linear-gradient(88deg,
-      #0c0b18 23.37%,
-      rgba(10, 13, 35, 0) 98.36%);
+  background: linear-gradient(
+    88deg,
+    #0c0b18 23.37%,
+    rgba(10, 13, 35, 0) 98.36%
+  );
   left: 0;
 }
 
 .today_right_side_victor {
-  background: linear-gradient(268deg,
-      #0c0b18 23.37%,
-      rgba(10, 13, 35, 0) 98.36%);
+  background: linear-gradient(
+    268deg,
+    #0c0b18 23.37%,
+    rgba(10, 13, 35, 0) 98.36%
+  );
   right: 0;
 }
 
@@ -611,10 +624,6 @@ input::-webkit-inner-spin-button {
 /* DEFINE FOOTER CSS CODE */
 .footer_section {
   padding: 262px 0px 69px 0px;
-}
-
-.form_box_hero {
-  padding: 30px 20px;
 }
 
 /* DEFINE ADVISORS SLIDER CSS CODE */
@@ -986,7 +995,9 @@ input::-webkit-inner-spin-button {
   .counter_box {
     gap: 6px;
   }
-
+  .form_box_hero_section {
+    padding: 16px;
+  }
   .advisors_slider_side_p {
     padding: 0 10px;
   }
@@ -1161,7 +1172,7 @@ input::-webkit-inner-spin-button {
     z-index: 11;
   }
 
-  label[for="navMenu"]>span {
+  label[for="navMenu"] > span {
     width: 100%;
     height: 4px;
     background-color: white;
@@ -1815,15 +1826,13 @@ body {
   transform: scale(1.1);
 }
 
-
-
-@media (max-width:1299.98px) {
+@media (max-width: 1299.98px) {
   .translate_registration {
     transform: translateX(20px) scale(0.8);
   }
 }
 
-@media (max-width:1199.98px) {
+@media (max-width: 1199.98px) {
   .footer_animation {
     z-index: -10;
     bottom: -450px;
@@ -1878,7 +1887,7 @@ body {
   }
 }
 
-@media (max-width:991.98px) {
+@media (max-width: 991.98px) {
   .footer_animation {
     bottom: -330px;
     left: 350px;
@@ -1900,18 +1909,16 @@ body {
     padding-left: 10px !important;
     padding-right: 10px;
   }
-
 }
 
-@media (max-width:767.98px) {
+@media (max-width: 767.98px) {
   .footer_animation {
     bottom: -320px;
     left: 320px;
   }
-
 }
 
-@media (max-width:575.98px) {
+@media (max-width: 575.98px) {
   .hero_bottom_spacing {
     padding-bottom: 130px !important;
   }
