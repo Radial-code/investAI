@@ -617,9 +617,6 @@ input::-webkit-inner-spin-button {
   overflow-x: hidden;
 }
 
-.register_paragraph {
-  padding-bottom: 48px;
-}
 
 /* DEFINE FOOTER CSS CODE */
 .footer_section {
@@ -785,10 +782,6 @@ input::-webkit-inner-spin-button {
     max-width: 351px;
   }
 
-  .register_paragraph {
-    padding-bottom: 96px !important;
-  }
-
   .hand_img_profit {
     transform: translateX(20px);
   }
@@ -910,11 +903,7 @@ input::-webkit-inner-spin-button {
     max-height: 273px;
   }
 }
-
 @media (min-width: 992px) {
-  .register_paragraph {
-    padding-bottom: 32px;
-  }
 
   .footer_animation_circle {
     top: 15% !important;
