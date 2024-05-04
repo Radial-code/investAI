@@ -42,11 +42,16 @@ function countdown() {
   let desktopSeconds = document.getElementById("desktopSeconds");
   let mobileDays = document.getElementById("mobileDays");
   let mobileHours = document.getElementById("mobileHours");
-  let mobileMintus = document.getElementById("mobileMintus");
+  let mobileMinutes = document.getElementById("mobileMintus"); // Corrected variable name
   let mobileSeconds = document.getElementById("mobileSeconds");
-  const now = new Date().getTime();
-  const targetTime = now + 3600000; // 1 hour in milliseconds
-  // 5184000
+
+  let targetTime = localStorage.getItem("targetTime");
+
+  if (!targetTime) {
+    targetTime = new Date().getTime() + 3600000; // 1 hour in milliseconds
+    localStorage.setItem("targetTime", targetTime);
+  }
+
   const x = setInterval(function () {
     const currentTime = new Date().getTime();
     let distance = targetTime - currentTime;
@@ -68,7 +73,7 @@ function countdown() {
       desktopSeconds.innerHTML = seconds.toString().padStart(2, "0");
       mobileDays.innerHTML = days.toString().padStart(2, "0");
       mobileHours.innerHTML = hours.toString().padStart(2, "0");
-      mobileMintus.innerHTML = minutes.toString().padStart(2, "0");
+      mobileMinutes.innerHTML = minutes.toString().padStart(2, "0"); // Corrected variable name
       mobileSeconds.innerHTML = seconds.toString().padStart(2, "0");
     }
   }, 1000);
