@@ -116,7 +116,7 @@
                     LIVE
                   </span>
                   <div class="hero_video">
-                    <video muted class="w-100" width="640" height="360" controls autoplay>
+                    <video muted class="w-100 h-100" width="640" height="360" controls autoplay>
                       <source src="./assets/video/hero-video.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
@@ -286,7 +286,7 @@
                 Felicia
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $2, 041
+                <span class="fw-normal">Profit:</span> $2,041
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
                 <span class="fw-normal">Current Balance: </span> $4,587
@@ -303,10 +303,10 @@
                 Brian
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $62, 233
+                <span class="fw-normal">Profit:</span> $62,233
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
-                <span class="fw-normal">Current Balance: </span> $105, 080
+                <span class="fw-normal">Current Balance: </span> $105,080
               </h2>
             </div>
           </div>
@@ -320,7 +320,7 @@
                 Murray
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $35, 449
+                <span class="fw-normal">Profit:</span> $35,449
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
                 <span class="fw-normal">Current Balance: </span> $68,187
@@ -337,7 +337,7 @@
                 Tamara
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $4, 930
+                <span class="fw-normal">Profit:</span> $4,930
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
                 <span class="fw-normal">Current Balance: </span>$12,230
@@ -371,7 +371,7 @@
                 Felicia
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $2, 041
+                <span class="fw-normal">Profit:</span> $2,041
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
                 <span class="fw-normal">Current Balance: </span> $4,587
@@ -388,10 +388,10 @@
                 Brian
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $62, 233
+                <span class="fw-normal">Profit:</span> $62,233
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
-                <span class="fw-normal">Current Balance: </span> $105, 080
+                <span class="fw-normal">Current Balance: </span> $105,080
               </h2>
             </div>
           </div>
@@ -405,7 +405,7 @@
                 Murray
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $35, 449
+                <span class="fw-normal">Profit:</span> $35,449
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
                 <span class="fw-normal">Current Balance: </span> $68,187
@@ -422,7 +422,7 @@
                 Tamara
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-0 pb-2">
-                <span class="fw-normal">Profit:</span> $4, 930
+                <span class="fw-normal">Profit:</span> $4,930
               </h2>
               <h2 class="ff_inter fw-bold fs_base text-white text-center mb-3 pb-1">
                 <span class="fw-normal">Current Balance: </span>$12,230
@@ -1086,7 +1086,7 @@
       <img class="position-absolute today_shade d-sm-none" src="./assets/images/svg/today-box-shade.svg"
         alt="today-box-shade">
       <div class="custom_container container mx-auto position-relative pt-3 pb-3 pb-md-0 pt-md-5 pt-xl-0">
-        <img class="position-absolute w-100 today_bg" src="./assets/images/svg/today_bg.svg" alt="background" />
+        <img class="position-absolute w-100 today_bg d-none d-md-block" src="./assets/images/svg/today_bg.svg" alt="background" />
         <h2 data-aos="fade-down" data-aos-duration="1500"
           class="text_arapawa fw-bold lh_120 fs_2xl text-capitalize main_heading_w mb-0 ff_openSans today_heading text-center mx-auto text-lowercase posit position-relative z-1 ">
           statistics for <span class="text_light_blue"> today</span>
@@ -1394,11 +1394,13 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
   <script>
-    window.addEventListener("load", function () {
-      AOS.init({
-        once: true
-      });
-    });
+   window.addEventListener("load", function () {
+   if (window.innerWidth > 768) { // Change the value as per your mobile breakpoint
+   AOS.init({
+   once: true
+   });
+   }
+   });
   </script>
   <script>
     document.getElementById("signupFormTwo").addEventListener("submit", function (event) {
