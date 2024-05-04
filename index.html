@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Primary Meta Tags -->
   <!-- page title -->
@@ -445,7 +447,7 @@
     <section class="position-relative understanding_section pb-5 bg-white">
       <div class="side_blur_box_three blur_box position-absolute"></div>
       <div class="max_w_1140 mx-auto position-relative z-1 pb-lg-3 pb-5 mb-1">
-        <h2
+        <h2 data-aos="fade-down" data-aos-duration="3000"
           class="text_arapawa fw-bold lh_120 fs_2xl text-capitalize main_heading_w mb-0 ff_openSans Implement_heading text-center mx-auto">
           Understanding leveraged
           <span class="d-block">
@@ -1419,7 +1421,8 @@
       </div>
 
     </div>
-
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- jquery link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -1434,8 +1437,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-
-
+   <script>
+     window.addEventListener("load", function () {
+       AOS.init({
+         once: true
+       });
+     });
+   </script>
     <script>
       document.getElementById("signupFormTwo").addEventListener("submit", function (event) {
         event.preventDefault();
@@ -1450,23 +1458,17 @@
     <script>
       // Counter Animation Script
       var reached = false;
-
       $(window).scroll(function () {
         var position = $('.today_counter').offset().top;
-
         if ($(window).scrollTop() + $(window).height() > position && !reached) {
-          // Call your counter function here
           startCounter();
           reached = true;
         }
       });
-
       function startCounter() {
-        var counters = [0, 0, 0]; // Initial values for counters
-        var maxCounts = [757, 124, 4]; // Change these to your desired maximum counts
-
+        var counters = [0, 0, 0]; 
+        var maxCounts = [757, 124, 4];
         var intervals = [];
-
         $('.text_arapawa.fs_3xl').each(function (index) {
           var $counterElement = $(this);
           var counter = 0;
@@ -1480,18 +1482,14 @@
               } else if (index === 2) {
                 $counterElement.text(counter + "x");
               }
-              counter += Math.ceil(maxCount / 100); // Increment by 1% of max count
+              counter += Math.ceil(maxCount / 100);
             } else {
               clearInterval(interval);
             }
-          }, 10); // Change interval as needed
+          }, 10); 
           intervals.push(interval);
         });
       }
     </script>
-
-
-
 </body>
-
 </html>
