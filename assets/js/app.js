@@ -35,52 +35,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-function countdown() {
-  let desktopDays = document.getElementById("desktopDays");
-  let desktopHours = document.getElementById("desktopHours");
-  let desktopMinutes = document.getElementById("desktopMinutes");
-  let desktopSeconds = document.getElementById("desktopSeconds");
-  let mobileDays = document.getElementById("mobileDays");
-  let mobileHours = document.getElementById("mobileHours");
-  let mobileMinutes = document.getElementById("mobileMintus"); // Corrected variable name
-  let mobileSeconds = document.getElementById("mobileSeconds");
-
-  let targetTime = localStorage.getItem("targetTime");
-
-  if (!targetTime) {
-    targetTime = new Date().getTime() + 3600000; // 1 hour in milliseconds
-    localStorage.setItem("targetTime", targetTime);
-  }
-
-  const x = setInterval(function () {
-    const currentTime = new Date().getTime();
-    let distance = targetTime - currentTime;
-
-    if (distance < 0) {
-      clearInterval(x);
-      countdown(); // Reset the countdown
-    } else {
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      desktopDays.innerHTML = days.toString().padStart(2, "0");
-      desktopHours.innerHTML = hours.toString().padStart(2, "0");
-      desktopMinutes.innerHTML = minutes.toString().padStart(2, "0");
-      desktopSeconds.innerHTML = seconds.toString().padStart(2, "0");
-      mobileDays.innerHTML = days.toString().padStart(2, "0");
-      mobileHours.innerHTML = hours.toString().padStart(2, "0");
-      mobileMinutes.innerHTML = minutes.toString().padStart(2, "0"); // Corrected variable name
-      mobileSeconds.innerHTML = seconds.toString().padStart(2, "0");
-    }
-  }, 1000);
-}
-
-countdown();
-
 // slider hero
 $(".hero_slider").slick({
   slidesToShow: 6,
