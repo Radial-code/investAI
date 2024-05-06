@@ -473,7 +473,9 @@ input::-webkit-inner-spin-button {
 .profit_heading {
   max-width: 805px;
   padding-top: 100px;
-  padding-bottom: 57px;
+}
+#formdata {
+  padding-top: 57px;
 }
 
 .hand_img_profit {
@@ -1218,7 +1220,9 @@ input::-webkit-inner-spin-button {
 
   .profit_heading {
     padding-top: 70px;
-    padding-bottom: 40px;
+  }
+  #formdata {
+    padding-top: 40px;
   }
 
   .today_side_vector {
@@ -1362,7 +1366,9 @@ input::-webkit-inner-spin-button {
 
   .profit_heading {
     padding-top: 48px;
-    padding-bottom: 32px;
+  }
+  #formdata {
+    padding-top: 32px;
   }
 
   .today_side_vector {
