@@ -173,12 +173,12 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1.2,
           dots: true,
         },
       },
       {
-        breakpoint: 440,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           dots: true,
