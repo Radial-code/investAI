@@ -193,6 +193,10 @@ body {
     --fs-md: 24px;
     --fs-3xl: 55px;
   }
+
+  .common_btn {
+    padding: 14px 30px;
+  }
 }
 
 @media (max-width: 767.98px) {
