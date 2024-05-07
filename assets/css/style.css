@@ -116,9 +116,7 @@ nav ul li a:hover {
 }
 
 .counter_para {
-  padding-top: 43px;
   max-width: 519px;
-  padding-bottom: 34px;
 }
 
 .form_box_hero {
@@ -134,7 +132,7 @@ nav ul li a:hover {
   background: #8989890d;
   border-radius: 20px;
   max-width: 600px;
-  padding: 30px 20px;
+  padding:20px;
 
   backdrop-filter: blur(8px);
 }
@@ -144,7 +142,7 @@ nav ul li a:hover {
 }
 
 .hero_input {
-  padding: 20.5px 28px;
+  padding: 16px 20px;
   margin-bottom: 20px;
   border-radius: 66px;
   outline: none;
@@ -1186,10 +1184,10 @@ input::-webkit-inner-spin-button {
     padding: 14px 18px;
   }
 
-  .counter_para {
+  /* .counter_para {
     padding-top: 50px;
     padding-bottom: 20px;
-  }
+  } */
 
   .live_icon {
     font-size: 18px !important;
