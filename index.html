@@ -1522,6 +1522,8 @@
             </div>
           </div>
         </div>
+        <p class="footer_para ff_openSans text-white opacity_80 mb-0 text-center mb-3">Copyright@Ai-ETC <span
+            id="currentYear"></span></p>
         <div class="footer_purle_line bg_light_blue">
         </div>
       </footer>
@@ -1556,6 +1558,9 @@
         disable: 'mobile'
       });
     });
+    // current data function
+    var currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
   </script>
   <script>
     document.getElementById("signupFormTwo").addEventListener("submit", function (event) {
