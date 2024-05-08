@@ -118,8 +118,10 @@
                     LIVE
                   </span>
                   <div class="hero_video">
-                    <video muted class="w-100 h-100" width="640" height="360" controls autoplay>
-                      <source src="./assets/video/hero-video.mp4" type="video/mp4">
+                    <video id="myVideo" muted class="w-100 h-100" width="640" height="360" controls
+                      autoplay playsinline
+                      loop>
+                      <source src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                   </div>
@@ -1582,6 +1584,13 @@
               // current data function
               var currentYear = new Date().getFullYear();
               document.getElementById("currentYear").textContent = currentYear;
+
+              // VIDEO IPHONE JS CODE START HERE
+              var video = document.getElementById("myVideo");
+              var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+              if (isSafari) {
+              video.setAttribute("playsinline", "");
+              video.setAttribute("webkit-playsinline", "");}
             </script>
             <script>
               document.getElementById("signupFormTwo").addEventListener("submit", function (event) {
