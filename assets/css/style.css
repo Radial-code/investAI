@@ -132,7 +132,7 @@ nav ul li a:hover {
   background: #8989890d;
   border-radius: 20px;
   max-width: 600px;
-  padding:20px;
+  padding: 20px;
 
   backdrop-filter: blur(8px);
 }
@@ -589,8 +589,8 @@ input::-webkit-inner-spin-button {
 
 .footer_semicircle_image {
   left: 50%;
-  top: 24%;
-  width: 120%;
+  top: 30%;
+  width: 140%;
   transform: translateX(-50%);
 }
 
@@ -891,10 +891,6 @@ input::-webkit-inner-spin-button {
     gap: 70px;
   }
 
-  .top_ai_section {
-    padding-top: 400px;
-  }
-
   .top_ai_blue_box {
     height: 72px;
     width: 72px;
@@ -908,6 +904,10 @@ input::-webkit-inner-spin-button {
 @media (min-width: 992px) {
   .footer_animation_circle {
     top: 15% !important;
+  }
+
+  .top_ai_section {
+    padding-top: 400px;
   }
 
   .understanding_slider .slick-slide {
@@ -1031,7 +1031,8 @@ input::-webkit-inner-spin-button {
   }
 
   .footer_semicircle_image {
-    top: 20%;
+    top: 25%;
+    width: 160%;
   }
 }
 
@@ -1059,7 +1060,8 @@ input::-webkit-inner-spin-button {
   }
 
   .counter_box {
-    margin-bottom: 36px;
+    margin: 0 auto 36px auto;
+    max-width: 470px;
   }
 
   .Implement_paragraph {
@@ -1073,6 +1075,10 @@ input::-webkit-inner-spin-button {
   .hight_return_bg_img {
     top: 54%;
     scale: 3;
+  }
+
+  .top_ai_section {
+    padding-top: 300px;
   }
 
   .footer_section {
@@ -1092,15 +1098,17 @@ input::-webkit-inner-spin-button {
   }
 
   .top5ai_semicircle_image {
-    top: 12%;
+    top: 9%;
+    width: 190%;
   }
 
   .benifit_semicircle_image {
-    top: 12%;
+    top: 8%;
+    width: 190%;
   }
 
   .footer_semicircle_image {
-    top: 12%;
+    top: 20%;
   }
 
   .hero_semicircle_image {
@@ -1119,8 +1127,8 @@ input::-webkit-inner-spin-button {
     font-size: 32px !important;
   }
 
-  .common_btn {
-    padding: 14px 30px !important;
+  .sign_up_btn {
+    padding: 14px 34px;
   }
 }
 
@@ -1137,16 +1145,16 @@ input::-webkit-inner-spin-button {
     z-index: 10;
   }
 
+  .sign_up_btn {
+    padding: 13px 34px !important;
+  }
+
   .top5ai_semicircle_image {
     top: 8%;
   }
 
   .benifit_semicircle_image {
-    top: 6%;
-  }
-
-  .footer_semicircle_image {
-    top: 6.5%;
+    top: 5%;
   }
 
   .hero_semicircle_image {
@@ -1320,7 +1328,7 @@ input::-webkit-inner-spin-button {
 
   .hero_input {
     padding: 12px 18px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .live_icon {
@@ -1330,6 +1338,8 @@ input::-webkit-inner-spin-button {
   .counter_box {
     padding: 8px !important;
     border-radius: 15px;
+    gap: 3px;
+    max-width: 340px;
   }
 
   .counter_box_timer h2 {
@@ -1341,10 +1351,6 @@ input::-webkit-inner-spin-button {
 
   .fs_18 {
     font-size: 18px !important;
-  }
-
-  .counter_box {
-    gap: 3px;
   }
 
   .implement_box h2 {
@@ -1407,10 +1413,6 @@ input::-webkit-inner-spin-button {
   }
 
   .footer_semicircle_image {
-    top: 13%;
-  }
-
-  .footer_semicircle_image {
     width: 220%;
   }
 
@@ -1419,7 +1421,7 @@ input::-webkit-inner-spin-button {
   }
 
   .benifit_semicircle_image {
-    top: 8%;
+    top: 7%;
   }
 
   .advisors_slider_box div {
@@ -1469,9 +1471,7 @@ body {
 }
 
 /* hero form */
-.sign_up_btn:hover {
-  box-shadow: 23px 20px 20px 22px #0084ff inset !important;
-}
+
 
 /* SECTION SECOND START HERE  */
 .profit_heading {
@@ -1672,6 +1672,7 @@ body {
   background-color: #563af5d5 !important;
   top: -70%;
   right: 0%;
+  z-index: -1;
 }
 
 .filter_animation {
@@ -1716,6 +1717,10 @@ body {
 
   .benifit_section {
     padding-top: 245px;
+  }
+
+  .sign_up_btn {
+    padding: 15px 34px !important;
   }
 }
 
@@ -1903,10 +1908,6 @@ body {
     max-width: 600px !important;
   }
 
-  .submit_btn {
-    padding: 14px !important;
-  }
-
   .understanding_slider .slick-slide {
     padding-left: 10px !important;
     padding-right: 10px;
@@ -1925,13 +1926,13 @@ body {
     padding-bottom: 130px !important;
   }
 
+  .sign_up_btn {
+    padding: 11px 34px !important;
+  }
+
   .footer_animation {
     bottom: -300px;
     left: 30px;
-  }
-
-  .submit_btn {
-    padding: 12px !important;
   }
 
   #advisors {
