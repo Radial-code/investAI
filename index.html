@@ -57,28 +57,30 @@
           <!-- nav bar start -->
           <nav class="d-flex align-items-center justify-content-between mb-2 mb-sm-3 pt-3 pb-1">
             <div class="width_md_full">
-              <a href="/" class="ff_orbitron fw-bold fs_md text-white position-relative nav_logo">
+              <a rel="home page" href="/" class="ff_orbitron fw-bold fs_md text-white position-relative nav_logo">
                 <span class="text_light_indigo">AI</span> ETF
               </a>
             </div>
             <div
               class="d-flex align-items-center justify-content-center flex-md-row flex-column width_md_full mb-0 mobile_navbar navbar_link_gap ps-0 list-unstyled"
               id="nav">
-              <a onclick="toggleNavigationMenu()" href="#home"
+              <a rel="home" onclick="toggleNavigationMenu()" href="#home"
                 class="d-inline-block text-white ff_inter fw-normal nav_line position-relative fs_nav">HOME</a>
-              <a onclick="toggleNavigationMenu()" href="#benefit"
+              <a rel="benifit" onclick="toggleNavigationMenu()" href="#benefit"
                 class="d-inline-block text-white ff_inter fw-normal nav_line position-relative fs_nav">BENEFIT</a>
-              <a onclick="toggleNavigationMenu()" href="#stocks"
+              <a rel="ai stocks" onclick="toggleNavigationMenu()" href="#stocks"
                 class="d-inline-block text-white ff_inter fw-normal nav_line position-relative fs_nav text-nowrap">AI
                 STOCKS</a>
               <div onclick="toggleNavigationMenu()" class="d-sm-none">
-                <a href="#formdata" class="common_btn d-inline-block text-white ff_inter fw-bold fs_base">
+                <a rel="sign up" href="#formdata"
+                  class="common_btn d-inline-block text-white ff_inter fw-bold fs_base">
                   SIGN UP
                 </a>
               </div>
             </div>
             <div class="width_md_full d-flex justify-content-end">
-              <a href="#formdata" class="common_btn text-white ff_inter fw-bold fs_base d-none d-sm-block">
+              <a rel="sign up" href="#formdata"
+                class="common_btn text-white ff_inter fw-bold fs_base d-none d-sm-block">
                 SIGN UP
               </a>
             </div>
@@ -201,7 +203,8 @@
                         id="phoneNumber" />
                     </div>
                     <div class="pt-3 pt-lg-1">
-                      <button type="submit" class="common_btn sign_up_btn w-100 text-white ff_inter fw-bold fs_base">
+                      <button aria-label="sign up" type="submit"
+                        class="common_btn sign_up_btn w-100 text-white ff_inter fw-bold fs_base">
                         SIGN UP
                       </button>
                     </div>
@@ -693,7 +696,7 @@
           </div>
         </div>
         <div class="pt-sm-3 mt-3 mt-sm-0 pt-4 text-center pb-lg-5 mb-lg-4 px-4 mx-1 d-flex justify-content-center">
-          <a href="#formdata" class="common_btn text-white ff_inter fw-bold fs_base sign_btn">
+          <a rel="sign up" href="#formdata" class="common_btn text-white ff_inter fw-bold fs_base sign_btn">
             SIGN UP
           </a>
         </div>
@@ -972,7 +975,7 @@
                 <p class="ff_inter fs-base text-black text-center">Fill in the module</p>
               </div>
               <div class="text-center">
-                <a href="#formdata"
+                <a href="#formdata" rel="user data"
                   class="common_btn btn_shadow text-white ff_inter fw-bold fs_base sign_btn d-inline-block">
                   Register now
                 </a>
@@ -991,7 +994,7 @@
                   verification of your account with ours authorized representative</p>
               </div>
               <div class="text-center mt-4 pt-2">
-                <a href="#formdata"
+                <a href="#formdata" rel="contact us"
                   class="common_btn btn_shadow text-white ff_inter fw-bold fs_base sign_btn d-inline-block">
                   Book a call
                 </a>
@@ -1011,7 +1014,7 @@
                   financial future</p>
               </div>
               <div class="text-center">
-                <a href="#formdata"
+                <a href="#formdata" rel="open account"
                   class="common_btn btn_shadow text-white ff_inter fw-bold fs_base sign_btn d-inline-block">
                   Open your account
                 </a>
@@ -1034,7 +1037,7 @@
               </p>
             </div>
             <div class="text-center">
-              <a href="#formdata"
+              <a href="#formdata" rel="register now"
                 class="common_btn btn_shadow text-white ff_inter fw-bold fs_base sign_btn d-inline-block">
                 Register now
               </a>
@@ -1052,7 +1055,7 @@
                 verification of your account with ours authorized representative</p>
             </div>
             <div class="text-center">
-              <a href="#formdata"
+              <a href="#formdata" rel="user data"
                 class="common_btn btn_shadow text-white ff_inter fw-bold fs_base sign_btn d-inline-block">
                 Register now
               </a>
@@ -1072,10 +1075,16 @@
                 future</p>
             </div>
             <div class="text-center">
-              <a href="#formdata"
+              <a href="#formdata" rel="Register"
                 class="common_btn btn_shadow text-white ff_inter fw-bold fs_base sign_btn d-inline-block">
                 Register now
-              </a </div> </div> </div> </div> </section> <!-- Advisors ADVISORS SECTION START -->
+              </a >
+            </div> 
+            </div>
+             </div> 
+            </div> 
+            </section> 
+              <!-- Advisors ADVISORS SECTION START -->
               <section id="advisors" class="pb-sm-4 bg_dark_blue overflow-hidden position-relative">
                 <img class="position-absolute start-0 advisor_top_stars"
                   src="./assets/images/svg/animation-starts-left.svg" alt="stars" />
@@ -1452,7 +1461,7 @@
                                 class="hero_input mb-2 mb-xl-0 w-100" />
                             </div>
                             <div class="pt-4">
-                              <button type="submit"
+                              <button aria-label="Sign up" type="submit"
                                 class="common_btn sign_up_btn w-100 text-white ff_inter fw-bold fs_base mt-xl-2">
                                 SIGN UP
                               </button>
@@ -1503,7 +1512,7 @@
                   <div class="footer_section">
                     <div class="container custom_container mx-auto">
                       <div class="text-center">
-                        <a href="/"
+                        <a href="/" rel="home page"
                           class="text-white fw-bold fs_2xl ff_orbitron lh_normal text-center pb-sm-4 mb-0 d-inline-block"><span
                             class="text_light_blue">AI</span> ETF</a>
                       </div>
