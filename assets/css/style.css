@@ -189,7 +189,15 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
+.iti {
+  width: 100%;
+}
+.iti input {
+  padding-left: 90px !important;
+}
+.iti .iti__selected-flag {
+  border-radius: 30px 0 0 30px;
+}
 .counter_box_timer {
   border-radius: 10px;
 }
@@ -1946,12 +1954,6 @@ body {
   padding-top: 100px;
 }
 
-.advisor_bg {
-  background-image: url("./assets/images/webp/advisor_bg.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .advisor_animation_circle {
   top: -11% !important;
