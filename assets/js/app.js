@@ -188,19 +188,6 @@ $(document).ready(function () {
   });
 });
 
-// slider hero
-$(".today_slider").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplaySpeed: 1500,
-  // autoplay: true,
-  infinite: true,
-  arrows: true,
-  dots: true,
-  nextArrow: ".left_arrow",
-  prevArrow: ".right_arrow",
-  pauseOnHover: true,
-});
 // partner-slider
 $(".partner_slider").slick({
   slidesToShow: 5,
@@ -295,4 +282,88 @@ document
     });
   });
 
+$(document).ready(function () {
+  var instance = $("[name=phone_no]").intlTelInput({
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.js",
+    initialCountry: "auto",
+    separateDialCode: true,
+    geoIpLookup: function (success, failure) {
+      $.get("https://ipinfo.io", function () {}, "jsonp").always(function (
+        resp
+      ) {
+        var countryCode = resp && resp.country ? resp.country : "us";
+        success(countryCode);
+      });
+    },
+  });
 
+  $("[name=phone_no]").on("blur", function () {
+    var countryData = instance.intlTelInput("getSelectedCountryData");
+  });
+});
+window.addEventListener("load", function () {
+  // Change the value as per your mobile breakpoint
+  AOS.init({
+    once: true,
+    disable: "mobile",
+  });
+});
+// current data function
+var currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
+
+// VIDEO IPHONE JS CODE START HERE
+var video = document.getElementById("myVideo");
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (isSafari) {
+  video.setAttribute("playsinline", "");
+  video.setAttribute("webkit-playsinline", "");
+}
+document
+  .getElementById("signupFormTwo")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+document
+  .getElementById("signupFormOne")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.reset();
+  });
+// Counter Animation Script
+var reached = false;
+$(window).scroll(function () {
+  var position = $(".today_counter").offset().top;
+  if ($(window).scrollTop() + $(window).height() > position && !reached) {
+    startCounter();
+    reached = true;
+  }
+});
+
+function startCounter() {
+  var counters = [0, 0, 0];
+  var maxCounts = [757, 124, 4];
+  var intervals = [];
+  $(".text_arapawa.fs_3xl").each(function (index) {
+    var $counterElement = $(this);
+    var counter = 0;
+    var maxCount = maxCounts[index];
+    var interval = setInterval(function () {
+      if (counter <= maxCount) {
+        if (index === 0) {
+          $counterElement.text(counter + "$");
+        } else if (index === 1) {
+          $counterElement.text(counter);
+        } else if (index === 2) {
+          $counterElement.text(counter + "x");
+        }
+        counter += Math.ceil(maxCount / 100);
+      } else {
+        clearInterval(interval);
+      }
+    }, 10);
+    intervals.push(interval);
+  });
+}

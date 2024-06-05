@@ -125,6 +125,7 @@ nav ul li a:hover {
   border: 2px solid #553af5;
   border-radius: 20px;
   max-width: 600px;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
@@ -133,7 +134,7 @@ nav ul li a:hover {
   border-radius: 20px;
   max-width: 600px;
   padding: 20px;
-
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
@@ -435,7 +436,9 @@ input::-webkit-inner-spin-button {
 .average_paragraph {
   max-width: 278px;
 }
-
+.font_display {
+  font-display: fallback;
+}
 .today_section_row_w {
   max-width: 861px;
 }
@@ -1172,7 +1175,7 @@ input::-webkit-inner-spin-button {
     top: 122%;
   }
 
-  label[for="navMenu"] {
+  #toggle_menu {
     width: 40px;
     height: 30px;
     display: flex;
@@ -1183,7 +1186,7 @@ input::-webkit-inner-spin-button {
     z-index: 11;
   }
 
-  label[for="navMenu"] > span {
+  #toggle_menu > span {
     width: 100%;
     height: 4px;
     background-color: white;
@@ -1315,7 +1318,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 40px;
   }
 
-  label[for="navMenu"] {
+  #toggle_menu {
     width: 35px;
     height: 25px;
   }
@@ -1953,7 +1956,6 @@ body {
 #advisors {
   padding-top: 100px;
 }
-
 
 .advisor_animation_circle {
   top: -11% !important;
